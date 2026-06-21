@@ -1,0 +1,5 @@
+package com.meditrack.appointment.security;
+
+public class SecurityUtilTest {
+
+}

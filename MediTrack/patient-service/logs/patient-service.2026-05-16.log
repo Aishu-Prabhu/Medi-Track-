@@ -1,0 +1,1129 @@
+2026-05-16 12:22:26.942 INFO  [patient-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-16 12:22:27.065 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - Starting PatientServiceApplicationTests using Java 20.0.2 with PID 32348 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\patient-service)
+2026-05-16 12:22:27.068 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:22:29.109 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16 12:22:29.439 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 304 ms. Found 1 JPA repository interface.
+2026-05-16 12:22:29.995 INFO  [patient-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=d6e47205-c530-3e12-81d2-06691240980f
+2026-05-16 12:22:30.928 INFO  [patient-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-16 12:22:31.053 INFO  [patient-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-16 12:22:31.115 INFO  [patient-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-16 12:22:31.709 INFO  [patient-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-16 12:22:31.804 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-16 12:22:32.477 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39ccab78
+2026-05-16 12:22:32.482 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-16 12:22:32.657 INFO  [patient-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-16 12:22:34.238 INFO  [patient-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-16 12:22:34.331 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 12:22:35.424 WARN  [patient-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-16 12:22:36.172 WARN  [patient-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c3aeb6e0-a824-4a1a-9c6a-c428820e105d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 12:22:37.856 INFO  [patient-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-16 12:22:37.962 WARN  [patient-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-16 12:22:37.999 INFO  [patient-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-16 12:22:38.649 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:22:38.651 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - Using default backup registry implementation which does not do anything.
+2026-05-16 12:22:38.685 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-05-16 12:22:38.725 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - Started PatientServiceApplicationTests in 12.732 seconds (process running for 16.053)
+2026-05-16 12:22:38.786 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:22:38.787 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:22:38.792 WARN  [patient-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:22:39.308 INFO  [patient-service] [traceId=none] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.meditrack.patient.controller.PatientControllerTest]: PatientControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-16 12:22:39.347 INFO  [patient-service] [traceId=none] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.meditrack.patient.PatientServiceApplication for test class com.meditrack.patient.controller.PatientControllerTest
+2026-05-16 12:22:39.464 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - Starting PatientControllerTest using Java 20.0.2 with PID 32348 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\patient-service)
+2026-05-16 12:22:39.465 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:22:40.339 WARN  [patient-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7aab3dda-d0a7-4929-aba7-ff7fb7d2a67e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 12:22:40.516 INFO  [patient-service] [traceId=none] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-16 12:22:40.516 INFO  [patient-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-16 12:22:40.518 INFO  [patient-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2026-05-16 12:22:40.567 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - Started PatientControllerTest in 1.215 seconds (process running for 17.896)
+2026-05-16 12:22:42.396 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by id 1
+2026-05-16 12:22:42.399 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Access requested by john@test.com role=ROLE_PATIENT
+2026-05-16 12:22:42.407 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Update medical history patient id=1
+2026-05-16 12:22:42.412 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Get all patients request by admin@test.com role=ROLE_ADMIN
+2026-05-16 12:22:42.413 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Total patients fetched = 1
+2026-05-16 12:22:42.421 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Update patient request id=1
+2026-05-16 12:22:42.423 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient updated successfully id=1
+2026-05-16 12:22:42.431 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Add patient request by john@test.com with role ROLE_PATIENT
+2026-05-16 12:22:42.432 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient created successfully id=1
+2026-05-16 12:22:42.438 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Delete patient request id=1 by admin@test.com role=ROLE_ADMIN
+2026-05-16 12:22:42.439 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient deleted successfully id=1
+2026-05-16 12:22:42.445 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by id 1
+2026-05-16 12:22:42.446 ERROR [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient not found id=1
+2026-05-16 12:22:43.626 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-05-16 12:22:43.640 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 12:22:43.661 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-16 12:22:43.693 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:22:43.693 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:22:43.694 WARN  [patient-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:22:43.720 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-16 12:22:46.764 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:22:46.765 ERROR [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:36:24.334 INFO  [patient-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-16 12:36:24.411 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - Starting PatientServiceApplicationTests using Java 20.0.2 with PID 13324 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\patient-service)
+2026-05-16 12:36:24.413 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:36:26.625 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16 12:36:26.942 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 290 ms. Found 1 JPA repository interface.
+2026-05-16 12:36:27.502 INFO  [patient-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=d6e47205-c530-3e12-81d2-06691240980f
+2026-05-16 12:36:28.501 INFO  [patient-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-16 12:36:28.618 INFO  [patient-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-16 12:36:28.675 INFO  [patient-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-16 12:36:29.455 INFO  [patient-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-16 12:36:29.516 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-16 12:36:30.219 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6445647
+2026-05-16 12:36:30.222 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-16 12:36:30.421 INFO  [patient-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-16 12:36:32.049 INFO  [patient-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-16 12:36:32.175 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 12:36:33.428 WARN  [patient-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-16 12:36:34.153 WARN  [patient-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8638a499-d1ea-4055-a495-46fe1a527b09
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 12:36:35.999 INFO  [patient-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-16 12:36:36.118 WARN  [patient-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-16 12:36:36.176 INFO  [patient-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-16 12:36:36.863 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:36:36.863 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - Using default backup registry implementation which does not do anything.
+2026-05-16 12:36:36.882 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-05-16 12:36:36.928 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - Started PatientServiceApplicationTests in 13.593 seconds (process running for 17.197)
+2026-05-16 12:36:36.994 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:36:36.995 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:36:37.000 WARN  [patient-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:36:38.433 INFO  [patient-service] [traceId=f0fd3f12] c.m.patient.aop.LoggingAspect - [CONTROLLER][f0fd3f12] --> PatientController.testMethod() | args: [data]
+2026-05-16 12:36:38.433 INFO  [patient-service] [traceId=f0fd3f12] c.m.patient.aop.LoggingAspect - [CONTROLLER][f0fd3f12] <-- PatientController.testMethod() | 0ms | result: OK
+2026-05-16 12:36:38.498 INFO  [patient-service] [traceId=89d5f28f] c.m.patient.aop.LoggingAspect - [SERVICE][89d5f28f] --> PatientService.errorMethod() | args: [test]
+2026-05-16 12:36:38.499 ERROR [patient-service] [traceId=89d5f28f] c.m.patient.aop.LoggingAspect - [SERVICE][89d5f28f] !! PatientService.errorMethod() | 1ms | error: Something went wrong
+java.lang.RuntimeException: Something went wrong
+	at com.meditrack.patient.aop.LoggingAspect.logExecution(LoggingAspect.java:42)
+	at com.meditrack.patient.aop.LoggingAspect.logServiceMethods(LoggingAspect.java:20)
+	at com.meditrack.patient.aop.LoggingAspectTest.lambda$0(LoggingAspectTest.java:104)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at com.meditrack.patient.aop.LoggingAspectTest.testLogExecutionException(LoggingAspectTest.java:102)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:91)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$2(InterceptingLauncher.java:47)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:46)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+2026-05-16 12:36:38.510 INFO  [patient-service] [traceId=c36cb4a2] c.m.patient.aop.LoggingAspect - [SERVICE][c36cb4a2] --> PatientService.testMethod() | args: [arg1, 100]
+2026-05-16 12:36:38.511 INFO  [patient-service] [traceId=c36cb4a2] c.m.patient.aop.LoggingAspect - [SERVICE][c36cb4a2] <-- PatientService.testMethod() | 1ms | result: SUCCESS
+2026-05-16 12:36:38.554 INFO  [patient-service] [traceId=none] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.meditrack.patient.controller.PatientControllerTest]: PatientControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-16 12:36:38.654 INFO  [patient-service] [traceId=none] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.meditrack.patient.PatientServiceApplication for test class com.meditrack.patient.controller.PatientControllerTest
+2026-05-16 12:36:38.959 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - Starting PatientControllerTest using Java 20.0.2 with PID 13324 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\patient-service)
+2026-05-16 12:36:38.960 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:36:40.027 WARN  [patient-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 3a90c8b5-4ad8-4895-a29f-3c635cf364ff
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 12:36:40.195 INFO  [patient-service] [traceId=none] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-16 12:36:40.196 INFO  [patient-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-16 12:36:40.199 INFO  [patient-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2026-05-16 12:36:40.251 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - Started PatientControllerTest in 1.588 seconds (process running for 20.519)
+2026-05-16 12:36:42.110 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Get all patients request by aishu@gmail.com role=ROLE_PATIENT
+2026-05-16 12:36:42.111 ERROR [patient-service] [traceId=none] c.m.patient.service.PatientService - Access denied for ROLE_PATIENT
+2026-05-16 12:36:42.139 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Creating profile for aishu@gmail.com
+2026-05-16 12:36:42.141 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Profile created id=1
+2026-05-16 12:36:42.146 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by id 1
+2026-05-16 12:36:42.147 ERROR [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient not found id=1
+2026-05-16 12:36:42.153 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Add patient request by aishu@gmail.com with role ROLE_PATIENT
+2026-05-16 12:36:42.156 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient created successfully id=1
+2026-05-16 12:36:42.161 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Add patient request by aishu@gmail.com with role ROLE_PATIENT
+2026-05-16 12:36:42.161 WARN  [patient-service] [traceId=none] c.m.patient.service.PatientService - Duplicate patient email found: aishu@gmail.com
+2026-05-16 12:36:42.165 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Delete patient request id=1 by aishu@gmail.com role=ROLE_PATIENT
+2026-05-16 12:36:42.171 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Update medical history patient id=1
+2026-05-16 12:36:42.178 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Update patient request id=1
+2026-05-16 12:36:42.180 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient updated successfully id=1
+2026-05-16 12:36:42.185 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by email=aishu@gmail.com
+2026-05-16 12:36:42.192 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Get all patients request by admin@gmail.com role=ROLE_ADMIN
+2026-05-16 12:36:42.192 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Total patients fetched = 1
+2026-05-16 12:36:42.198 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by id 1
+2026-05-16 12:36:42.200 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Access requested by other@gmail.com role=ROLE_PATIENT
+2026-05-16 12:36:42.200 WARN  [patient-service] [traceId=none] c.m.patient.service.PatientService - Unauthorized patient access
+2026-05-16 12:36:42.207 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Delete patient request id=1 by admin@gmail.com role=ROLE_ADMIN
+2026-05-16 12:36:42.208 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient deleted successfully id=1
+2026-05-16 12:36:42.214 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Creating profile for aishu@gmail.com
+2026-05-16 12:36:42.219 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by id 1
+2026-05-16 12:36:42.220 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Access requested by admin@gmail.com role=ROLE_ADMIN
+2026-05-16 12:36:43.612 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-05-16 12:36:43.634 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 12:36:43.648 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-16 12:36:43.668 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:36:43.672 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-16 12:36:43.670 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:36:43.673 WARN  [patient-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:36:46.750 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:36:46.751 ERROR [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:38:11.426 INFO  [patient-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-16 12:38:11.503 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - Starting PatientServiceApplicationTests using Java 20.0.2 with PID 24380 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\patient-service)
+2026-05-16 12:38:11.504 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:38:13.706 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16 12:38:13.986 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 258 ms. Found 1 JPA repository interface.
+2026-05-16 12:38:14.467 INFO  [patient-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=d6e47205-c530-3e12-81d2-06691240980f
+2026-05-16 12:38:15.404 INFO  [patient-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-16 12:38:15.535 INFO  [patient-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-16 12:38:15.614 INFO  [patient-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-16 12:38:16.429 INFO  [patient-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-16 12:38:16.512 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-16 12:38:17.278 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26e178d1
+2026-05-16 12:38:17.283 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-16 12:38:17.548 INFO  [patient-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-16 12:38:19.285 INFO  [patient-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-16 12:38:19.395 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 12:38:20.618 WARN  [patient-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-16 12:38:21.333 WARN  [patient-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 3bb3c852-e491-4017-927d-ad4310877fbf
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 12:38:23.021 INFO  [patient-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-16 12:38:23.135 WARN  [patient-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-16 12:38:23.179 INFO  [patient-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-16 12:38:23.823 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:38:23.824 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - Using default backup registry implementation which does not do anything.
+2026-05-16 12:38:23.844 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-05-16 12:38:23.893 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - Started PatientServiceApplicationTests in 13.354 seconds (process running for 16.087)
+2026-05-16 12:38:23.984 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:38:23.985 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:38:23.994 WARN  [patient-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:38:25.376 INFO  [patient-service] [traceId=2c46c439] c.m.patient.aop.LoggingAspect - [CONTROLLER][2c46c439] --> PatientController.testMethod() | args: [data]
+2026-05-16 12:38:25.377 INFO  [patient-service] [traceId=2c46c439] c.m.patient.aop.LoggingAspect - [CONTROLLER][2c46c439] <-- PatientController.testMethod() | 1ms | result: OK
+2026-05-16 12:38:25.427 INFO  [patient-service] [traceId=f396d29f] c.m.patient.aop.LoggingAspect - [SERVICE][f396d29f] --> PatientService.errorMethod() | args: [test]
+2026-05-16 12:38:25.428 ERROR [patient-service] [traceId=f396d29f] c.m.patient.aop.LoggingAspect - [SERVICE][f396d29f] !! PatientService.errorMethod() | 1ms | error: Something went wrong
+java.lang.RuntimeException: Something went wrong
+	at com.meditrack.patient.aop.LoggingAspect.logExecution(LoggingAspect.java:42)
+	at com.meditrack.patient.aop.LoggingAspect.logServiceMethods(LoggingAspect.java:20)
+	at com.meditrack.patient.aop.LoggingAspectTest.lambda$0(LoggingAspectTest.java:104)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at com.meditrack.patient.aop.LoggingAspectTest.testLogExecutionException(LoggingAspectTest.java:102)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:91)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$2(InterceptingLauncher.java:47)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:46)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+2026-05-16 12:38:25.437 INFO  [patient-service] [traceId=0b968e1e] c.m.patient.aop.LoggingAspect - [SERVICE][0b968e1e] --> PatientService.testMethod() | args: [arg1, 100]
+2026-05-16 12:38:25.437 INFO  [patient-service] [traceId=0b968e1e] c.m.patient.aop.LoggingAspect - [SERVICE][0b968e1e] <-- PatientService.testMethod() | 0ms | result: SUCCESS
+2026-05-16 12:38:25.467 INFO  [patient-service] [traceId=none] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.meditrack.patient.controller.PatientControllerTest]: PatientControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-16 12:38:25.569 INFO  [patient-service] [traceId=none] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.meditrack.patient.PatientServiceApplication for test class com.meditrack.patient.controller.PatientControllerTest
+2026-05-16 12:38:25.805 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - Starting PatientControllerTest using Java 20.0.2 with PID 24380 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\patient-service)
+2026-05-16 12:38:25.805 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:38:26.652 WARN  [patient-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b5987895-429e-49c7-8064-a7a369b1c2a4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 12:38:26.846 INFO  [patient-service] [traceId=none] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-16 12:38:26.847 INFO  [patient-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-16 12:38:26.851 INFO  [patient-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2026-05-16 12:38:26.894 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - Started PatientControllerTest in 1.319 seconds (process running for 19.088)
+2026-05-16 12:38:28.429 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Get all patients request by aishu@gmail.com role=ROLE_PATIENT
+2026-05-16 12:38:28.430 ERROR [patient-service] [traceId=none] c.m.patient.service.PatientService - Access denied for ROLE_PATIENT
+2026-05-16 12:38:28.463 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Creating profile for aishu@gmail.com
+2026-05-16 12:38:28.466 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Profile created id=1
+2026-05-16 12:38:28.473 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by id 1
+2026-05-16 12:38:28.475 ERROR [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient not found id=1
+2026-05-16 12:38:28.482 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Add patient request by aishu@gmail.com with role ROLE_PATIENT
+2026-05-16 12:38:28.484 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient created successfully id=1
+2026-05-16 12:38:28.490 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Add patient request by aishu@gmail.com with role ROLE_PATIENT
+2026-05-16 12:38:28.491 WARN  [patient-service] [traceId=none] c.m.patient.service.PatientService - Duplicate patient email found: aishu@gmail.com
+2026-05-16 12:38:28.499 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Delete patient request id=1 by aishu@gmail.com role=ROLE_PATIENT
+2026-05-16 12:38:28.509 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Update medical history patient id=1
+2026-05-16 12:38:28.519 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Update patient request id=1
+2026-05-16 12:38:28.520 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient updated successfully id=1
+2026-05-16 12:38:28.526 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by email=aishu@gmail.com
+2026-05-16 12:38:28.533 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Get all patients request by admin@gmail.com role=ROLE_ADMIN
+2026-05-16 12:38:28.534 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Total patients fetched = 1
+2026-05-16 12:38:28.541 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by id 1
+2026-05-16 12:38:28.542 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Access requested by other@gmail.com role=ROLE_PATIENT
+2026-05-16 12:38:28.543 WARN  [patient-service] [traceId=none] c.m.patient.service.PatientService - Unauthorized patient access
+2026-05-16 12:38:28.550 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Delete patient request id=1 by admin@gmail.com role=ROLE_ADMIN
+2026-05-16 12:38:28.551 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient deleted successfully id=1
+2026-05-16 12:38:28.556 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Creating profile for aishu@gmail.com
+2026-05-16 12:38:28.562 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by id 1
+2026-05-16 12:38:28.563 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Access requested by admin@gmail.com role=ROLE_ADMIN
+2026-05-16 12:38:30.290 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-05-16 12:38:30.307 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 12:38:30.319 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-16 12:38:30.349 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-16 12:38:30.368 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:38:30.369 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:38:30.372 WARN  [patient-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:38:30.401 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:38:30.403 ERROR [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:38:58.607 INFO  [patient-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-16 12:38:58.695 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - Starting PatientServiceApplicationTests using Java 20.0.2 with PID 16196 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\patient-service)
+2026-05-16 12:38:58.698 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:39:00.838 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16 12:39:01.109 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 244 ms. Found 1 JPA repository interface.
+2026-05-16 12:39:01.672 INFO  [patient-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=d6e47205-c530-3e12-81d2-06691240980f
+2026-05-16 12:39:02.750 INFO  [patient-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-16 12:39:02.911 INFO  [patient-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-16 12:39:02.992 INFO  [patient-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-16 12:39:03.676 INFO  [patient-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-16 12:39:03.755 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-16 12:39:04.490 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@595b2839
+2026-05-16 12:39:04.494 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-16 12:39:04.740 INFO  [patient-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-16 12:39:06.640 INFO  [patient-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-16 12:39:06.748 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 12:39:08.084 WARN  [patient-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-16 12:39:08.858 WARN  [patient-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 92fca5db-4f7e-42da-b957-28be1935f13e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 12:39:10.705 INFO  [patient-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-16 12:39:10.805 WARN  [patient-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-16 12:39:10.864 INFO  [patient-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-16 12:39:11.492 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:39:11.492 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - Using default backup registry implementation which does not do anything.
+2026-05-16 12:39:11.507 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-05-16 12:39:11.543 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - Started PatientServiceApplicationTests in 14.002 seconds (process running for 16.897)
+2026-05-16 12:39:11.630 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:39:11.630 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:39:11.633 WARN  [patient-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:39:12.790 INFO  [patient-service] [traceId=086ee50d] c.m.patient.aop.LoggingAspect - [CONTROLLER][086ee50d] --> PatientController.testMethod() | args: [data]
+2026-05-16 12:39:12.791 INFO  [patient-service] [traceId=086ee50d] c.m.patient.aop.LoggingAspect - [CONTROLLER][086ee50d] <-- PatientController.testMethod() | 1ms | result: OK
+2026-05-16 12:39:12.850 INFO  [patient-service] [traceId=cbf3a038] c.m.patient.aop.LoggingAspect - [SERVICE][cbf3a038] --> PatientService.errorMethod() | args: [test]
+2026-05-16 12:39:12.851 ERROR [patient-service] [traceId=cbf3a038] c.m.patient.aop.LoggingAspect - [SERVICE][cbf3a038] !! PatientService.errorMethod() | 1ms | error: Something went wrong
+java.lang.RuntimeException: Something went wrong
+	at com.meditrack.patient.aop.LoggingAspect.logExecution(LoggingAspect.java:42)
+	at com.meditrack.patient.aop.LoggingAspect.logServiceMethods(LoggingAspect.java:20)
+	at com.meditrack.patient.aop.LoggingAspectTest.lambda$0(LoggingAspectTest.java:104)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at com.meditrack.patient.aop.LoggingAspectTest.testLogExecutionException(LoggingAspectTest.java:102)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:91)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$2(InterceptingLauncher.java:47)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:46)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+2026-05-16 12:39:12.861 INFO  [patient-service] [traceId=18a798c8] c.m.patient.aop.LoggingAspect - [SERVICE][18a798c8] --> PatientService.testMethod() | args: [arg1, 100]
+2026-05-16 12:39:12.862 INFO  [patient-service] [traceId=18a798c8] c.m.patient.aop.LoggingAspect - [SERVICE][18a798c8] <-- PatientService.testMethod() | 1ms | result: SUCCESS
+2026-05-16 12:39:12.901 INFO  [patient-service] [traceId=none] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.meditrack.patient.controller.PatientControllerTest]: PatientControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-16 12:39:13.010 INFO  [patient-service] [traceId=none] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.meditrack.patient.PatientServiceApplication for test class com.meditrack.patient.controller.PatientControllerTest
+2026-05-16 12:39:13.354 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - Starting PatientControllerTest using Java 20.0.2 with PID 16196 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\patient-service)
+2026-05-16 12:39:13.356 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:39:14.376 WARN  [patient-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 16db8fa9-4f48-419d-afd3-4e6afff6a5bd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 12:39:14.535 INFO  [patient-service] [traceId=none] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-16 12:39:14.535 INFO  [patient-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-16 12:39:14.537 INFO  [patient-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-05-16 12:39:14.583 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - Started PatientControllerTest in 1.56 seconds (process running for 19.937)
+2026-05-16 12:39:16.465 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Get all patients request by aishu@gmail.com role=ROLE_PATIENT
+2026-05-16 12:39:16.465 ERROR [patient-service] [traceId=none] c.m.patient.service.PatientService - Access denied for ROLE_PATIENT
+2026-05-16 12:39:16.490 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Creating profile for aishu@gmail.com
+2026-05-16 12:39:16.492 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Profile created id=1
+2026-05-16 12:39:16.499 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by id 1
+2026-05-16 12:39:16.501 ERROR [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient not found id=1
+2026-05-16 12:39:16.508 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Add patient request by aishu@gmail.com with role ROLE_PATIENT
+2026-05-16 12:39:16.510 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient created successfully id=1
+2026-05-16 12:39:16.516 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Add patient request by aishu@gmail.com with role ROLE_PATIENT
+2026-05-16 12:39:16.517 WARN  [patient-service] [traceId=none] c.m.patient.service.PatientService - Duplicate patient email found: aishu@gmail.com
+2026-05-16 12:39:16.522 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Delete patient request id=1 by aishu@gmail.com role=ROLE_PATIENT
+2026-05-16 12:39:16.532 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Update medical history patient id=1
+2026-05-16 12:39:16.539 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Update patient request id=1
+2026-05-16 12:39:16.541 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient updated successfully id=1
+2026-05-16 12:39:16.547 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by email=aishu@gmail.com
+2026-05-16 12:39:16.553 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Get all patients request by admin@gmail.com role=ROLE_ADMIN
+2026-05-16 12:39:16.554 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Total patients fetched = 1
+2026-05-16 12:39:16.560 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by id 1
+2026-05-16 12:39:16.561 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Access requested by other@gmail.com role=ROLE_PATIENT
+2026-05-16 12:39:16.562 WARN  [patient-service] [traceId=none] c.m.patient.service.PatientService - Unauthorized patient access
+2026-05-16 12:39:16.567 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Delete patient request id=1 by admin@gmail.com role=ROLE_ADMIN
+2026-05-16 12:39:16.568 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient deleted successfully id=1
+2026-05-16 12:39:16.575 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Creating profile for aishu@gmail.com
+2026-05-16 12:39:16.582 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by id 1
+2026-05-16 12:39:16.583 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Access requested by admin@gmail.com role=ROLE_ADMIN
+2026-05-16 12:39:18.179 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-05-16 12:39:18.197 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 12:39:18.241 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-16 12:39:18.253 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:39:18.254 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:39:18.254 WARN  [patient-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:39:18.286 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-16 12:39:21.332 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:39:21.333 ERROR [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 14:17:44.263 INFO  [patient-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-16 14:17:44.470 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplication - Starting PatientServiceApplication using Java 20.0.2 with PID 23576 (C:\Users\Aishu\C_MediTrack\MediTrack\patient-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\patient-service)
+2026-05-16 14:17:44.472 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 14:17:50.167 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16 14:17:50.793 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 590 ms. Found 1 JPA repository interface.
+2026-05-16 14:17:52.046 INFO  [patient-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=21da2f07-95f3-3cc0-9b20-5633a7eb8d92
+2026-05-16 14:17:54.671 INFO  [patient-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-05-16 14:17:54.770 INFO  [patient-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-05-16 14:17:54.778 INFO  [patient-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-16 14:17:54.779 INFO  [patient-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-16 14:17:55.193 INFO  [patient-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-16 14:17:55.194 INFO  [patient-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10423 ms
+2026-05-16 14:17:55.899 INFO  [patient-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-16 14:17:56.131 INFO  [patient-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-16 14:17:56.231 INFO  [patient-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-16 14:17:57.139 INFO  [patient-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-16 14:17:57.231 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-16 14:17:58.756 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24520a51
+2026-05-16 14:17:58.759 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-16 14:17:59.066 INFO  [patient-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-16 14:18:02.803 INFO  [patient-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-16 14:18:02.968 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 14:18:06.343 WARN  [patient-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-16 14:18:07.702 WARN  [patient-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2b10e165-5e4d-4168-9769-5f847847fa0b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 14:18:11.047 INFO  [patient-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-16 14:18:11.210 WARN  [patient-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-16 14:18:11.369 INFO  [patient-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-16 14:18:12.612 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-05-16 14:18:12.618 INFO  [patient-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-05-16 14:18:12.676 INFO  [patient-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-05-16 14:18:12.678 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2026-05-16 14:18:13.023 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplication - Started PatientServiceApplication in 32.395 seconds (process running for 34.29)
+2026-05-16 14:41:46.224 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 14:41:46.284 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 14:41:46.285 ERROR [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:860)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1418)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 14:41:47.651 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 14:41:47.678 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 14:41:53.592 INFO  [patient-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-16 14:41:53.645 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-05-16 14:41:53.681 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 14:41:53.682 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 14:41:53.682 WARN  [patient-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 14:41:53.743 INFO  [patient-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-16 14:41:53.754 INFO  [patient-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+2026-05-16 14:41:53.789 INFO  [patient-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-16 14:41:53.794 INFO  [patient-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+2026-05-16 14:41:53.825 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 14:41:53.866 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-16 14:41:53.877 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-16 14:41:56.950 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 14:41:56.959 ERROR [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)

@@ -1,0 +1,5 @@
+package com.meditrack.prescription.aop;
+
+public class LoggingAspectTest {
+
+}

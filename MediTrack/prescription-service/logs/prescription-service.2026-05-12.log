@@ -1,0 +1,778 @@
+2026-05-12 12:33:25.561 INFO  [prescription-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-12 12:33:25.878 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - Starting PrescriptionServiceApplication using Java 20.0.2 with PID 9644 (C:\Users\Aishu\C_MediTrack\MediTrack\prescription-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\prescription-service)
+2026-05-12 12:33:25.880 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-12 12:33:29.495 INFO  [prescription-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-12 12:33:29.948 INFO  [prescription-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 421 ms. Found 1 JPA repository interface.
+2026-05-12 12:33:30.861 INFO  [prescription-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=1e4e7d19-f098-3e5f-8203-fdb81d31e6d8
+2026-05-12 12:33:33.168 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2026-05-12 12:33:33.194 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2026-05-12 12:33:33.201 INFO  [prescription-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-12 12:33:33.203 INFO  [prescription-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-12 12:33:33.401 INFO  [prescription-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-12 12:33:33.401 INFO  [prescription-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7219 ms
+2026-05-12 12:33:34.030 INFO  [prescription-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-12 12:33:34.139 INFO  [prescription-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-12 12:33:34.225 INFO  [prescription-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-12 12:33:35.313 INFO  [prescription-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-12 12:33:35.386 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-12 12:33:36.255 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4860627a
+2026-05-12 12:33:36.258 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-12 12:33:36.476 INFO  [prescription-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-12 12:33:39.512 INFO  [prescription-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-12 12:33:39.690 INFO  [prescription-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12 12:33:41.640 WARN  [prescription-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-12 12:33:42.905 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'appointment-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 12:33:43.346 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 12:33:43.512 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'notification-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 12:33:45.480 WARN  [prescription-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b29c0a3b-cf40-48cf-815d-dfba6f8e6832
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-12 12:33:48.489 INFO  [prescription-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-12 12:33:48.655 WARN  [prescription-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-12 12:33:48.876 INFO  [prescription-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-12 12:33:50.212 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PRESCRIPTION-SERVICE with eureka with status UP
+2026-05-12 12:33:50.219 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2026-05-12 12:33:50.361 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/'
+2026-05-12 12:33:50.363 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8085
+2026-05-12 12:33:50.886 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - Started PrescriptionServiceApplication in 27.173 seconds (process running for 30.314)
+2026-05-12 12:53:01.029 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 12:53:01.029 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 12:53:02.321 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 12:53:02.334 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 12:53:02.834 INFO  [prescription-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-12 12:53:02.850 INFO  [prescription-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-12 12:53:03.678 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PRESCRIPTION-SERVICE with eureka with status DOWN
+2026-05-12 12:53:02.352 ERROR [prescription-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:860)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1418)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-12 12:53:04.005 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 12:53:04.011 WARN  [prescription-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-12 12:53:04.017 WARN  [prescription-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-12 12:53:04.958 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-12 12:53:05.220 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"]
+2026-05-12 12:53:06.360 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-12 12:53:06.429 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"]
+2026-05-12 12:53:07.188 INFO  [prescription-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12 12:53:07.951 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-12 12:53:08.472 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-12 12:53:12.628 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 12:53:12.644 ERROR [prescription-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-12 13:11:21.953 INFO  [prescription-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-12 13:11:22.716 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - Starting PrescriptionServiceApplication using Java 20.0.2 with PID 29552 (C:\Users\Aishu\C_MediTrack\MediTrack\prescription-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\prescription-service)
+2026-05-12 13:11:22.718 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-12 13:11:30.851 INFO  [prescription-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-12 13:11:32.199 INFO  [prescription-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1181 ms. Found 1 JPA repository interface.
+2026-05-12 13:11:35.164 INFO  [prescription-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=1e4e7d19-f098-3e5f-8203-fdb81d31e6d8
+2026-05-12 13:11:39.711 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2026-05-12 13:11:39.827 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2026-05-12 13:11:39.834 INFO  [prescription-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-12 13:11:39.834 INFO  [prescription-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-12 13:11:40.917 INFO  [prescription-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-12 13:11:40.984 INFO  [prescription-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 17990 ms
+2026-05-12 13:11:43.173 INFO  [prescription-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-12 13:11:43.585 INFO  [prescription-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-12 13:11:44.089 INFO  [prescription-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-12 13:11:47.140 INFO  [prescription-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-12 13:11:47.293 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-12 13:11:49.661 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60ba6631
+2026-05-12 13:11:49.681 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-12 13:11:51.523 INFO  [prescription-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-12 13:11:58.072 INFO  [prescription-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-12 13:11:58.403 INFO  [prescription-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12 13:12:02.192 WARN  [prescription-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-12 13:12:03.319 INFO  [prescription-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-12 13:12:04.151 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'appointment-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 13:12:04.430 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 13:12:04.501 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'notification-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 13:12:05.573 WARN  [prescription-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6d46b71a-9466-4b02-95eb-5f0345ccb6dd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-12 13:12:07.422 INFO  [prescription-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-12 13:12:07.509 WARN  [prescription-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-12 13:12:07.688 INFO  [prescription-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-12 13:12:09.421 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PRESCRIPTION-SERVICE with eureka with status UP
+2026-05-12 13:12:09.425 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2026-05-12 13:12:09.513 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/'
+2026-05-12 13:12:09.517 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8085
+2026-05-12 13:12:09.742 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - Started PrescriptionServiceApplication in 53.255 seconds (process running for 58.92)
+2026-05-12 13:12:09.744 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PRESCRIPTION-SERVICE with eureka with status DOWN
+2026-05-12 13:12:09.753 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-12 13:12:09.758 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"]
+2026-05-12 13:12:09.815 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-12 13:12:09.816 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"]
+2026-05-12 13:12:09.831 INFO  [prescription-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12 13:12:09.835 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-12 13:12:09.848 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-12 13:12:27.046 INFO  [prescription-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-12 13:12:27.182 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - Starting PrescriptionServiceApplication using Java 20.0.2 with PID 24092 (C:\Users\Aishu\C_MediTrack\MediTrack\prescription-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\prescription-service)
+2026-05-12 13:12:27.186 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-12 13:12:36.260 INFO  [prescription-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-12 13:12:37.475 INFO  [prescription-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1177 ms. Found 1 JPA repository interface.
+2026-05-12 13:12:39.266 INFO  [prescription-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=1e4e7d19-f098-3e5f-8203-fdb81d31e6d8
+2026-05-12 13:12:42.771 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2026-05-12 13:12:42.813 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2026-05-12 13:12:42.819 INFO  [prescription-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-12 13:12:42.819 INFO  [prescription-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-12 13:12:43.274 INFO  [prescription-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-12 13:12:43.275 INFO  [prescription-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 15910 ms
+2026-05-12 13:12:44.744 INFO  [prescription-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-12 13:12:45.099 INFO  [prescription-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-12 13:12:45.392 INFO  [prescription-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-12 13:12:47.015 INFO  [prescription-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-12 13:12:47.188 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-12 13:12:51.608 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48188d23
+2026-05-12 13:12:51.612 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-12 13:12:52.084 INFO  [prescription-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-12 13:13:00.728 INFO  [prescription-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-12 13:13:01.119 INFO  [prescription-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12 13:13:05.222 WARN  [prescription-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-12 13:13:08.209 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'appointment-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 13:13:08.967 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 13:13:09.166 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'notification-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 13:13:12.883 WARN  [prescription-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1765c5b8-06eb-4df6-a371-2ede6af7f573
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-12 13:13:16.577 INFO  [prescription-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-12 13:13:16.686 WARN  [prescription-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-12 13:13:16.867 INFO  [prescription-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-12 13:13:18.998 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PRESCRIPTION-SERVICE with eureka with status UP
+2026-05-12 13:13:19.085 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2026-05-12 13:13:19.309 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/'
+2026-05-12 13:13:19.311 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8085
+2026-05-12 13:13:19.458 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - Started PrescriptionServiceApplication in 55.768 seconds (process running for 59.302)
+2026-05-12 13:18:46.125 INFO  [prescription-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-12 13:18:46.146 INFO  [prescription-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-12 13:18:46.258 INFO  [prescription-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 112 ms
+2026-05-12 13:18:46.948 INFO  [prescription-service] [traceId=00e9a535] c.m.prescription.aop.LoggingAspect - [CONTROLLER][00e9a535] --> PrescriptionController.getByDoctor(..) | args: [2]
+2026-05-12 13:18:46.950 INFO  [prescription-service] [traceId=00e9a535] c.m.prescription.aop.LoggingAspect - [SERVICE][00e9a535] --> PrescriptionService.getPrescriptionsByDoctor(..) | args: [2]
+2026-05-12 13:18:47.899 INFO  [prescription-service] [traceId=00e9a535] c.m.prescription.aop.LoggingAspect - [SERVICE][00e9a535] <-- PrescriptionService.getPrescriptionsByDoctor(..) | 949ms | result: []
+2026-05-12 13:18:47.900 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][00e9a535] <-- PrescriptionController.getByDoctor(..) | 952ms | result: <200 OK OK,[],[]>
+2026-05-12 13:18:47.952 INFO  [prescription-service] [traceId=ff0b74bd] c.m.prescription.aop.LoggingAspect - [CONTROLLER][ff0b74bd] --> PrescriptionController.getByDoctor(..) | args: [2]
+2026-05-12 13:18:47.953 INFO  [prescription-service] [traceId=ff0b74bd] c.m.prescription.aop.LoggingAspect - [SERVICE][ff0b74bd] --> PrescriptionService.getPrescriptionsByDoctor(..) | args: [2]
+2026-05-12 13:18:47.959 INFO  [prescription-service] [traceId=ff0b74bd] c.m.prescription.aop.LoggingAspect - [SERVICE][ff0b74bd] <-- PrescriptionService.getPrescriptionsByDoctor(..) | 6ms | result: []
+2026-05-12 13:18:47.960 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][ff0b74bd] <-- PrescriptionController.getByDoctor(..) | 8ms | result: <200 OK OK,[],[]>
+2026-05-12 13:19:59.245 INFO  [prescription-service] [traceId=ffec4b0b] c.m.prescription.aop.LoggingAspect - [CONTROLLER][ffec4b0b] --> PrescriptionController.getByPatient(..) | args: [4]
+2026-05-12 13:19:59.270 INFO  [prescription-service] [traceId=ffec4b0b] c.m.prescription.aop.LoggingAspect - [SERVICE][ffec4b0b] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [4]
+2026-05-12 13:20:01.005 INFO  [prescription-service] [traceId=ffec4b0b] c.m.prescription.aop.LoggingAspect - [SERVICE][ffec4b0b] <-- PrescriptionService.getPrescriptionsByPatient(..) | 1735ms | result: [com.meditrack.prescription.entity.Prescription@3531f050]
+2026-05-12 13:20:01.005 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][ffec4b0b] <-- PrescriptionController.getByPatient(..) | 1760ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@3531f050],[]>
+2026-05-12 13:20:01.105 INFO  [prescription-service] [traceId=5cfb749c] c.m.prescription.aop.LoggingAspect - [CONTROLLER][5cfb749c] --> PrescriptionController.getByPatient(..) | args: [4]
+2026-05-12 13:20:01.106 INFO  [prescription-service] [traceId=5cfb749c] c.m.prescription.aop.LoggingAspect - [SERVICE][5cfb749c] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [4]
+2026-05-12 13:20:01.141 INFO  [prescription-service] [traceId=5cfb749c] c.m.prescription.aop.LoggingAspect - [SERVICE][5cfb749c] <-- PrescriptionService.getPrescriptionsByPatient(..) | 35ms | result: [com.meditrack.prescription.entity.Prescription@2820a8af]
+2026-05-12 13:20:01.141 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][5cfb749c] <-- PrescriptionController.getByPatient(..) | 36ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@2820a8af],[]>
+2026-05-12 13:32:56.288 INFO  [prescription-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-12 13:32:56.704 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PRESCRIPTION-SERVICE with eureka with status DOWN
+2026-05-12 13:32:56.956 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-12 13:32:56.989 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 13:32:57.000 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"]
+2026-05-12 13:32:57.039 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 13:32:57.078 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-12 13:32:57.093 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"]
+2026-05-12 13:32:57.040 WARN  [prescription-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-12 13:32:57.116 WARN  [prescription-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-12 13:32:57.218 INFO  [prescription-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12 13:32:57.303 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-12 13:32:57.377 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-12 13:33:00.466 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 13:33:00.466 ERROR [prescription-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-12 13:37:36.146 INFO  [prescription-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-12 13:37:36.261 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - Starting PrescriptionServiceApplication using Java 20.0.2 with PID 21168 (C:\Users\Aishu\C_MediTrack\MediTrack\prescription-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\prescription-service)
+2026-05-12 13:37:36.281 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-12 13:37:40.792 INFO  [prescription-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-12 13:37:41.220 INFO  [prescription-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 402 ms. Found 1 JPA repository interface.
+2026-05-12 13:37:42.251 INFO  [prescription-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=1e4e7d19-f098-3e5f-8203-fdb81d31e6d8
+2026-05-12 13:37:44.146 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2026-05-12 13:37:44.185 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2026-05-12 13:37:44.189 INFO  [prescription-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-12 13:37:44.190 INFO  [prescription-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-12 13:37:44.365 INFO  [prescription-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-12 13:37:44.365 INFO  [prescription-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7928 ms
+2026-05-12 13:37:45.224 INFO  [prescription-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-12 13:37:45.365 INFO  [prescription-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-12 13:37:45.463 INFO  [prescription-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-12 13:37:46.164 INFO  [prescription-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-12 13:37:46.251 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-12 13:37:47.516 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d2950ed
+2026-05-12 13:37:47.520 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-12 13:37:48.016 INFO  [prescription-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-12 13:37:50.945 INFO  [prescription-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-12 13:37:51.184 INFO  [prescription-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12 13:37:53.152 WARN  [prescription-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-12 13:37:54.357 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'appointment-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 13:37:54.550 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 13:37:54.693 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'notification-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 13:37:56.102 WARN  [prescription-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4a819182-4c1f-4a10-8c9a-8f77af46b6d8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-12 13:37:59.000 INFO  [prescription-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-12 13:37:59.091 WARN  [prescription-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-12 13:37:59.316 INFO  [prescription-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-12 13:38:00.324 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PRESCRIPTION-SERVICE with eureka with status UP
+2026-05-12 13:38:00.328 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2026-05-12 13:38:00.368 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/'
+2026-05-12 13:38:00.370 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8085
+2026-05-12 13:38:00.556 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - Started PrescriptionServiceApplication in 27.07 seconds (process running for 29.414)
+2026-05-12 13:41:34.561 INFO  [prescription-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-12 13:41:34.578 INFO  [prescription-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-12 13:41:34.703 INFO  [prescription-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 125 ms
+2026-05-12 13:41:35.486 INFO  [prescription-service] [traceId=1bf60b10] c.m.prescription.aop.LoggingAspect - [CONTROLLER][1bf60b10] --> PrescriptionController.getAll() | args: []
+2026-05-12 13:41:35.486 INFO  [prescription-service] [traceId=1bf60b10] c.m.prescription.aop.LoggingAspect - [SERVICE][1bf60b10] --> PrescriptionService.getAllPrescriptions() | args: []
+2026-05-12 13:41:35.491 INFO  [prescription-service] [traceId=1bf60b10] c.m.p.service.PrescriptionService - getAllPrescriptions called by role: SUPER_ADMIN
+2026-05-12 13:41:35.826 INFO  [prescription-service] [traceId=1bf60b10] c.m.prescription.aop.LoggingAspect - [SERVICE][1bf60b10] <-- PrescriptionService.getAllPrescriptions() | 340ms | result: []
+2026-05-12 13:41:35.827 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][1bf60b10] <-- PrescriptionController.getAll() | 341ms | result: <200 OK OK,[],[]>
+2026-05-12 13:41:35.879 INFO  [prescription-service] [traceId=28997164] c.m.prescription.aop.LoggingAspect - [CONTROLLER][28997164] --> PrescriptionController.getAll() | args: []
+2026-05-12 13:41:35.879 INFO  [prescription-service] [traceId=28997164] c.m.prescription.aop.LoggingAspect - [SERVICE][28997164] --> PrescriptionService.getAllPrescriptions() | args: []
+2026-05-12 13:41:35.879 INFO  [prescription-service] [traceId=28997164] c.m.p.service.PrescriptionService - getAllPrescriptions called by role: SUPER_ADMIN
+2026-05-12 13:41:35.891 INFO  [prescription-service] [traceId=28997164] c.m.prescription.aop.LoggingAspect - [SERVICE][28997164] <-- PrescriptionService.getAllPrescriptions() | 12ms | result: []
+2026-05-12 13:41:35.891 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][28997164] <-- PrescriptionController.getAll() | 12ms | result: <200 OK OK,[],[]>
+2026-05-12 13:46:18.719 INFO  [prescription-service] [traceId=9d78c878] c.m.prescription.aop.LoggingAspect - [CONTROLLER][9d78c878] --> PrescriptionController.getAll() | args: []
+2026-05-12 13:46:18.731 INFO  [prescription-service] [traceId=9d78c878] c.m.prescription.aop.LoggingAspect - [SERVICE][9d78c878] --> PrescriptionService.getAllPrescriptions() | args: []
+2026-05-12 13:46:18.732 INFO  [prescription-service] [traceId=9d78c878] c.m.p.service.PrescriptionService - getAllPrescriptions called by role: SUPER_ADMIN
+2026-05-12 13:46:18.822 INFO  [prescription-service] [traceId=9d78c878] c.m.prescription.aop.LoggingAspect - [SERVICE][9d78c878] <-- PrescriptionService.getAllPrescriptions() | 91ms | result: []
+2026-05-12 13:46:18.823 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][9d78c878] <-- PrescriptionController.getAll() | 106ms | result: <200 OK OK,[],[]>
+2026-05-12 13:46:18.856 INFO  [prescription-service] [traceId=6f1e33b7] c.m.prescription.aop.LoggingAspect - [CONTROLLER][6f1e33b7] --> PrescriptionController.getAll() | args: []
+2026-05-12 13:46:18.856 INFO  [prescription-service] [traceId=6f1e33b7] c.m.prescription.aop.LoggingAspect - [SERVICE][6f1e33b7] --> PrescriptionService.getAllPrescriptions() | args: []
+2026-05-12 13:46:18.857 INFO  [prescription-service] [traceId=6f1e33b7] c.m.p.service.PrescriptionService - getAllPrescriptions called by role: SUPER_ADMIN
+2026-05-12 13:46:18.863 INFO  [prescription-service] [traceId=6f1e33b7] c.m.prescription.aop.LoggingAspect - [SERVICE][6f1e33b7] <-- PrescriptionService.getAllPrescriptions() | 7ms | result: []
+2026-05-12 13:46:18.864 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][6f1e33b7] <-- PrescriptionController.getAll() | 8ms | result: <200 OK OK,[],[]>
+2026-05-12 13:55:39.177 INFO  [prescription-service] [traceId=050a1514] c.m.prescription.aop.LoggingAspect - [CONTROLLER][050a1514] --> PrescriptionController.getByDoctor(..) | args: [3]
+2026-05-12 13:55:39.197 INFO  [prescription-service] [traceId=050a1514] c.m.prescription.aop.LoggingAspect - [SERVICE][050a1514] --> PrescriptionService.getPrescriptionsByDoctor(..) | args: [3]
+2026-05-12 13:55:39.912 INFO  [prescription-service] [traceId=050a1514] c.m.prescription.aop.LoggingAspect - [SERVICE][050a1514] <-- PrescriptionService.getPrescriptionsByDoctor(..) | 715ms | result: []
+2026-05-12 13:55:39.913 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][050a1514] <-- PrescriptionController.getByDoctor(..) | 738ms | result: <200 OK OK,[],[]>
+2026-05-12 13:55:39.986 INFO  [prescription-service] [traceId=e5fd09a1] c.m.prescription.aop.LoggingAspect - [CONTROLLER][e5fd09a1] --> PrescriptionController.getByDoctor(..) | args: [3]
+2026-05-12 13:55:39.986 INFO  [prescription-service] [traceId=e5fd09a1] c.m.prescription.aop.LoggingAspect - [SERVICE][e5fd09a1] --> PrescriptionService.getPrescriptionsByDoctor(..) | args: [3]
+2026-05-12 13:55:39.995 INFO  [prescription-service] [traceId=e5fd09a1] c.m.prescription.aop.LoggingAspect - [SERVICE][e5fd09a1] <-- PrescriptionService.getPrescriptionsByDoctor(..) | 9ms | result: []
+2026-05-12 13:55:39.995 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][e5fd09a1] <-- PrescriptionController.getByDoctor(..) | 9ms | result: <200 OK OK,[],[]>
+2026-05-12 13:56:53.284 INFO  [prescription-service] [traceId=e86bdd22] c.m.prescription.aop.LoggingAspect - [CONTROLLER][e86bdd22] --> PrescriptionController.addPrescription(..) | args: [com.meditrack.prescription.entity.Prescription@34e7ef36]
+2026-05-12 13:56:53.302 INFO  [prescription-service] [traceId=e86bdd22] c.m.prescription.aop.LoggingAspect - [SERVICE][e86bdd22] --> PrescriptionService.addPrescription(..) | args: [com.meditrack.prescription.entity.Prescription@34e7ef36]
+2026-05-12 13:56:54.396 INFO  [prescription-service] [traceId=e86bdd22] c.m.p.service.PrescriptionService - Prescription created successfully for appointmentId=1
+2026-05-12 13:56:54.491 INFO  [prescription-service] [traceId=e86bdd22] c.m.prescription.aop.LoggingAspect - [SERVICE][e86bdd22] <-- PrescriptionService.addPrescription(..) | 1190ms | result: com.meditrack.prescription.entity.Prescription@34e7ef36
+2026-05-12 13:56:54.529 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][e86bdd22] <-- PrescriptionController.addPrescription(..) | 1245ms | result: <200 OK OK,com.meditrack.prescription.entity.Prescription@34e7ef36,[]>
+2026-05-12 13:57:53.208 INFO  [prescription-service] [traceId=0c6606fa] c.m.prescription.aop.LoggingAspect - [CONTROLLER][0c6606fa] --> PrescriptionController.getByPatient(..) | args: [1]
+2026-05-12 13:57:53.209 INFO  [prescription-service] [traceId=0c6606fa] c.m.prescription.aop.LoggingAspect - [SERVICE][0c6606fa] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [1]
+2026-05-12 13:57:53.293 INFO  [prescription-service] [traceId=0c6606fa] c.m.prescription.aop.LoggingAspect - [SERVICE][0c6606fa] <-- PrescriptionService.getPrescriptionsByPatient(..) | 84ms | result: [com.meditrack.prescription.entity.Prescription@4a034596]
+2026-05-12 13:57:53.293 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][0c6606fa] <-- PrescriptionController.getByPatient(..) | 85ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@4a034596],[]>
+2026-05-12 13:57:53.308 INFO  [prescription-service] [traceId=72b86d0b] c.m.prescription.aop.LoggingAspect - [CONTROLLER][72b86d0b] --> PrescriptionController.getByPatient(..) | args: [1]
+2026-05-12 13:57:53.309 INFO  [prescription-service] [traceId=72b86d0b] c.m.prescription.aop.LoggingAspect - [SERVICE][72b86d0b] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [1]
+2026-05-12 13:57:53.335 INFO  [prescription-service] [traceId=72b86d0b] c.m.prescription.aop.LoggingAspect - [SERVICE][72b86d0b] <-- PrescriptionService.getPrescriptionsByPatient(..) | 26ms | result: [com.meditrack.prescription.entity.Prescription@56073032]
+2026-05-12 13:57:53.336 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][72b86d0b] <-- PrescriptionController.getByPatient(..) | 28ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@56073032],[]>
+2026-05-12 13:58:03.904 INFO  [prescription-service] [traceId=b16e618a] c.m.prescription.aop.LoggingAspect - [CONTROLLER][b16e618a] --> PrescriptionController.getByPatient(..) | args: [1]
+2026-05-12 13:58:03.905 INFO  [prescription-service] [traceId=b16e618a] c.m.prescription.aop.LoggingAspect - [SERVICE][b16e618a] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [1]
+2026-05-12 13:58:04.182 INFO  [prescription-service] [traceId=b16e618a] c.m.prescription.aop.LoggingAspect - [SERVICE][b16e618a] <-- PrescriptionService.getPrescriptionsByPatient(..) | 277ms | result: [com.meditrack.prescription.entity.Prescription@305e8331]
+2026-05-12 13:58:04.182 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][b16e618a] <-- PrescriptionController.getByPatient(..) | 278ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@305e8331],[]>
+2026-05-12 13:58:04.239 INFO  [prescription-service] [traceId=9bb6b9df] c.m.prescription.aop.LoggingAspect - [CONTROLLER][9bb6b9df] --> PrescriptionController.getByPatient(..) | args: [1]
+2026-05-12 13:58:04.241 INFO  [prescription-service] [traceId=9bb6b9df] c.m.prescription.aop.LoggingAspect - [SERVICE][9bb6b9df] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [1]
+2026-05-12 13:58:04.300 INFO  [prescription-service] [traceId=9bb6b9df] c.m.prescription.aop.LoggingAspect - [SERVICE][9bb6b9df] <-- PrescriptionService.getPrescriptionsByPatient(..) | 59ms | result: [com.meditrack.prescription.entity.Prescription@1d66ee28]
+2026-05-12 13:58:04.301 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][9bb6b9df] <-- PrescriptionController.getByPatient(..) | 64ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@1d66ee28],[]>
+2026-05-12 13:58:08.275 INFO  [prescription-service] [traceId=25639dc1] c.m.prescription.aop.LoggingAspect - [CONTROLLER][25639dc1] --> PrescriptionController.getByPatient(..) | args: [1]
+2026-05-12 13:58:08.276 INFO  [prescription-service] [traceId=25639dc1] c.m.prescription.aop.LoggingAspect - [SERVICE][25639dc1] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [1]
+2026-05-12 13:58:08.302 INFO  [prescription-service] [traceId=25639dc1] c.m.prescription.aop.LoggingAspect - [SERVICE][25639dc1] <-- PrescriptionService.getPrescriptionsByPatient(..) | 26ms | result: [com.meditrack.prescription.entity.Prescription@10c6e95c]
+2026-05-12 13:58:08.302 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][25639dc1] <-- PrescriptionController.getByPatient(..) | 27ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@10c6e95c],[]>
+2026-05-12 13:58:08.313 INFO  [prescription-service] [traceId=027cd246] c.m.prescription.aop.LoggingAspect - [CONTROLLER][027cd246] --> PrescriptionController.getByPatient(..) | args: [1]
+2026-05-12 13:58:08.313 INFO  [prescription-service] [traceId=027cd246] c.m.prescription.aop.LoggingAspect - [SERVICE][027cd246] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [1]
+2026-05-12 13:58:08.335 INFO  [prescription-service] [traceId=027cd246] c.m.prescription.aop.LoggingAspect - [SERVICE][027cd246] <-- PrescriptionService.getPrescriptionsByPatient(..) | 22ms | result: [com.meditrack.prescription.entity.Prescription@440c73c7]
+2026-05-12 13:58:08.336 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][027cd246] <-- PrescriptionController.getByPatient(..) | 23ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@440c73c7],[]>
+2026-05-12 14:03:58.761 INFO  [prescription-service] [traceId=f421f948] c.m.prescription.aop.LoggingAspect - [CONTROLLER][f421f948] --> PrescriptionController.getByPatient(..) | args: [1]
+2026-05-12 14:03:58.785 INFO  [prescription-service] [traceId=f421f948] c.m.prescription.aop.LoggingAspect - [SERVICE][f421f948] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [1]
+2026-05-12 14:03:59.204 INFO  [prescription-service] [traceId=f421f948] c.m.prescription.aop.LoggingAspect - [SERVICE][f421f948] <-- PrescriptionService.getPrescriptionsByPatient(..) | 419ms | result: [com.meditrack.prescription.entity.Prescription@4d5449f6]
+2026-05-12 14:03:59.204 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][f421f948] <-- PrescriptionController.getByPatient(..) | 444ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@4d5449f6],[]>
+2026-05-12 14:06:25.162 INFO  [prescription-service] [traceId=9e3a262f] c.m.prescription.aop.LoggingAspect - [CONTROLLER][9e3a262f] --> PrescriptionController.getByPatient(..) | args: [1]
+2026-05-12 14:06:25.190 INFO  [prescription-service] [traceId=9e3a262f] c.m.prescription.aop.LoggingAspect - [SERVICE][9e3a262f] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [1]
+2026-05-12 14:06:25.500 INFO  [prescription-service] [traceId=9e3a262f] c.m.prescription.aop.LoggingAspect - [SERVICE][9e3a262f] <-- PrescriptionService.getPrescriptionsByPatient(..) | 310ms | result: [com.meditrack.prescription.entity.Prescription@35273793]
+2026-05-12 14:06:25.500 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][9e3a262f] <-- PrescriptionController.getByPatient(..) | 340ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@35273793],[]>
+2026-05-12 14:07:52.050 INFO  [prescription-service] [traceId=060f177e] c.m.prescription.aop.LoggingAspect - [CONTROLLER][060f177e] --> PrescriptionController.getByPatient(..) | args: [1]
+2026-05-12 14:07:52.066 INFO  [prescription-service] [traceId=060f177e] c.m.prescription.aop.LoggingAspect - [SERVICE][060f177e] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [1]
+2026-05-12 14:07:52.251 INFO  [prescription-service] [traceId=060f177e] c.m.prescription.aop.LoggingAspect - [SERVICE][060f177e] <-- PrescriptionService.getPrescriptionsByPatient(..) | 185ms | result: [com.meditrack.prescription.entity.Prescription@2fcc5885]
+2026-05-12 14:07:52.252 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][060f177e] <-- PrescriptionController.getByPatient(..) | 204ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@2fcc5885],[]>
+2026-05-12 14:08:19.020 INFO  [prescription-service] [traceId=621c59b2] c.m.prescription.aop.LoggingAspect - [CONTROLLER][621c59b2] --> PrescriptionController.getByPatient(..) | args: [1]
+2026-05-12 14:08:19.021 INFO  [prescription-service] [traceId=621c59b2] c.m.prescription.aop.LoggingAspect - [SERVICE][621c59b2] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [1]
+2026-05-12 14:08:19.243 INFO  [prescription-service] [traceId=621c59b2] c.m.prescription.aop.LoggingAspect - [SERVICE][621c59b2] <-- PrescriptionService.getPrescriptionsByPatient(..) | 222ms | result: [com.meditrack.prescription.entity.Prescription@9cd71fd]
+2026-05-12 14:08:19.243 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][621c59b2] <-- PrescriptionController.getByPatient(..) | 224ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@9cd71fd],[]>
+2026-05-12 14:09:38.258 INFO  [prescription-service] [traceId=d2f5ae97] c.m.prescription.aop.LoggingAspect - [CONTROLLER][d2f5ae97] --> PrescriptionController.getByPatient(..) | args: [1]
+2026-05-12 14:09:38.286 INFO  [prescription-service] [traceId=d2f5ae97] c.m.prescription.aop.LoggingAspect - [SERVICE][d2f5ae97] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [1]
+2026-05-12 14:09:38.713 INFO  [prescription-service] [traceId=d2f5ae97] c.m.prescription.aop.LoggingAspect - [SERVICE][d2f5ae97] <-- PrescriptionService.getPrescriptionsByPatient(..) | 428ms | result: [com.meditrack.prescription.entity.Prescription@58016b26]
+2026-05-12 14:09:38.714 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][d2f5ae97] <-- PrescriptionController.getByPatient(..) | 459ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@58016b26],[]>
+2026-05-12 14:10:13.843 INFO  [prescription-service] [traceId=d466bb28] c.m.prescription.aop.LoggingAspect - [CONTROLLER][d466bb28] --> PrescriptionController.getByPatient(..) | args: [1]
+2026-05-12 14:10:13.846 INFO  [prescription-service] [traceId=d466bb28] c.m.prescription.aop.LoggingAspect - [SERVICE][d466bb28] --> PrescriptionService.getPrescriptionsByPatient(..) | args: [1]
+2026-05-12 14:10:13.870 INFO  [prescription-service] [traceId=d466bb28] c.m.prescription.aop.LoggingAspect - [SERVICE][d466bb28] <-- PrescriptionService.getPrescriptionsByPatient(..) | 24ms | result: [com.meditrack.prescription.entity.Prescription@786a8dac]
+2026-05-12 14:10:13.871 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][d466bb28] <-- PrescriptionController.getByPatient(..) | 28ms | result: <200 OK OK,[com.meditrack.prescription.entity.Prescription@786a8dac],[]>
+2026-05-12 14:28:22.689 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 14:28:22.689 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 14:28:23.254 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 14:28:23.256 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 14:28:23.256 ERROR [prescription-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:860)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1418)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-12 14:28:25.396 INFO  [prescription-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-12 14:28:25.396 INFO  [prescription-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-12 14:28:25.444 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PRESCRIPTION-SERVICE with eureka with status DOWN
+2026-05-12 14:28:25.499 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 14:28:25.501 WARN  [prescription-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-12 14:28:25.501 WARN  [prescription-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-12 14:28:25.584 INFO  [prescription-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-12 14:28:25.596 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-12 14:28:25.629 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"]
+2026-05-12 14:28:25.680 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-12 14:28:25.692 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"]
+2026-05-12 14:28:25.765 INFO  [prescription-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-12 14:28:25.791 INFO  [prescription-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12 14:28:25.871 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-12 14:28:25.901 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-12 14:34:20.694 INFO  [prescription-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-12 14:34:20.941 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - Starting PrescriptionServiceApplication using Java 20.0.2 with PID 19856 (C:\Users\Aishu\C_MediTrack\MediTrack\prescription-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\prescription-service)
+2026-05-12 14:34:20.946 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-12 14:34:28.423 INFO  [prescription-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-12 14:34:29.072 INFO  [prescription-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 531 ms. Found 1 JPA repository interface.
+2026-05-12 14:34:30.259 INFO  [prescription-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=1e4e7d19-f098-3e5f-8203-fdb81d31e6d8
+2026-05-12 14:34:33.277 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2026-05-12 14:34:33.365 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2026-05-12 14:34:33.383 INFO  [prescription-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-12 14:34:33.384 INFO  [prescription-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-12 14:34:33.761 INFO  [prescription-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-12 14:34:33.762 INFO  [prescription-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12226 ms
+2026-05-12 14:34:34.748 INFO  [prescription-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-12 14:34:35.028 INFO  [prescription-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-12 14:34:35.235 INFO  [prescription-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-12 14:34:37.014 INFO  [prescription-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-12 14:34:37.176 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-12 14:34:38.947 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51aaa9d4
+2026-05-12 14:34:38.951 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-12 14:34:39.277 INFO  [prescription-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-12 14:34:44.169 INFO  [prescription-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-12 14:34:44.398 INFO  [prescription-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12 14:34:47.618 WARN  [prescription-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-12 14:34:49.127 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'appointment-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 14:34:49.506 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 14:34:49.818 INFO  [prescription-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'notification-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-12 14:34:52.629 WARN  [prescription-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c6f2d96d-e339-4b1f-9d34-8f9a9edefbf2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-12 14:34:56.942 INFO  [prescription-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-12 14:34:57.255 WARN  [prescription-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-12 14:34:57.647 INFO  [prescription-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-12 14:35:01.297 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PRESCRIPTION-SERVICE with eureka with status UP
+2026-05-12 14:35:01.398 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2026-05-12 14:35:01.707 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/'
+2026-05-12 14:35:01.709 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8085
+2026-05-12 14:35:02.282 INFO  [prescription-service] [traceId=none] c.m.p.PrescriptionServiceApplication - Started PrescriptionServiceApplication in 44.298 seconds (process running for 49.154)
+2026-05-12 14:41:48.318 INFO  [prescription-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-12 14:41:48.338 INFO  [prescription-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-12 14:41:48.463 INFO  [prescription-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 123 ms
+2026-05-12 14:41:49.077 INFO  [prescription-service] [traceId=c33ca9e1] c.m.prescription.aop.LoggingAspect - [CONTROLLER][c33ca9e1] --> PrescriptionController.getByDoctor(..) | args: [1]
+2026-05-12 14:41:49.080 INFO  [prescription-service] [traceId=c33ca9e1] c.m.prescription.aop.LoggingAspect - [SERVICE][c33ca9e1] --> PrescriptionService.getPrescriptionsByDoctor(..) | args: [1]
+2026-05-12 14:41:49.626 INFO  [prescription-service] [traceId=c33ca9e1] c.m.prescription.aop.LoggingAspect - [SERVICE][c33ca9e1] <-- PrescriptionService.getPrescriptionsByDoctor(..) | 546ms | result: []
+2026-05-12 14:41:49.627 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][c33ca9e1] <-- PrescriptionController.getByDoctor(..) | 550ms | result: <200 OK OK,[],[]>
+2026-05-12 14:41:49.752 INFO  [prescription-service] [traceId=1f804d45] c.m.prescription.aop.LoggingAspect - [CONTROLLER][1f804d45] --> PrescriptionController.getByDoctor(..) | args: [1]
+2026-05-12 14:41:49.752 INFO  [prescription-service] [traceId=1f804d45] c.m.prescription.aop.LoggingAspect - [SERVICE][1f804d45] --> PrescriptionService.getPrescriptionsByDoctor(..) | args: [1]
+2026-05-12 14:41:49.758 INFO  [prescription-service] [traceId=1f804d45] c.m.prescription.aop.LoggingAspect - [SERVICE][1f804d45] <-- PrescriptionService.getPrescriptionsByDoctor(..) | 5ms | result: []
+2026-05-12 14:41:49.758 INFO  [prescription-service] [traceId=none] c.m.prescription.aop.LoggingAspect - [CONTROLLER][1f804d45] <-- PrescriptionController.getByDoctor(..) | 6ms | result: <200 OK OK,[],[]>
+2026-05-12 15:14:25.632 WARN  [prescription-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m15s877ms727µs500ns).
+2026-05-12 15:40:55.176 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 15:40:55.176 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 15:40:55.611 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 15:40:55.613 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 15:40:55.614 ERROR [prescription-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:860)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1418)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-12 15:40:59.254 INFO  [prescription-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-12 15:40:59.303 INFO  [prescription-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PRESCRIPTION-SERVICE with eureka with status DOWN
+2026-05-12 15:40:59.344 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 15:40:59.345 WARN  [prescription-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-12 15:40:59.345 WARN  [prescription-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-12 15:40:59.418 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-12 15:40:59.438 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"]
+2026-05-12 15:40:59.478 INFO  [prescription-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-12 15:40:59.484 INFO  [prescription-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"]
+2026-05-12 15:40:59.548 INFO  [prescription-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12 15:40:59.604 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-12 15:40:59.623 INFO  [prescription-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-12 15:41:02.683 WARN  [prescription-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-12 15:41:02.683 ERROR [prescription-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PRESCRIPTION-SERVICE/DESKTOP-TE08QKM:prescription-service:8085 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)

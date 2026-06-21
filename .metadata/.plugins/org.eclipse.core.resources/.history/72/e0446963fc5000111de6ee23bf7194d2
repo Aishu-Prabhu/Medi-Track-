@@ -1,0 +1,191 @@
+package com.meditrack.appointment.controller;
+
+import com.meditrack.appointment.entity.DoctorSlot;
+import com.meditrack.appointment.entity.SlotStatus;
+import com.meditrack.appointment.service.SlotService;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+@ExtendWith(MockitoExtension.class)
+class SlotControllerTest {
+
+    @Mock
+    private SlotService slotService;
+
+    @InjectMocks
+    private SlotController controller;
+
+    private LocalDate futureDate;
+    private List<DoctorSlot> slots;
+
+    @BeforeEach
+    void setUp() {
+        futureDate = LocalDate.now().plusDays(5);
+
+        DoctorSlot slot1 = new DoctorSlot();
+        slot1.setId(1L);
+        slot1.setDoctorId(10L);
+        slot1.setSlotDate(futureDate);
+        slot1.setSlotTime("09:00 AM");
+        slot1.setStatus(SlotStatus.AVAILABLE);
+
+        DoctorSlot slot2 = new DoctorSlot();
+        slot2.setId(2L);
+        slot2.setDoctorId(10L);
+        slot2.setSlotDate(futureDate);
+        slot2.setSlotTime("10:00 AM");
+        slot2.setStatus(SlotStatus.AVAILABLE);
+
+        DoctorSlot slot3 = new DoctorSlot();
+        slot3.setId(3L);
+        slot3.setDoctorId(10L);
+        slot3.setSlotDate(futureDate);
+        slot3.setSlotTime("11:00 AM");
+        slot3.setStatus(SlotStatus.BOOKED);
+
+        slots = Arrays.asList(slot1, slot2, slot3);
+    }
+
+    // ─────────────────────────────────────────────
+    // POST /slots/generate/{doctorId}
+    // ─────────────────────────────────────────────
+
+    @Test
+    void generateSlots_ShouldReturn200WithGeneratedSlots() {
+        when(slotService.generateSlots(10L, futureDate)).thenReturn(slots);
+
+        ResponseEntity<?> response = controller.generateSlots(10L, futureDate);
+
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertNotNull(response.getBody());
+        verify(slotService, times(1)).generateSlots(10L, futureDate);
+    }
+
+    @Test
+    void generateSlots_ShouldReturnAllDefaultSlots() {
+        when(slotService.generateSlots(10L, futureDate)).thenReturn(slots);
+
+        ResponseEntity<?> response = controller.generateSlots(10L, futureDate);
+
+        List<?> body = (List<?>) response.getBody();
+        assertEquals(3, body.size());
+    }
+
+    @Test
+    void generateSlots_ShouldPassCorrectDoctorIdAndDate() {
+        LocalDate anotherDate = LocalDate.now().plusDays(10);
+        when(slotService.generateSlots(20L, anotherDate)).thenReturn(slots);
+
+        controller.generateSlots(20L, anotherDate);
+
+        verify(slotService).generateSlots(20L, anotherDate);
+        verify(slotService, never()).generateSlots(10L, futureDate);
+    }
+
+   
+
+    @Test
+    void getAllSlots_ShouldReturn200WithAllSlots() {
+        when(slotService.getAllSlots(10L, futureDate)).thenReturn(slots);
+
+        ResponseEntity<?> response = controller.getAllSlots(10L, futureDate);
+
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertNotNull(response.getBody());
+        verify(slotService, times(1)).getAllSlots(10L, futureDate);
+    }
+
+    @Test
+    void getAllSlots_ShouldReturnBothBookedAndAvailableSlots() {
+        when(slotService.getAllSlots(10L, futureDate)).thenReturn(slots);
+
+        ResponseEntity<?> response = controller.getAllSlots(10L, futureDate);
+
+        List<DoctorSlot> body = (List<DoctorSlot>) response.getBody();
+        // slots list has 2 AVAILABLE + 1 BOOKED
+        long availableCount = body.stream()
+                .filter(s -> s.getStatus() == SlotStatus.AVAILABLE).count();
+        long bookedCount = body.stream()
+                .filter(s -> s.getStatus() == SlotStatus.BOOKED).count();
+
+        assertEquals(2, availableCount);
+        assertEquals(1, bookedCount);
+    }
+
+    @Test
+    void getAllSlots_ShouldPassCorrectDoctorIdAndDate() {
+        when(slotService.getAllSlots(5L, futureDate)).thenReturn(slots);
+
+        controller.getAllSlots(5L, futureDate);
+
+        verify(slotService).getAllSlots(5L, futureDate);
+        verify(slotService, never()).getAllSlots(10L, futureDate);
+    }
+
+    // ─────────────────────────────────────────────
+    // GET /slots/doctor/{doctorId}/available
+    // ─────────────────────────────────────────────
+
+    @Test
+    void getAvailableSlots_ShouldReturn200WithOnlyAvailableSlots() {
+        List<DoctorSlot> available = slots.stream()
+                .filter(s -> s.getStatus() == SlotStatus.AVAILABLE)
+                .toList();
+
+        when(slotService.getAvailableSlots(10L, futureDate)).thenReturn(available);
+
+        ResponseEntity<?> response = controller.getAvailableSlots(10L, futureDate);
+
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertNotNull(response.getBody());
+        verify(slotService, times(1)).getAvailableSlots(10L, futureDate);
+    }
+
+    @Test
+    void getAvailableSlots_ShouldReturnOnlyAvailableSlots() {
+        List<DoctorSlot> available = slots.stream()
+                .filter(s -> s.getStatus() == SlotStatus.AVAILABLE)
+                .toList();
+
+        when(slotService.getAvailableSlots(10L, futureDate)).thenReturn(available);
+
+        ResponseEntity<?> response = controller.getAvailableSlots(10L, futureDate);
+
+        List<DoctorSlot> body = (List<DoctorSlot>) response.getBody();
+        assertEquals(2, body.size());
+        assertTrue(body.stream().allMatch(s -> s.getStatus() == SlotStatus.AVAILABLE));
+    }
+
+    @Test
+    void getAvailableSlots_ShouldPassCorrectDoctorIdAndDate() {
+        List<DoctorSlot> available = slots.subList(0, 1);
+        when(slotService.getAvailableSlots(15L, futureDate)).thenReturn(available);
+
+        controller.getAvailableSlots(15L, futureDate);
+
+        verify(slotService).getAvailableSlots(15L, futureDate);
+        verify(slotService, never()).getAvailableSlots(10L, futureDate);
+    }
+
+    @Test
+    void getAvailableSlots_ShouldNotCallGetAllSlots() {
+        when(slotService.getAvailableSlots(10L, futureDate)).thenReturn(slots);
+
+        controller.getAvailableSlots(10L, futureDate);
+
+        verify(slotService, never()).getAllSlots(anyLong(), any());
+    }
+}

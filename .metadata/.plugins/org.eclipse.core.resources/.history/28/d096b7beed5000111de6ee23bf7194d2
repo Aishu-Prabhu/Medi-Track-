@@ -1,0 +1,5 @@
+package com.meditrack.appointment.aop;
+
+public class LoggingAspectTest {
+
+}

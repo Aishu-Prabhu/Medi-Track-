@@ -1,0 +1,350 @@
+2026-05-10 16:43:49.994 INFO  [doctor-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-10 16:43:50.054 INFO  [doctor-service] [traceId=none] c.m.doctor.DoctorServiceApplication - Starting DoctorServiceApplication using Java 20.0.2 with PID 1820 (C:\Users\Aishu\C_MediTrack\MediTrack\doctor-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\doctor-service)
+2026-05-10 16:43:50.055 INFO  [doctor-service] [traceId=none] c.m.doctor.DoctorServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 16:43:51.140 INFO  [doctor-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 16:43:51.343 INFO  [doctor-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 192 ms. Found 1 JPA repository interface.
+2026-05-10 16:43:51.601 INFO  [doctor-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=7fc60451-9508-38bf-a735-dad71eb705df
+2026-05-10 16:43:52.225 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2026-05-10 16:43:52.243 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2026-05-10 16:43:52.246 INFO  [doctor-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-10 16:43:52.246 INFO  [doctor-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-10 16:43:52.329 INFO  [doctor-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-10 16:43:52.330 INFO  [doctor-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2224 ms
+2026-05-10 16:43:52.547 INFO  [doctor-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 16:43:52.618 INFO  [doctor-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-10 16:43:52.664 INFO  [doctor-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 16:43:53.012 INFO  [doctor-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 16:43:53.053 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 16:43:53.451 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3539cf45
+2026-05-10 16:43:53.453 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 16:43:53.587 INFO  [doctor-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 16:43:54.475 INFO  [doctor-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 16:43:54.585 INFO  [doctor-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 16:43:55.189 WARN  [doctor-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 16:43:55.504 WARN  [doctor-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d70c9604-4179-47b0-bd26-3ba6d9cc58c4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-10 16:43:56.391 INFO  [doctor-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-10 16:43:56.456 WARN  [doctor-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-10 16:43:56.515 INFO  [doctor-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-10 16:43:56.999 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application DOCTOR-SERVICE with eureka with status UP
+2026-05-10 16:43:57.001 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2026-05-10 16:43:57.032 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2026-05-10 16:43:57.033 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8083
+2026-05-10 16:43:57.136 INFO  [doctor-service] [traceId=none] c.m.doctor.DoctorServiceApplication - Started DoctorServiceApplication in 7.752 seconds (process running for 8.698)
+2026-05-10 16:44:14.012 INFO  [doctor-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-10 16:44:14.013 INFO  [doctor-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-10 16:44:14.015 INFO  [doctor-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-10 16:46:43.463 INFO  [doctor-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-10 16:46:43.578 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DOCTOR-SERVICE with eureka with status DOWN
+2026-05-10 16:46:43.996 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-10 16:46:44.046 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8083"]
+2026-05-10 16:46:44.212 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-10 16:46:44.228 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8083"]
+2026-05-10 16:46:44.412 INFO  [doctor-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 16:46:44.540 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 16:46:44.680 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 16:47:01.601 INFO  [doctor-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-10 16:47:01.663 INFO  [doctor-service] [traceId=none] c.m.doctor.DoctorServiceApplication - Starting DoctorServiceApplication using Java 20.0.2 with PID 27776 (C:\Users\Aishu\C_MediTrack\MediTrack\doctor-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\doctor-service)
+2026-05-10 16:47:01.665 INFO  [doctor-service] [traceId=none] c.m.doctor.DoctorServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 16:47:03.100 INFO  [doctor-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 16:47:03.385 INFO  [doctor-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 263 ms. Found 1 JPA repository interface.
+2026-05-10 16:47:03.752 INFO  [doctor-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=819f5eda-e533-351b-b9e7-7e1d88e11679
+2026-05-10 16:47:04.540 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2026-05-10 16:47:04.558 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2026-05-10 16:47:04.560 INFO  [doctor-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-10 16:47:04.561 INFO  [doctor-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-10 16:47:04.676 INFO  [doctor-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-10 16:47:04.676 INFO  [doctor-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2948 ms
+2026-05-10 16:47:04.943 INFO  [doctor-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 16:47:05.030 INFO  [doctor-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-10 16:47:05.084 INFO  [doctor-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 16:47:05.439 INFO  [doctor-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 16:47:05.478 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 16:47:06.158 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@da11873
+2026-05-10 16:47:06.161 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 16:47:06.265 INFO  [doctor-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 16:47:07.218 INFO  [doctor-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 16:47:07.309 INFO  [doctor-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 16:47:07.881 WARN  [doctor-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 16:47:08.207 WARN  [doctor-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 56427d58-a5ef-4971-ba91-9c4fca23d7cd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-10 16:47:09.043 INFO  [doctor-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-10 16:47:09.101 WARN  [doctor-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-10 16:47:09.162 INFO  [doctor-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-10 16:47:09.639 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application DOCTOR-SERVICE with eureka with status UP
+2026-05-10 16:47:09.641 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2026-05-10 16:47:09.674 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2026-05-10 16:47:09.674 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8083
+2026-05-10 16:47:09.777 INFO  [doctor-service] [traceId=none] c.m.doctor.DoctorServiceApplication - Started DoctorServiceApplication in 8.873 seconds (process running for 10.094)
+2026-05-10 16:47:21.575 INFO  [doctor-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-10 16:47:21.575 INFO  [doctor-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-10 16:47:21.577 INFO  [doctor-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-10 16:47:25.326 INFO  [doctor-service] [traceId=none] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 330 ms
+2026-05-10 17:19:34.021 INFO  [doctor-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-10 17:19:34.323 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DOCTOR-SERVICE with eureka with status DOWN
+2026-05-10 17:19:35.171 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-10 17:19:35.400 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8083"]
+2026-05-10 17:19:35.592 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-10 17:19:35.651 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8083"]
+2026-05-10 17:19:36.072 INFO  [doctor-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 17:19:36.682 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 17:19:36.830 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 17:19:40.009 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-10 17:19:40.080 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-10 17:19:40.081 ERROR [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-10 17:20:15.664 INFO  [doctor-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-10 17:20:15.949 INFO  [doctor-service] [traceId=none] c.m.doctor.DoctorServiceApplication - Starting DoctorServiceApplication using Java 20.0.2 with PID 16228 (C:\Users\Aishu\C_MediTrack\MediTrack\doctor-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\doctor-service)
+2026-05-10 17:20:15.953 INFO  [doctor-service] [traceId=none] c.m.doctor.DoctorServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-10 17:20:22.002 INFO  [doctor-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-10 17:20:23.501 INFO  [doctor-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1441 ms. Found 1 JPA repository interface.
+2026-05-10 17:20:24.899 INFO  [doctor-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=819f5eda-e533-351b-b9e7-7e1d88e11679
+2026-05-10 17:20:34.942 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2026-05-10 17:20:34.975 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2026-05-10 17:20:34.998 INFO  [doctor-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-10 17:20:34.999 INFO  [doctor-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-10 17:20:35.173 INFO  [doctor-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-10 17:20:35.174 INFO  [doctor-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 18982 ms
+2026-05-10 17:20:35.825 INFO  [doctor-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-10 17:20:35.968 INFO  [doctor-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-10 17:20:36.073 INFO  [doctor-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-10 17:20:37.057 INFO  [doctor-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-10 17:20:37.152 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-10 17:20:38.285 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d563c13
+2026-05-10 17:20:38.293 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-10 17:20:38.674 INFO  [doctor-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-10 17:20:42.328 INFO  [doctor-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-10 17:20:42.815 INFO  [doctor-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 17:20:45.417 WARN  [doctor-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 17:20:46.897 WARN  [doctor-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 51f13be7-7bdf-4740-ba65-bfa28fd53300
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-10 17:20:52.492 INFO  [doctor-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-10 17:20:53.336 WARN  [doctor-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-10 17:20:53.507 INFO  [doctor-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-10 17:21:02.763 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application DOCTOR-SERVICE with eureka with status UP
+2026-05-10 17:21:02.773 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2026-05-10 17:21:03.034 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2026-05-10 17:21:03.036 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8083
+2026-05-10 17:21:03.503 INFO  [doctor-service] [traceId=none] c.m.doctor.DoctorServiceApplication - Started DoctorServiceApplication in 51.559 seconds (process running for 54.124)
+2026-05-10 17:22:44.404 INFO  [doctor-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-10 17:22:44.412 INFO  [doctor-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-10 17:22:44.484 INFO  [doctor-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 71 ms
+2026-05-10 17:22:45.559 INFO  [doctor-service] [traceId=none] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 535 ms
+2026-05-10 17:24:03.090 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-10 17:24:03.164 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-10 17:24:03.165 ERROR [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:860)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1418)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-10 17:24:03.333 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-10 17:24:03.380 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-10 17:24:07.833 INFO  [doctor-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-10 17:24:07.837 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DOCTOR-SERVICE with eureka with status DOWN
+2026-05-10 17:24:07.848 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-10 17:24:07.850 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8083"]
+2026-05-10 17:24:07.872 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-10 17:24:07.874 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8083"]
+2026-05-10 17:24:07.881 INFO  [doctor-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-10 17:24:07.885 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-10 17:24:07.885 WARN  [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-10 17:24:07.886 WARN  [doctor-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-10 17:24:07.886 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-10 17:24:07.896 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-10 17:24:10.930 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-10 17:24:10.930 ERROR [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)

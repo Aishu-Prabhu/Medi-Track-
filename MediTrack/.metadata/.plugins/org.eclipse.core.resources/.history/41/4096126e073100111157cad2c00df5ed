@@ -1,0 +1,19 @@
+package com.meditrack.appointment.repository;
+
+import com.meditrack.appointment.entity.DoctorSlot;
+import com.meditrack.appointment.entity.SlotStatus;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+
+public interface DoctorSlotRepository extends JpaRepository<DoctorSlot, Long> {
+
+    List<DoctorSlot> findByDoctorIdAndSlotDate(Long doctorId, LocalDate slotDate);
+
+    List<DoctorSlot> findByDoctorIdAndSlotDateAndStatus(
+        Long doctorId, LocalDate slotDate, SlotStatus status);
+
+    Optional<DoctorSlot> findByDoctorIdAndSlotDateAndSlotTime(
+        Long doctorId, LocalDate slotDate, String slotTime);
+}

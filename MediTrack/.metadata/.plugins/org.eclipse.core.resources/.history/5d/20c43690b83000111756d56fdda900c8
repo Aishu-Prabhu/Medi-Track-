@@ -1,0 +1,5 @@
+package com.meditrack.appointment.entity;
+
+public class Appointment {
+
+}

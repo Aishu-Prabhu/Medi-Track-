@@ -1,0 +1,5 @@
+package com.meditrack.notification.service;
+
+public class KafkaConsumerServiceTest {
+
+}

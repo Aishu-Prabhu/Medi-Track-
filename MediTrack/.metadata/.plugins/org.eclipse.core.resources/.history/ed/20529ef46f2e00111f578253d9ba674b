@@ -1,0 +1,5 @@
+package com.meditrack.auth.controller;
+
+public class AuthController {
+
+}

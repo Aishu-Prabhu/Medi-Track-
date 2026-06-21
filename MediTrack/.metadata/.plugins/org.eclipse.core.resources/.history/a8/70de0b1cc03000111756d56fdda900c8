@@ -1,0 +1,68 @@
+package com.meditrack.appointment.service;
+
+import com.meditrack.appointment.client.DoctorClient;
+import com.meditrack.appointment.entity.Appointment;
+import com.meditrack.appointment.entity.AppointmentStatus;
+import com.meditrack.appointment.repository.AppointmentRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.logging.Logger;
+
+@Service
+public class AppointmentService {
+
+    private static final Logger logger = Logger.getLogger(AppointmentService.class.getName());
+
+    @Autowired
+    private AppointmentRepository appointmentRepository;
+
+    @Autowired
+    private DoctorClient doctorClient;
+
+    public Appointment bookAppointment(Appointment appointment) {
+        logger.info("Booking appointment for patient: " + appointment.getPatientId());
+        // Call Doctor Service via Feign to toggle availability
+        doctorClient.toggleAvailability(appointment.getDoctorId());
+        appointment.setStatus(AppointmentStatus.BOOKED);
+        return appointmentRepository.save(appointment);
+    }
+
+    public Appointment getAppointmentById(Long id) {
+        logger.info("Fetching appointment: " + id);
+        return appointmentRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Appointment not found: " + id));
+    }
+
+    public List<Appointment> getAllAppointments() {
+        logger.info("Fetching all appointments");
+        return appointmentRepository.findAll();
+    }
+
+    public List<Appointment> getAppointmentsByPatient(Long patientId) {
+        logger.info("Fetching appointments for patient: " + patientId);
+        return appointmentRepository.findByPatientId(patientId);
+    }
+
+    public List<Appointment> getAppointmentsByDoctor(Long doctorId) {
+        logger.info("Fetching appointments for doctor: " + doctorId);
+        return appointmentRepository.findByDoctorId(doctorId);
+    }
+
+    public Appointment cancelAppointment(Long id) {
+        logger.info("Cancelling appointment: " + id);
+        Appointment appointment = getAppointmentById(id);
+        appointment.setStatus(AppointmentStatus.CANCELLED);
+        // Toggle doctor back to available
+        doctorClient.toggleAvailability(appointment.getDoctorId());
+        return appointmentRepository.save(appointment);
+    }
+
+    public Appointment completeAppointment(Long id) {
+        logger.info("Completing appointment: " + id);
+        Appointment appointment = getAppointmentById(id);
+        appointment.setStatus(AppointmentStatus.COMPLETED);
+        return appointmentRepository.save(appointment);
+    }
+}

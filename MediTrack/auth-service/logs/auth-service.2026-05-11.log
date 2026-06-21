@@ -1,0 +1,86 @@
+2026-05-11 12:33:01.255 INFO  [auth-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-11 12:33:01.763 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Starting AuthServiceApplication using Java 20.0.2 with PID 9904 (C:\Users\Aishu\C_MediTrack\MediTrack\auth-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\auth-service)
+2026-05-11 12:33:01.766 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-11 12:33:08.552 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-11 12:33:09.344 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 767 ms. Found 1 JPA repository interface.
+2026-05-11 12:33:10.875 INFO  [auth-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=330e27bd-679c-391f-90ff-6e2a8a44d098
+2026-05-11 12:33:14.854 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-11 12:33:14.941 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-11 12:33:14.948 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-11 12:33:14.951 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-11 12:33:15.350 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-11 12:33:15.350 INFO  [auth-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13266 ms
+2026-05-11 12:33:16.212 INFO  [auth-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-11 12:33:16.428 INFO  [auth-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-11 12:33:16.525 INFO  [auth-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-11 12:33:17.749 INFO  [auth-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-11 12:33:17.830 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-11 12:33:19.138 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cc81ea1
+2026-05-11 12:33:19.144 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-11 12:33:19.895 INFO  [auth-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-11 12:33:24.334 INFO  [auth-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-11 12:33:24.592 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-11 12:33:33.185 INFO  [auth-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-11 12:33:39.025 INFO  [auth-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-11 12:33:39.228 WARN  [auth-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-11 12:33:39.440 INFO  [auth-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-11 12:33:41.353 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application AUTH-SERVICE with eureka with status UP
+2026-05-11 12:33:41.374 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-11 12:33:41.435 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-05-11 12:33:41.436 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-05-11 12:33:41.797 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Started AuthServiceApplication in 42.787 seconds (process running for 48.732)
+2026-05-11 12:35:07.062 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-11 12:35:07.075 INFO  [auth-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-11 12:35:07.203 INFO  [auth-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 127 ms
+2026-05-11 12:35:08.475 INFO  [auth-service] [traceId=620bc178] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][620bc178] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@3356897a]
+2026-05-11 12:35:08.476 INFO  [auth-service] [traceId=620bc178] c.meditrack.auth.aop.LoggingAspect - [SERVICE][620bc178] --> AuthService.login(..) | args: [admin@gmail.com, admin123]
+2026-05-11 12:35:08.952 INFO  [auth-service] [traceId=620bc178] c.meditrack.auth.aop.LoggingAspect - [SERVICE][620bc178] <-- AuthService.login(..) | 476ms | result: com.meditrack.auth.dto.AuthResponse@134ce14c
+2026-05-11 12:35:08.952 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][620bc178] <-- AuthController.login(..) | 477ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@134ce14c,[]>
+2026-05-11 12:35:09.510 INFO  [auth-service] [traceId=0bd9fb76] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][0bd9fb76] --> AuthController.getAllAdmins() | args: []
+2026-05-11 12:35:09.511 INFO  [auth-service] [traceId=0bd9fb76] c.meditrack.auth.aop.LoggingAspect - [SERVICE][0bd9fb76] --> AuthService.getAllAdmins() | args: []
+2026-05-11 12:35:09.551 INFO  [auth-service] [traceId=0bd9fb76] c.meditrack.auth.aop.LoggingAspect - [SERVICE][0bd9fb76] <-- AuthService.getAllAdmins() | 40ms | result: [com.meditrack.auth.entity.User@4633a53c, com.meditrack.auth.entity.User@618e9359]
+2026-05-11 12:35:09.552 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][0bd9fb76] <-- AuthController.getAllAdmins() | 42ms | result: <200 OK OK,[com.meditrack.auth.entity.User@4633a53c, com.meditrack.auth.entity.User@618e9359],[]>
+2026-05-11 12:35:09.610 INFO  [auth-service] [traceId=6badc939] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][6badc939] --> AuthController.getAllAdmins() | args: []
+2026-05-11 12:35:09.611 INFO  [auth-service] [traceId=6badc939] c.meditrack.auth.aop.LoggingAspect - [SERVICE][6badc939] --> AuthService.getAllAdmins() | args: []
+2026-05-11 12:35:09.618 INFO  [auth-service] [traceId=6badc939] c.meditrack.auth.aop.LoggingAspect - [SERVICE][6badc939] <-- AuthService.getAllAdmins() | 7ms | result: [com.meditrack.auth.entity.User@7ced5878, com.meditrack.auth.entity.User@512395df]
+2026-05-11 12:35:09.619 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][6badc939] <-- AuthController.getAllAdmins() | 9ms | result: <200 OK OK,[com.meditrack.auth.entity.User@7ced5878, com.meditrack.auth.entity.User@512395df],[]>
+2026-05-11 12:50:03.420 INFO  [auth-service] [traceId=549ce80c] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][549ce80c] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@5c399577]
+2026-05-11 12:50:03.440 INFO  [auth-service] [traceId=549ce80c] c.meditrack.auth.aop.LoggingAspect - [SERVICE][549ce80c] --> AuthService.login(..) | args: [ravikumar@meditrack.in, ravi123]
+2026-05-11 12:50:04.130 INFO  [auth-service] [traceId=549ce80c] c.meditrack.auth.aop.LoggingAspect - [SERVICE][549ce80c] <-- AuthService.login(..) | 690ms | result: com.meditrack.auth.dto.AuthResponse@4b08f1ba
+2026-05-11 12:50:04.132 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][549ce80c] <-- AuthController.login(..) | 713ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@4b08f1ba,[]>
+2026-05-11 12:53:38.505 INFO  [auth-service] [traceId=0e8be8d7] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][0e8be8d7] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@5b499b91]
+2026-05-11 12:53:38.522 INFO  [auth-service] [traceId=0e8be8d7] c.meditrack.auth.aop.LoggingAspect - [SERVICE][0e8be8d7] --> AuthService.login(..) | args: [admin@gmail.com, admin123]
+2026-05-11 12:53:39.008 INFO  [auth-service] [traceId=0e8be8d7] c.meditrack.auth.aop.LoggingAspect - [SERVICE][0e8be8d7] <-- AuthService.login(..) | 486ms | result: com.meditrack.auth.dto.AuthResponse@231fa2c4
+2026-05-11 12:53:39.009 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][0e8be8d7] <-- AuthController.login(..) | 507ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@231fa2c4,[]>
+2026-05-11 12:53:39.350 INFO  [auth-service] [traceId=1f74c416] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][1f74c416] --> AuthController.getAllAdmins() | args: []
+2026-05-11 12:53:39.362 INFO  [auth-service] [traceId=1f74c416] c.meditrack.auth.aop.LoggingAspect - [SERVICE][1f74c416] --> AuthService.getAllAdmins() | args: []
+2026-05-11 12:53:39.399 INFO  [auth-service] [traceId=1f74c416] c.meditrack.auth.aop.LoggingAspect - [SERVICE][1f74c416] <-- AuthService.getAllAdmins() | 37ms | result: [com.meditrack.auth.entity.User@64f6efa, com.meditrack.auth.entity.User@72793ab]
+2026-05-11 12:53:39.401 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][1f74c416] <-- AuthController.getAllAdmins() | 52ms | result: <200 OK OK,[com.meditrack.auth.entity.User@64f6efa, com.meditrack.auth.entity.User@72793ab],[]>
+2026-05-11 12:53:39.525 INFO  [auth-service] [traceId=b3c7aefc] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][b3c7aefc] --> AuthController.getAllAdmins() | args: []
+2026-05-11 12:53:39.525 INFO  [auth-service] [traceId=b3c7aefc] c.meditrack.auth.aop.LoggingAspect - [SERVICE][b3c7aefc] --> AuthService.getAllAdmins() | args: []
+2026-05-11 12:53:39.540 INFO  [auth-service] [traceId=b3c7aefc] c.meditrack.auth.aop.LoggingAspect - [SERVICE][b3c7aefc] <-- AuthService.getAllAdmins() | 15ms | result: [com.meditrack.auth.entity.User@32761dc9, com.meditrack.auth.entity.User@15609fcf]
+2026-05-11 12:53:39.541 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][b3c7aefc] <-- AuthController.getAllAdmins() | 16ms | result: <200 OK OK,[com.meditrack.auth.entity.User@32761dc9, com.meditrack.auth.entity.User@15609fcf],[]>
+2026-05-11 12:54:18.124 INFO  [auth-service] [traceId=8c056cc5] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][8c056cc5] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@7fcab384]
+2026-05-11 12:54:18.131 INFO  [auth-service] [traceId=8c056cc5] c.meditrack.auth.aop.LoggingAspect - [SERVICE][8c056cc5] --> AuthService.login(..) | args: [ravikumar@meditrack.in, ravi123]
+2026-05-11 12:54:18.419 INFO  [auth-service] [traceId=8c056cc5] c.meditrack.auth.aop.LoggingAspect - [SERVICE][8c056cc5] <-- AuthService.login(..) | 288ms | result: com.meditrack.auth.dto.AuthResponse@61bb3cdb
+2026-05-11 12:54:18.420 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][8c056cc5] <-- AuthController.login(..) | 299ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@61bb3cdb,[]>
+2026-05-11 13:59:08.576 INFO  [auth-service] [traceId=3f797a16] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][3f797a16] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@1114dec1]
+2026-05-11 13:59:08.639 INFO  [auth-service] [traceId=3f797a16] c.meditrack.auth.aop.LoggingAspect - [SERVICE][3f797a16] --> AuthService.login(..) | args: [rohan@meditrack.in, rohan123]
+2026-05-11 13:59:09.555 INFO  [auth-service] [traceId=3f797a16] c.meditrack.auth.aop.LoggingAspect - [SERVICE][3f797a16] <-- AuthService.login(..) | 917ms | result: com.meditrack.auth.dto.AuthResponse@aaf783b
+2026-05-11 13:59:09.556 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][3f797a16] <-- AuthController.login(..) | 988ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@aaf783b,[]>
+2026-05-11 15:06:38.983 INFO  [auth-service] [traceId=a0a87c02] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][a0a87c02] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@2612680d]
+2026-05-11 15:06:39.010 INFO  [auth-service] [traceId=a0a87c02] c.meditrack.auth.aop.LoggingAspect - [SERVICE][a0a87c02] --> AuthService.login(..) | args: [ravikumar@meditrack.in, ravi123]
+2026-05-11 15:06:39.451 INFO  [auth-service] [traceId=a0a87c02] c.meditrack.auth.aop.LoggingAspect - [SERVICE][a0a87c02] <-- AuthService.login(..) | 441ms | result: com.meditrack.auth.dto.AuthResponse@66e634f
+2026-05-11 15:06:39.454 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][a0a87c02] <-- AuthController.login(..) | 475ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@66e634f,[]>
+2026-05-11 15:57:36.317 INFO  [auth-service] [traceId=403f636d] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][403f636d] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@587d1ca7]
+2026-05-11 15:57:36.340 INFO  [auth-service] [traceId=403f636d] c.meditrack.auth.aop.LoggingAspect - [SERVICE][403f636d] --> AuthService.login(..) | args: [neha@gmail.com, neha123]
+2026-05-11 15:57:36.662 INFO  [auth-service] [traceId=403f636d] c.meditrack.auth.aop.LoggingAspect - [SERVICE][403f636d] <-- AuthService.login(..) | 322ms | result: com.meditrack.auth.dto.AuthResponse@25f38da6
+2026-05-11 15:57:36.662 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][403f636d] <-- AuthController.login(..) | 348ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@25f38da6,[]>
+2026-05-11 16:50:33.876 WARN  [auth-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m38s623ms11µs300ns).

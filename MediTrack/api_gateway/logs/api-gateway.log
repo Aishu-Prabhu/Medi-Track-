@@ -1,0 +1,430 @@
+2026-05-20 11:24:22.279 INFO  [api-gateway] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-20 11:24:22.434 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 20.0.2 with PID 41016 (C:\Users\Aishu\C_MediTrack\MediTrack\api_gateway\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\api_gateway)
+2026-05-20 11:24:22.442 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 11:24:28.260 INFO  [api-gateway] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=0a685e7a-ee54-35f4-8f22-27fef5837b74
+2026-05-20 11:24:31.572 INFO  [api-gateway] [traceId=none] c.m.apigateway.aop.LoggingAspect - [GATEWAY] --> CorsConfig.corsWebFilter()
+2026-05-20 11:24:31.630 INFO  [api-gateway] [traceId=none] c.m.apigateway.aop.LoggingAspect - [GATEWAY] <-- CorsConfig.corsWebFilter() | 58ms
+2026-05-20 11:24:36.642 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-05-20 11:24:36.643 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-05-20 11:24:36.643 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-05-20 11:24:36.643 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-05-20 11:24:36.643 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-05-20 11:24:36.644 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-05-20 11:24:36.644 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-05-20 11:24:36.644 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-05-20 11:24:36.644 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-05-20 11:24:36.644 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-05-20 11:24:36.644 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-05-20 11:24:36.644 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-05-20 11:24:36.644 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-05-20 11:24:36.644 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-05-20 11:24:39.259 INFO  [api-gateway] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-20 11:24:40.882 WARN  [api-gateway] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-20 11:24:41.004 INFO  [api-gateway] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-20 11:24:43.920 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application API-GATEWAY with eureka with status UP
+2026-05-20 11:24:45.849 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080 (http)
+2026-05-20 11:24:45.863 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2026-05-20 11:24:47.839 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 28.59 seconds (process running for 31.18)
+2026-05-20 11:40:16.204 WARN  [api-gateway] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/API-GATEWAY/DESKTOP-TE08QKM:api-gateway:8080": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-20 11:40:16.313 WARN  [api-gateway] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/API-GATEWAY/DESKTOP-TE08QKM:api-gateway:8080": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-20 11:40:16.314 ERROR [api-gateway] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_API-GATEWAY/DESKTOP-TE08QKM:api-gateway:8080 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1403)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-20 11:40:16.656 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 11:40:16.688 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application API-GATEWAY with eureka with status DOWN
+2026-05-20 11:40:16.758 WARN  [api-gateway] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-20 11:40:16.760 WARN  [api-gateway] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_API-GATEWAY/DESKTOP-TE08QKM:api-gateway:8080 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-20 11:40:16.761 WARN  [api-gateway] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-20 11:40:16.767 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 11:40:16.788 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 11:40:16.793 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2026-05-20 11:40:17.108 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 11:40:17.121 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 11:40:17.202 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 11:40:17.361 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 11:40:17.512 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 11:40:17.667 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 11:40:17.830 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 11:40:19.430 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 11:40:19.447 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 11:44:04.240 INFO  [api-gateway] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-20 11:44:04.309 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 20.0.2 with PID 1484 (C:\Users\Aishu\C_MediTrack\MediTrack\api_gateway\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\api_gateway)
+2026-05-20 11:44:04.310 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 11:44:05.685 INFO  [api-gateway] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=0a685e7a-ee54-35f4-8f22-27fef5837b74
+2026-05-20 11:44:06.391 INFO  [api-gateway] [traceId=none] c.m.apigateway.aop.LoggingAspect - [GATEWAY] --> CorsConfig.corsWebFilter()
+2026-05-20 11:44:06.400 INFO  [api-gateway] [traceId=none] c.m.apigateway.aop.LoggingAspect - [GATEWAY] <-- CorsConfig.corsWebFilter() | 9ms
+2026-05-20 11:44:07.206 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-05-20 11:44:07.206 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-05-20 11:44:07.206 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-05-20 11:44:07.206 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-05-20 11:44:07.206 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-05-20 11:44:07.206 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-05-20 11:44:07.206 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-05-20 11:44:07.206 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-05-20 11:44:07.206 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-05-20 11:44:07.206 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-05-20 11:44:07.207 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-05-20 11:44:07.207 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-05-20 11:44:07.207 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-05-20 11:44:07.207 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-05-20 11:44:08.011 INFO  [api-gateway] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-20 11:44:08.187 WARN  [api-gateway] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-20 11:44:08.241 INFO  [api-gateway] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-20 11:44:08.655 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application API-GATEWAY with eureka with status UP
+2026-05-20 11:44:09.055 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080 (http)
+2026-05-20 11:44:09.059 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2026-05-20 11:44:09.534 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 6.065 seconds (process running for 7.057)
+2026-05-20 11:57:26.592 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 11:57:26.699 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application API-GATEWAY with eureka with status DOWN
+2026-05-20 11:57:26.912 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 11:57:27.105 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2026-05-20 11:57:40.126 INFO  [api-gateway] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-20 11:57:40.186 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 20.0.2 with PID 13392 (C:\Users\Aishu\C_MediTrack\MediTrack\api_gateway\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\api_gateway)
+2026-05-20 11:57:40.186 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 11:57:41.383 INFO  [api-gateway] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=0a685e7a-ee54-35f4-8f22-27fef5837b74
+2026-05-20 11:57:41.982 INFO  [api-gateway] [traceId=none] c.m.apigateway.aop.LoggingAspect - [GATEWAY] --> CorsConfig.corsWebFilter()
+2026-05-20 11:57:41.992 INFO  [api-gateway] [traceId=none] c.m.apigateway.aop.LoggingAspect - [GATEWAY] <-- CorsConfig.corsWebFilter() | 10ms
+2026-05-20 11:57:42.848 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-05-20 11:57:42.848 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-05-20 11:57:42.848 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-05-20 11:57:42.848 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-05-20 11:57:42.848 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-05-20 11:57:42.848 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-05-20 11:57:42.848 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-05-20 11:57:42.848 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-05-20 11:57:42.848 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-05-20 11:57:42.848 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-05-20 11:57:42.848 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-05-20 11:57:42.848 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-05-20 11:57:42.849 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-05-20 11:57:42.849 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-05-20 11:57:43.350 INFO  [api-gateway] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-20 11:57:43.511 WARN  [api-gateway] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-20 11:57:43.563 INFO  [api-gateway] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-20 11:57:43.958 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application API-GATEWAY with eureka with status UP
+2026-05-20 11:57:44.258 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080 (http)
+2026-05-20 11:57:44.260 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2026-05-20 11:57:44.514 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 5.02 seconds (process running for 5.839)
+2026-05-20 11:57:56.239 WARN  [api-gateway] [traceId=none] o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: AUTH-SERVICE
+2026-05-20 11:58:09.332 WARN  [api-gateway] [traceId=none] o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: AUTH-SERVICE
+2026-05-20 12:01:58.725 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:01:58.744 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application API-GATEWAY with eureka with status DOWN
+2026-05-20 12:01:58.767 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 12:01:58.785 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2026-05-20 12:01:58.823 WARN  [api-gateway] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-20 12:01:58.853 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:01:58.886 WARN  [api-gateway] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-20 12:01:58.887 WARN  [api-gateway] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_API-GATEWAY/DESKTOP-TE08QKM:api-gateway:8080 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-20 12:01:58.902 WARN  [api-gateway] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-20 12:01:59.018 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:01:59.178 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:01:59.345 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:01:59.501 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:01:59.655 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:01:59.814 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:01:59.986 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:02:00.148 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:02:00.304 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:02:00.465 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:02:00.627 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:02:00.786 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 12:09:42.213 INFO  [api-gateway] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-20 12:09:42.269 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 20.0.2 with PID 31912 (C:\Users\Aishu\C_MediTrack\MediTrack\api_gateway\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\api_gateway)
+2026-05-20 12:09:42.270 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 12:09:43.345 INFO  [api-gateway] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=0a685e7a-ee54-35f4-8f22-27fef5837b74
+2026-05-20 12:09:43.913 INFO  [api-gateway] [traceId=none] c.m.apigateway.aop.LoggingAspect - [GATEWAY] --> CorsConfig.corsWebFilter()
+2026-05-20 12:09:43.921 INFO  [api-gateway] [traceId=none] c.m.apigateway.aop.LoggingAspect - [GATEWAY] <-- CorsConfig.corsWebFilter() | 8ms
+2026-05-20 12:09:44.655 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-05-20 12:09:44.656 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-05-20 12:09:44.656 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-05-20 12:09:44.656 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-05-20 12:09:44.656 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-05-20 12:09:44.656 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-05-20 12:09:44.656 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-05-20 12:09:44.656 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-05-20 12:09:44.656 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-05-20 12:09:44.656 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-05-20 12:09:44.656 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-05-20 12:09:44.656 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-05-20 12:09:44.656 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-05-20 12:09:44.656 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-05-20 12:09:45.235 INFO  [api-gateway] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-20 12:09:45.390 WARN  [api-gateway] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-20 12:09:45.445 INFO  [api-gateway] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-20 12:09:45.853 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application API-GATEWAY with eureka with status UP
+2026-05-20 12:09:46.165 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080 (http)
+2026-05-20 12:09:46.167 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2026-05-20 12:09:46.470 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 4.927 seconds (process running for 5.765)
+2026-05-20 12:40:52.415 WARN  [api-gateway] [traceId=none] o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: PRESCRIPTION-SERVICE
+2026-05-20 13:00:03.138 WARN  [api-gateway] [traceId=none] o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: AUTH-SERVICE
+2026-05-20 13:14:01.876 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 13:14:01.946 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application API-GATEWAY with eureka with status DOWN
+2026-05-20 13:14:02.070 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 13:14:02.124 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2026-05-20 13:14:02.181 WARN  [api-gateway] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-20 13:14:02.223 WARN  [api-gateway] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-20 13:14:02.223 WARN  [api-gateway] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_API-GATEWAY/DESKTOP-TE08QKM:api-gateway:8080 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-20 13:14:02.240 WARN  [api-gateway] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-20 13:14:07.275 WARN  [api-gateway] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/DESKTOP-TE08QKM:api-gateway:8080": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-20 13:14:07.275 ERROR [api-gateway] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_API-GATEWAY/DESKTOP-TE08QKM:api-gateway:8080 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:155)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-20 13:27:03.263 INFO  [api-gateway] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-20 13:27:03.904 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 20.0.2 with PID 22900 (C:\Users\Aishu\C_MediTrack\MediTrack\api_gateway\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\api_gateway)
+2026-05-20 13:27:03.910 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 13:27:11.821 INFO  [api-gateway] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=0a685e7a-ee54-35f4-8f22-27fef5837b74
+2026-05-20 13:27:16.808 INFO  [api-gateway] [traceId=none] c.m.apigateway.aop.LoggingAspect - [GATEWAY] --> CorsConfig.corsWebFilter()
+2026-05-20 13:27:16.896 INFO  [api-gateway] [traceId=none] c.m.apigateway.aop.LoggingAspect - [GATEWAY] <-- CorsConfig.corsWebFilter() | 88ms
+2026-05-20 13:27:23.409 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-05-20 13:27:23.410 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-05-20 13:27:23.410 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-05-20 13:27:23.410 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-05-20 13:27:23.410 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-05-20 13:27:23.410 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-05-20 13:27:23.410 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-05-20 13:27:23.411 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-05-20 13:27:23.411 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-05-20 13:27:23.411 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-05-20 13:27:23.411 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-05-20 13:27:23.411 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-05-20 13:27:23.411 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-05-20 13:27:23.411 INFO  [api-gateway] [traceId=none] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-05-20 13:27:27.269 INFO  [api-gateway] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-20 13:27:28.130 WARN  [api-gateway] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-20 13:27:28.333 INFO  [api-gateway] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-20 13:27:32.480 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application API-GATEWAY with eureka with status UP
+2026-05-20 13:27:38.937 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080 (http)
+2026-05-20 13:27:38.944 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2026-05-20 13:27:41.825 INFO  [api-gateway] [traceId=none] c.m.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 43.009 seconds (process running for 48.548)
+2026-05-20 13:31:43.732 WARN  [api-gateway] [traceId=none] o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: PRESCRIPTION-SERVICE
+2026-05-20 13:31:43.812 WARN  [api-gateway] [traceId=none] o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-05-20 13:31:44.377 WARN  [api-gateway] [traceId=none] o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: PRESCRIPTION-SERVICE
+2026-05-20 13:31:44.390 WARN  [api-gateway] [traceId=none] o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-05-20 13:32:49.083 WARN  [api-gateway] [traceId=none] o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-05-20 13:32:49.295 WARN  [api-gateway] [traceId=none] o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: PRESCRIPTION-SERVICE
+2026-05-20 13:32:50.115 WARN  [api-gateway] [traceId=none] o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-05-20 13:32:50.154 WARN  [api-gateway] [traceId=none] o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: PRESCRIPTION-SERVICE
+2026-05-20 13:36:36.469 WARN  [api-gateway] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/API-GATEWAY/DESKTOP-TE08QKM:api-gateway:8080": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-20 13:36:37.962 WARN  [api-gateway] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/API-GATEWAY/DESKTOP-TE08QKM:api-gateway:8080": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-20 13:36:37.966 ERROR [api-gateway] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_API-GATEWAY/DESKTOP-TE08QKM:api-gateway:8080 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1403)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-20 13:36:39.521 WARN  [api-gateway] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-20 13:36:39.632 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 13:36:39.650 INFO  [api-gateway] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application API-GATEWAY with eureka with status DOWN
+2026-05-20 13:36:39.675 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 13:36:39.719 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 13:36:39.778 INFO  [api-gateway] [traceId=none] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2026-05-20 13:36:39.779 WARN  [api-gateway] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-20 13:36:40.029 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 13:36:40.045 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 13:36:40.065 WARN  [api-gateway] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-20 13:36:40.066 WARN  [api-gateway] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_API-GATEWAY/DESKTOP-TE08QKM:api-gateway:8080 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-20 13:36:40.093 WARN  [api-gateway] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-20 13:36:40.168 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 13:36:41.314 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 13:36:41.485 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 13:36:41.661 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-20 13:36:41.855 INFO  [api-gateway] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.

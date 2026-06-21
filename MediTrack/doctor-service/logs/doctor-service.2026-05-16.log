@@ -1,0 +1,821 @@
+2026-05-16 11:59:46.811 INFO  [doctor-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-16 11:59:46.916 INFO  [doctor-service] [traceId=none] c.m.d.DoctorServiceApplicationTests - Starting DoctorServiceApplicationTests using Java 20.0.2 with PID 23516 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\doctor-service)
+2026-05-16 11:59:46.918 INFO  [doctor-service] [traceId=none] c.m.d.DoctorServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 11:59:48.986 INFO  [doctor-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16 11:59:49.313 INFO  [doctor-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 300 ms. Found 1 JPA repository interface.
+2026-05-16 11:59:49.892 INFO  [doctor-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=811dd7b2-bc0b-3e22-8735-79dbbe2c03b6
+2026-05-16 11:59:50.901 INFO  [doctor-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-16 11:59:51.026 INFO  [doctor-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-16 11:59:51.078 INFO  [doctor-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-16 11:59:51.593 INFO  [doctor-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-16 11:59:51.663 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-16 11:59:52.198 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67b3cd01
+2026-05-16 11:59:52.204 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-16 11:59:52.404 INFO  [doctor-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-16 11:59:53.787 INFO  [doctor-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-16 11:59:53.872 INFO  [doctor-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 11:59:54.913 WARN  [doctor-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-16 11:59:55.563 WARN  [doctor-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c43fc02a-eae9-420a-9ad8-b4400491df82
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 11:59:57.103 INFO  [doctor-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-16 11:59:57.227 WARN  [doctor-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-16 11:59:57.270 INFO  [doctor-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-16 11:59:57.802 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 11:59:57.802 WARN  [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - Using default backup registry implementation which does not do anything.
+2026-05-16 11:59:57.817 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application DOCTOR-SERVICE with eureka with status UP
+2026-05-16 11:59:57.854 INFO  [doctor-service] [traceId=none] c.m.d.DoctorServiceApplicationTests - Started DoctorServiceApplicationTests in 11.95 seconds (process running for 14.715)
+2026-05-16 11:59:57.920 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 11:59:57.920 WARN  [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 11:59:57.923 WARN  [doctor-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 11:59:58.962 INFO  [doctor-service] [traceId=existing123] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][existing123] --> DoctorService.find() | args: [1]
+2026-05-16 11:59:58.963 INFO  [doctor-service] [traceId=existing123] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][existing123] <-- DoctorService.find() | 1ms | result: FOUND
+2026-05-16 11:59:59.016 INFO  [doctor-service] [traceId=7a399eba] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][7a399eba] --> DoctorService.saveDoctor() | args: [doctor]
+2026-05-16 11:59:59.018 ERROR [doctor-service] [traceId=7a399eba] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][7a399eba] !! DoctorService.saveDoctor() | 2ms | error: Database Error
+java.lang.RuntimeException: Database Error
+	at com.meditrack.doctor.aop.LoggingAspect.logExecution(LoggingAspect.java:44)
+	at com.meditrack.doctor.aop.LoggingAspect.logServiceMethods(LoggingAspect.java:22)
+	at com.meditrack.doctor.aop.LoggingAspectTest.lambda$0(LoggingAspectTest.java:87)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at com.meditrack.doctor.aop.LoggingAspectTest.testLogExecution_Exception(LoggingAspectTest.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:91)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$2(InterceptingLauncher.java:47)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:46)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+2026-05-16 11:59:59.026 INFO  [doctor-service] [traceId=259971db] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][259971db] --> DoctorController.getDoctors() | args: []
+2026-05-16 11:59:59.027 INFO  [doctor-service] [traceId=259971db] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][259971db] <-- DoctorController.getDoctors() | 1ms | result: DATA
+2026-05-16 11:59:59.035 INFO  [doctor-service] [traceId=e4a86093] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][e4a86093] --> DoctorService.getDoctor() | args: [101]
+2026-05-16 11:59:59.035 INFO  [doctor-service] [traceId=e4a86093] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][e4a86093] <-- DoctorService.getDoctor() | 0ms | result: SUCCESS
+2026-05-16 11:59:59.082 INFO  [doctor-service] [traceId=none] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.meditrack.doctor.controller.DoctorControllerTest]: DoctorControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-16 11:59:59.204 INFO  [doctor-service] [traceId=none] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.meditrack.doctor.DoctorServiceApplication for test class com.meditrack.doctor.controller.DoctorControllerTest
+2026-05-16 11:59:59.432 INFO  [doctor-service] [traceId=none] c.m.d.c.DoctorControllerTest - Starting DoctorControllerTest using Java 20.0.2 with PID 23516 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\doctor-service)
+2026-05-16 11:59:59.433 INFO  [doctor-service] [traceId=none] c.m.d.c.DoctorControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:00:00.261 WARN  [doctor-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 36f905b6-f78f-45f8-a44d-3984a53a9455
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 12:00:00.452 INFO  [doctor-service] [traceId=none] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-16 12:00:00.454 INFO  [doctor-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-16 12:00:00.456 INFO  [doctor-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-05-16 12:00:00.514 INFO  [doctor-service] [traceId=none] c.m.d.c.DoctorControllerTest - Started DoctorControllerTest in 1.301 seconds (process running for 17.374)
+2026-05-16 12:00:02.300 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Updating doctor with id: 1
+2026-05-16 12:00:02.303 ERROR [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Doctor not found for update: 1
+2026-05-16 12:00:02.310 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Updating doctor with id: 1
+2026-05-16 12:00:02.318 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Deleting doctor with id: 1
+2026-05-16 12:00:02.319 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Doctor deleted successfully with id: 1
+2026-05-16 12:00:02.327 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Fetching doctors by specialization: CARDIOLOGIST
+2026-05-16 12:00:02.338 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Fetching doctor with id: 1
+2026-05-16 12:00:02.346 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Adding new doctor: a@test.com
+2026-05-16 12:00:02.353 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Fetching available doctors
+2026-05-16 12:00:02.362 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Fetching all doctors
+2026-05-16 12:00:02.370 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Adding new doctor: a@test.com
+2026-05-16 12:00:02.371 ERROR [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Duplicate email detected: a@test.com
+2026-05-16 12:00:02.378 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Fetching doctor with id: 1
+2026-05-16 12:00:02.381 ERROR [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Doctor not found with id: 1
+2026-05-16 12:00:02.388 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Request to toggle availability for doctor id: 1
+2026-05-16 12:00:02.400 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Deleting doctor with id: 1
+2026-05-16 12:00:02.402 ERROR [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Doctor not found for deletion: 1
+2026-05-16 12:00:04.102 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DOCTOR-SERVICE with eureka with status DOWN
+2026-05-16 12:00:04.129 INFO  [doctor-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 12:00:04.156 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-16 12:00:04.187 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-16 12:00:04.204 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:00:04.204 WARN  [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:00:04.205 WARN  [doctor-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:00:04.254 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:00:04.255 ERROR [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:01:38.040 INFO  [doctor-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-16 12:01:38.153 INFO  [doctor-service] [traceId=none] c.m.d.DoctorServiceApplicationTests - Starting DoctorServiceApplicationTests using Java 20.0.2 with PID 7636 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\doctor-service)
+2026-05-16 12:01:38.155 INFO  [doctor-service] [traceId=none] c.m.d.DoctorServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:01:40.529 INFO  [doctor-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16 12:01:40.886 INFO  [doctor-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 333 ms. Found 1 JPA repository interface.
+2026-05-16 12:01:41.488 INFO  [doctor-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=811dd7b2-bc0b-3e22-8735-79dbbe2c03b6
+2026-05-16 12:01:43.328 INFO  [doctor-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-16 12:01:43.508 INFO  [doctor-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-16 12:01:43.620 INFO  [doctor-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-16 12:01:44.576 INFO  [doctor-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-16 12:01:44.687 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-16 12:01:45.652 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2786ccb
+2026-05-16 12:01:45.658 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-16 12:01:45.920 INFO  [doctor-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-16 12:01:48.314 INFO  [doctor-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-16 12:01:48.492 INFO  [doctor-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 12:01:49.927 WARN  [doctor-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-16 12:01:50.672 WARN  [doctor-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8b381c80-6535-4509-9dca-c051efadd298
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 12:01:52.489 INFO  [doctor-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-16 12:01:52.635 WARN  [doctor-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-16 12:01:52.682 INFO  [doctor-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-16 12:01:53.359 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:01:53.359 WARN  [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - Using default backup registry implementation which does not do anything.
+2026-05-16 12:01:53.378 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application DOCTOR-SERVICE with eureka with status UP
+2026-05-16 12:01:53.418 INFO  [doctor-service] [traceId=none] c.m.d.DoctorServiceApplicationTests - Started DoctorServiceApplicationTests in 16.357 seconds (process running for 19.76)
+2026-05-16 12:01:53.473 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:01:53.474 WARN  [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:01:53.478 WARN  [doctor-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:01:54.830 INFO  [doctor-service] [traceId=existing123] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][existing123] --> DoctorService.find() | args: [1]
+2026-05-16 12:01:54.831 INFO  [doctor-service] [traceId=existing123] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][existing123] <-- DoctorService.find() | 1ms | result: FOUND
+2026-05-16 12:01:54.888 INFO  [doctor-service] [traceId=8305d049] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][8305d049] --> DoctorService.saveDoctor() | args: [doctor]
+2026-05-16 12:01:54.889 ERROR [doctor-service] [traceId=8305d049] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][8305d049] !! DoctorService.saveDoctor() | 1ms | error: Database Error
+java.lang.RuntimeException: Database Error
+	at com.meditrack.doctor.aop.LoggingAspect.logExecution(LoggingAspect.java:44)
+	at com.meditrack.doctor.aop.LoggingAspect.logServiceMethods(LoggingAspect.java:22)
+	at com.meditrack.doctor.aop.LoggingAspectTest.lambda$0(LoggingAspectTest.java:87)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at com.meditrack.doctor.aop.LoggingAspectTest.testLogExecution_Exception(LoggingAspectTest.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:91)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$2(InterceptingLauncher.java:47)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:46)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+2026-05-16 12:01:54.900 INFO  [doctor-service] [traceId=72ccfeab] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][72ccfeab] --> DoctorController.getDoctors() | args: []
+2026-05-16 12:01:54.900 INFO  [doctor-service] [traceId=72ccfeab] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][72ccfeab] <-- DoctorController.getDoctors() | 0ms | result: DATA
+2026-05-16 12:01:54.906 INFO  [doctor-service] [traceId=8ad654e0] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][8ad654e0] --> DoctorService.getDoctor() | args: [101]
+2026-05-16 12:01:54.907 INFO  [doctor-service] [traceId=8ad654e0] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][8ad654e0] <-- DoctorService.getDoctor() | 1ms | result: SUCCESS
+2026-05-16 12:01:54.952 INFO  [doctor-service] [traceId=none] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.meditrack.doctor.controller.DoctorControllerTest]: DoctorControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-16 12:01:55.086 INFO  [doctor-service] [traceId=none] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.meditrack.doctor.DoctorServiceApplication for test class com.meditrack.doctor.controller.DoctorControllerTest
+2026-05-16 12:01:55.328 INFO  [doctor-service] [traceId=none] c.m.d.c.DoctorControllerTest - Starting DoctorControllerTest using Java 20.0.2 with PID 7636 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\doctor-service)
+2026-05-16 12:01:55.328 INFO  [doctor-service] [traceId=none] c.m.d.c.DoctorControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:01:56.043 WARN  [doctor-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1cf53fbb-8d48-4f5f-866e-76c730f84eea
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 12:01:56.169 INFO  [doctor-service] [traceId=none] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-16 12:01:56.170 INFO  [doctor-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-16 12:01:56.172 INFO  [doctor-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2026-05-16 12:01:56.218 INFO  [doctor-service] [traceId=none] c.m.d.c.DoctorControllerTest - Started DoctorControllerTest in 1.121 seconds (process running for 22.56)
+2026-05-16 12:01:58.212 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Updating doctor with id: 1
+2026-05-16 12:01:58.213 ERROR [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Doctor not found for update: 1
+2026-05-16 12:01:58.218 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Updating doctor with id: 1
+2026-05-16 12:01:58.221 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Deleting doctor with id: 1
+2026-05-16 12:01:58.221 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Doctor deleted successfully with id: 1
+2026-05-16 12:01:58.224 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Fetching doctors by specialization: CARDIOLOGIST
+2026-05-16 12:01:58.230 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Fetching doctor with id: 1
+2026-05-16 12:01:58.234 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Adding new doctor: a@test.com
+2026-05-16 12:01:58.237 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Fetching available doctors
+2026-05-16 12:01:58.242 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Fetching all doctors
+2026-05-16 12:01:58.246 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Adding new doctor: a@test.com
+2026-05-16 12:01:58.247 ERROR [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Duplicate email detected: a@test.com
+2026-05-16 12:01:58.250 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Fetching doctor with id: 1
+2026-05-16 12:01:58.251 ERROR [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Doctor not found with id: 1
+2026-05-16 12:01:58.255 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Request to toggle availability for doctor id: 1
+2026-05-16 12:01:58.262 INFO  [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Deleting doctor with id: 1
+2026-05-16 12:01:58.263 ERROR [doctor-service] [traceId=none] c.m.doctor.service.DoctorService - Doctor not found for deletion: 1
+2026-05-16 12:01:59.604 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DOCTOR-SERVICE with eureka with status DOWN
+2026-05-16 12:01:59.616 INFO  [doctor-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 12:01:59.627 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-16 12:01:59.646 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-16 12:01:59.647 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:01:59.647 WARN  [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:01:59.648 WARN  [doctor-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 12:01:59.676 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 12:01:59.676 ERROR [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 14:17:44.604 INFO  [doctor-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-16 14:17:44.846 INFO  [doctor-service] [traceId=none] c.m.doctor.DoctorServiceApplication - Starting DoctorServiceApplication using Java 20.0.2 with PID 16804 (C:\Users\Aishu\C_MediTrack\MediTrack\doctor-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\doctor-service)
+2026-05-16 14:17:44.850 INFO  [doctor-service] [traceId=none] c.m.doctor.DoctorServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 14:17:50.160 INFO  [doctor-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16 14:17:50.759 INFO  [doctor-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 573 ms. Found 1 JPA repository interface.
+2026-05-16 14:17:52.156 INFO  [doctor-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=819f5eda-e533-351b-b9e7-7e1d88e11679
+2026-05-16 14:17:54.664 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2026-05-16 14:17:54.696 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2026-05-16 14:17:54.701 INFO  [doctor-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-16 14:17:54.703 INFO  [doctor-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-16 14:17:55.037 INFO  [doctor-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-16 14:17:55.042 INFO  [doctor-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9922 ms
+2026-05-16 14:17:56.069 INFO  [doctor-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-16 14:17:56.259 INFO  [doctor-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-16 14:17:56.374 INFO  [doctor-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-16 14:17:57.132 INFO  [doctor-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-16 14:17:57.219 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-16 14:17:58.892 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@744db9fb
+2026-05-16 14:17:58.896 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-16 14:17:59.134 INFO  [doctor-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-16 14:18:02.822 INFO  [doctor-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-16 14:18:03.040 INFO  [doctor-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 14:18:06.394 WARN  [doctor-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-16 14:18:07.761 WARN  [doctor-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 17062e7e-392d-4b01-9dc9-863cf99c7d71
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16 14:18:11.312 INFO  [doctor-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-16 14:18:11.457 WARN  [doctor-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-16 14:18:11.646 INFO  [doctor-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-16 14:18:12.841 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application DOCTOR-SERVICE with eureka with status UP
+2026-05-16 14:18:12.845 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2026-05-16 14:18:12.918 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2026-05-16 14:18:12.922 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8083
+2026-05-16 14:18:13.140 INFO  [doctor-service] [traceId=none] c.m.doctor.DoctorServiceApplication - Started DoctorServiceApplication in 30.609 seconds (process running for 33.589)
+2026-05-16 14:27:20.628 INFO  [doctor-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16 14:27:20.652 INFO  [doctor-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-16 14:27:20.759 INFO  [doctor-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 107 ms
+2026-05-16 14:27:21.210 INFO  [doctor-service] [traceId=ba4d98db] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][ba4d98db] --> DoctorController.getAllDoctors() | args: []
+2026-05-16 14:27:21.210 INFO  [doctor-service] [traceId=ba4d98db] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][ba4d98db] --> DoctorService.getAllDoctors() | args: []
+2026-05-16 14:27:21.210 INFO  [doctor-service] [traceId=ba4d98db] c.m.doctor.service.DoctorService - Fetching all doctors
+2026-05-16 14:27:21.287 INFO  [doctor-service] [traceId=04b740cb] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][04b740cb] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:27:21.288 INFO  [doctor-service] [traceId=04b740cb] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][04b740cb] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:27:21.961 INFO  [doctor-service] [traceId=04b740cb] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][04b740cb] <-- DoctorService.getDoctorByEmail(..) | 673ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:27:21.968 INFO  [doctor-service] [traceId=ba4d98db] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][ba4d98db] <-- DoctorService.getAllDoctors() | 758ms | result: [DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)]
+2026-05-16 14:27:21.968 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][04b740cb] <-- DoctorController.getDoctorByEmail(..) | 681ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:27:21.968 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][ba4d98db] <-- DoctorController.getAllDoctors() | 758ms | result: <200 OK OK,[DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)],[]>
+2026-05-16 14:27:22.049 INFO  [doctor-service] [traceId=785afa58] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][785afa58] --> DoctorController.getAllDoctors() | args: []
+2026-05-16 14:27:22.049 INFO  [doctor-service] [traceId=785afa58] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][785afa58] --> DoctorService.getAllDoctors() | args: []
+2026-05-16 14:27:22.049 INFO  [doctor-service] [traceId=785afa58] c.m.doctor.service.DoctorService - Fetching all doctors
+2026-05-16 14:27:22.053 INFO  [doctor-service] [traceId=3d111baa] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][3d111baa] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:27:22.053 INFO  [doctor-service] [traceId=3d111baa] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][3d111baa] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:27:22.061 INFO  [doctor-service] [traceId=785afa58] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][785afa58] <-- DoctorService.getAllDoctors() | 12ms | result: [DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)]
+2026-05-16 14:27:22.062 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][785afa58] <-- DoctorController.getAllDoctors() | 13ms | result: <200 OK OK,[DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)],[]>
+2026-05-16 14:27:22.064 INFO  [doctor-service] [traceId=3d111baa] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][3d111baa] <-- DoctorService.getDoctorByEmail(..) | 11ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:27:22.064 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][3d111baa] <-- DoctorController.getDoctorByEmail(..) | 11ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:27:25.468 INFO  [doctor-service] [traceId=fb050f8e] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][fb050f8e] --> DoctorController.getDoctorById(..) | args: [1]
+2026-05-16 14:27:25.469 INFO  [doctor-service] [traceId=fb050f8e] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][fb050f8e] --> DoctorService.getDoctorById(..) | args: [1]
+2026-05-16 14:27:25.470 INFO  [doctor-service] [traceId=fb050f8e] c.m.doctor.service.DoctorService - Fetching doctor with id: 1
+2026-05-16 14:27:25.536 INFO  [doctor-service] [traceId=fb050f8e] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][fb050f8e] <-- DoctorService.getDoctorById(..) | 67ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:27:25.537 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][fb050f8e] <-- DoctorController.getDoctorById(..) | 69ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:27:26.294 INFO  [doctor-service] [traceId=92441c68] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][92441c68] --> DoctorController.getDoctorById(..) | args: [1]
+2026-05-16 14:27:26.294 INFO  [doctor-service] [traceId=92441c68] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][92441c68] --> DoctorService.getDoctorById(..) | args: [1]
+2026-05-16 14:27:26.294 INFO  [doctor-service] [traceId=92441c68] c.m.doctor.service.DoctorService - Fetching doctor with id: 1
+2026-05-16 14:27:26.306 INFO  [doctor-service] [traceId=92441c68] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][92441c68] <-- DoctorService.getDoctorById(..) | 12ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:27:26.306 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][92441c68] <-- DoctorController.getDoctorById(..) | 12ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:27:28.564 INFO  [doctor-service] [traceId=e5f0f708] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][e5f0f708] --> DoctorController.getAllDoctors() | args: []
+2026-05-16 14:27:28.565 INFO  [doctor-service] [traceId=e5f0f708] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][e5f0f708] --> DoctorService.getAllDoctors() | args: []
+2026-05-16 14:27:28.565 INFO  [doctor-service] [traceId=e5f0f708] c.m.doctor.service.DoctorService - Fetching all doctors
+2026-05-16 14:27:28.577 INFO  [doctor-service] [traceId=e5f0f708] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][e5f0f708] <-- DoctorService.getAllDoctors() | 12ms | result: [DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)]
+2026-05-16 14:27:28.578 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][e5f0f708] <-- DoctorController.getAllDoctors() | 14ms | result: <200 OK OK,[DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)],[]>
+2026-05-16 14:27:28.594 INFO  [doctor-service] [traceId=46995261] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][46995261] --> DoctorController.getAllDoctors() | args: []
+2026-05-16 14:27:28.595 INFO  [doctor-service] [traceId=46995261] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][46995261] --> DoctorService.getAllDoctors() | args: []
+2026-05-16 14:27:28.595 INFO  [doctor-service] [traceId=46995261] c.m.doctor.service.DoctorService - Fetching all doctors
+2026-05-16 14:27:28.604 INFO  [doctor-service] [traceId=46995261] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][46995261] <-- DoctorService.getAllDoctors() | 9ms | result: [DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)]
+2026-05-16 14:27:28.605 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][46995261] <-- DoctorController.getAllDoctors() | 11ms | result: <200 OK OK,[DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)],[]>
+2026-05-16 14:27:28.617 INFO  [doctor-service] [traceId=ec5e1425] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][ec5e1425] --> DoctorController.getDoctorById(..) | args: [1]
+2026-05-16 14:27:28.617 INFO  [doctor-service] [traceId=ec5e1425] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][ec5e1425] --> DoctorService.getDoctorById(..) | args: [1]
+2026-05-16 14:27:28.618 INFO  [doctor-service] [traceId=ec5e1425] c.m.doctor.service.DoctorService - Fetching doctor with id: 1
+2026-05-16 14:27:28.625 INFO  [doctor-service] [traceId=ec5e1425] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][ec5e1425] <-- DoctorService.getDoctorById(..) | 8ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:27:28.625 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][ec5e1425] <-- DoctorController.getDoctorById(..) | 8ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:27:28.660 INFO  [doctor-service] [traceId=c5bd86b3] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][c5bd86b3] --> DoctorController.getDoctorById(..) | args: [1]
+2026-05-16 14:27:28.661 INFO  [doctor-service] [traceId=c5bd86b3] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][c5bd86b3] --> DoctorService.getDoctorById(..) | args: [1]
+2026-05-16 14:27:28.661 INFO  [doctor-service] [traceId=c5bd86b3] c.m.doctor.service.DoctorService - Fetching doctor with id: 1
+2026-05-16 14:27:28.667 INFO  [doctor-service] [traceId=c5bd86b3] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][c5bd86b3] <-- DoctorService.getDoctorById(..) | 7ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:27:28.667 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][c5bd86b3] <-- DoctorController.getDoctorById(..) | 7ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:27:29.325 INFO  [doctor-service] [traceId=aa1c2e56] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][aa1c2e56] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:27:29.326 INFO  [doctor-service] [traceId=aa1c2e56] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][aa1c2e56] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:27:29.332 INFO  [doctor-service] [traceId=aa1c2e56] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][aa1c2e56] <-- DoctorService.getDoctorByEmail(..) | 6ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:27:29.332 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][aa1c2e56] <-- DoctorController.getDoctorByEmail(..) | 7ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:27:39.330 INFO  [doctor-service] [traceId=5d325502] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][5d325502] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:27:39.331 INFO  [doctor-service] [traceId=5d325502] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][5d325502] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:27:39.340 INFO  [doctor-service] [traceId=5d325502] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][5d325502] <-- DoctorService.getDoctorByEmail(..) | 9ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:27:39.340 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][5d325502] <-- DoctorController.getDoctorByEmail(..) | 10ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:27:49.322 INFO  [doctor-service] [traceId=4b732aaf] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][4b732aaf] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:27:49.324 INFO  [doctor-service] [traceId=4b732aaf] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][4b732aaf] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:27:49.330 INFO  [doctor-service] [traceId=4b732aaf] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][4b732aaf] <-- DoctorService.getDoctorByEmail(..) | 6ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:27:49.330 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][4b732aaf] <-- DoctorController.getDoctorByEmail(..) | 8ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:28:04.304 INFO  [doctor-service] [traceId=853d4a22] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][853d4a22] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:28:04.307 INFO  [doctor-service] [traceId=853d4a22] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][853d4a22] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:28:04.321 INFO  [doctor-service] [traceId=853d4a22] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][853d4a22] <-- DoctorService.getDoctorByEmail(..) | 14ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:28:04.321 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][853d4a22] <-- DoctorController.getDoctorByEmail(..) | 17ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:28:05.180 INFO  [doctor-service] [traceId=2e2357e9] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][2e2357e9] --> DoctorController.getAllDoctors() | args: []
+2026-05-16 14:28:05.180 INFO  [doctor-service] [traceId=2e2357e9] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][2e2357e9] --> DoctorService.getAllDoctors() | args: []
+2026-05-16 14:28:05.180 INFO  [doctor-service] [traceId=2e2357e9] c.m.doctor.service.DoctorService - Fetching all doctors
+2026-05-16 14:28:05.197 INFO  [doctor-service] [traceId=2e2357e9] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][2e2357e9] <-- DoctorService.getAllDoctors() | 17ms | result: [DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)]
+2026-05-16 14:28:05.197 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][2e2357e9] <-- DoctorController.getAllDoctors() | 17ms | result: <200 OK OK,[DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)],[]>
+2026-05-16 14:28:05.242 INFO  [doctor-service] [traceId=d7d60949] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][d7d60949] --> DoctorController.getDoctorById(..) | args: [1]
+2026-05-16 14:28:05.242 INFO  [doctor-service] [traceId=d7d60949] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][d7d60949] --> DoctorService.getDoctorById(..) | args: [1]
+2026-05-16 14:28:05.242 INFO  [doctor-service] [traceId=d7d60949] c.m.doctor.service.DoctorService - Fetching doctor with id: 1
+2026-05-16 14:28:05.250 INFO  [doctor-service] [traceId=d7d60949] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][d7d60949] <-- DoctorService.getDoctorById(..) | 8ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:28:05.250 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][d7d60949] <-- DoctorController.getDoctorById(..) | 8ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:28:09.387 INFO  [doctor-service] [traceId=07f5103e] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][07f5103e] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:28:09.388 INFO  [doctor-service] [traceId=07f5103e] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][07f5103e] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:28:09.398 INFO  [doctor-service] [traceId=07f5103e] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][07f5103e] <-- DoctorService.getDoctorByEmail(..) | 10ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:28:09.398 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][07f5103e] <-- DoctorController.getDoctorByEmail(..) | 11ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:28:19.918 INFO  [doctor-service] [traceId=4de0663c] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][4de0663c] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:28:19.919 INFO  [doctor-service] [traceId=4de0663c] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][4de0663c] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:28:19.929 INFO  [doctor-service] [traceId=4de0663c] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][4de0663c] <-- DoctorService.getDoctorByEmail(..) | 10ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:28:19.930 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][4de0663c] <-- DoctorController.getDoctorByEmail(..) | 12ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:28:29.877 INFO  [doctor-service] [traceId=bc9abe80] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][bc9abe80] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:28:29.877 INFO  [doctor-service] [traceId=bc9abe80] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][bc9abe80] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:28:29.885 INFO  [doctor-service] [traceId=bc9abe80] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][bc9abe80] <-- DoctorService.getDoctorByEmail(..) | 8ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:28:29.886 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][bc9abe80] <-- DoctorController.getDoctorByEmail(..) | 9ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:28:39.987 INFO  [doctor-service] [traceId=9c7191d9] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][9c7191d9] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:28:40.216 INFO  [doctor-service] [traceId=9c7191d9] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][9c7191d9] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:28:40.374 INFO  [doctor-service] [traceId=9c7191d9] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][9c7191d9] <-- DoctorService.getDoctorByEmail(..) | 158ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:28:40.374 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][9c7191d9] <-- DoctorController.getDoctorByEmail(..) | 387ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:28:49.869 INFO  [doctor-service] [traceId=82a9557e] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][82a9557e] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:28:49.869 INFO  [doctor-service] [traceId=82a9557e] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][82a9557e] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:28:49.892 INFO  [doctor-service] [traceId=82a9557e] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][82a9557e] <-- DoctorService.getDoctorByEmail(..) | 23ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:28:49.892 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][82a9557e] <-- DoctorController.getDoctorByEmail(..) | 23ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:29:02.091 INFO  [doctor-service] [traceId=b60c4656] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][b60c4656] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:29:02.091 INFO  [doctor-service] [traceId=b60c4656] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][b60c4656] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:29:02.096 INFO  [doctor-service] [traceId=b60c4656] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][b60c4656] <-- DoctorService.getDoctorByEmail(..) | 5ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:29:02.096 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][b60c4656] <-- DoctorController.getDoctorByEmail(..) | 5ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:29:09.852 INFO  [doctor-service] [traceId=b4c40e88] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][b4c40e88] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:29:09.867 INFO  [doctor-service] [traceId=b4c40e88] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][b4c40e88] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:29:09.872 INFO  [doctor-service] [traceId=b4c40e88] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][b4c40e88] <-- DoctorService.getDoctorByEmail(..) | 5ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:29:09.872 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][b4c40e88] <-- DoctorController.getDoctorByEmail(..) | 20ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:29:19.865 INFO  [doctor-service] [traceId=5fd86beb] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][5fd86beb] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:29:19.866 INFO  [doctor-service] [traceId=5fd86beb] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][5fd86beb] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:29:19.871 INFO  [doctor-service] [traceId=5fd86beb] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][5fd86beb] <-- DoctorService.getDoctorByEmail(..) | 5ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:29:19.872 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][5fd86beb] <-- DoctorController.getDoctorByEmail(..) | 7ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:29:55.876 INFO  [doctor-service] [traceId=06c2ee00] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][06c2ee00] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:29:55.876 INFO  [doctor-service] [traceId=06c2ee00] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][06c2ee00] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:29:55.884 INFO  [doctor-service] [traceId=06c2ee00] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][06c2ee00] <-- DoctorService.getDoctorByEmail(..) | 8ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:29:55.885 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][06c2ee00] <-- DoctorController.getDoctorByEmail(..) | 9ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:30:37.272 INFO  [doctor-service] [traceId=b85fd4a2] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][b85fd4a2] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:30:37.273 INFO  [doctor-service] [traceId=b85fd4a2] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][b85fd4a2] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:30:37.288 INFO  [doctor-service] [traceId=b85fd4a2] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][b85fd4a2] <-- DoctorService.getDoctorByEmail(..) | 15ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:30:37.288 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][b85fd4a2] <-- DoctorController.getDoctorByEmail(..) | 16ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:30:39.337 INFO  [doctor-service] [traceId=62308307] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][62308307] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:30:39.338 INFO  [doctor-service] [traceId=62308307] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][62308307] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:30:39.346 INFO  [doctor-service] [traceId=62308307] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][62308307] <-- DoctorService.getDoctorByEmail(..) | 8ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:30:39.346 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][62308307] <-- DoctorController.getDoctorByEmail(..) | 9ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:30:49.332 INFO  [doctor-service] [traceId=dddb3a13] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][dddb3a13] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:30:49.334 INFO  [doctor-service] [traceId=dddb3a13] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][dddb3a13] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:30:49.344 INFO  [doctor-service] [traceId=dddb3a13] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][dddb3a13] <-- DoctorService.getDoctorByEmail(..) | 10ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:30:49.344 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][dddb3a13] <-- DoctorController.getDoctorByEmail(..) | 12ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:30:59.596 INFO  [doctor-service] [traceId=cecaaabc] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][cecaaabc] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:30:59.597 INFO  [doctor-service] [traceId=cecaaabc] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][cecaaabc] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:30:59.610 INFO  [doctor-service] [traceId=cecaaabc] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][cecaaabc] <-- DoctorService.getDoctorByEmail(..) | 13ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:30:59.610 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][cecaaabc] <-- DoctorController.getDoctorByEmail(..) | 14ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:31:05.177 INFO  [doctor-service] [traceId=6fd1cf79] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][6fd1cf79] --> DoctorController.getAllDoctors() | args: []
+2026-05-16 14:31:05.178 INFO  [doctor-service] [traceId=6fd1cf79] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][6fd1cf79] --> DoctorService.getAllDoctors() | args: []
+2026-05-16 14:31:05.178 INFO  [doctor-service] [traceId=6fd1cf79] c.m.doctor.service.DoctorService - Fetching all doctors
+2026-05-16 14:31:05.238 INFO  [doctor-service] [traceId=6fd1cf79] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][6fd1cf79] <-- DoctorService.getAllDoctors() | 60ms | result: [DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)]
+2026-05-16 14:31:05.240 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][6fd1cf79] <-- DoctorController.getAllDoctors() | 63ms | result: <200 OK OK,[DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)],[]>
+2026-05-16 14:31:05.269 INFO  [doctor-service] [traceId=8b6d4977] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][8b6d4977] --> DoctorController.getAllDoctors() | args: []
+2026-05-16 14:31:05.270 INFO  [doctor-service] [traceId=8b6d4977] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][8b6d4977] --> DoctorService.getAllDoctors() | args: []
+2026-05-16 14:31:05.270 INFO  [doctor-service] [traceId=8b6d4977] c.m.doctor.service.DoctorService - Fetching all doctors
+2026-05-16 14:31:05.296 INFO  [doctor-service] [traceId=8b6d4977] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][8b6d4977] <-- DoctorService.getAllDoctors() | 26ms | result: [DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)]
+2026-05-16 14:31:05.300 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][8b6d4977] <-- DoctorController.getAllDoctors() | 31ms | result: <200 OK OK,[DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=2, name=Murthy, email=murthy@meditrack.in, phone=9087654321, specialization=GENERAL_PHYSICIAN, experience=18, qualification=MBBS,MD, consultationFee=500.0, hospital=Medicare Hospital, available=true), DoctorResponse(id=3, name=Milana, email=milana@meditrack.in, phone=9876543210, specialization=CARDIOLOGIST, experience=15, qualification=MBBS,MD,Surgeon, consultationFee=1000.0, hospital=Medicare Hospital, available=true)],[]>
+2026-05-16 14:31:05.686 INFO  [doctor-service] [traceId=1984b96d] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][1984b96d] --> DoctorController.getDoctorById(..) | args: [1]
+2026-05-16 14:31:05.686 INFO  [doctor-service] [traceId=1984b96d] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][1984b96d] --> DoctorService.getDoctorById(..) | args: [1]
+2026-05-16 14:31:05.694 INFO  [doctor-service] [traceId=1984b96d] c.m.doctor.service.DoctorService - Fetching doctor with id: 1
+2026-05-16 14:31:05.697 INFO  [doctor-service] [traceId=1984b96d] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][1984b96d] <-- DoctorService.getDoctorById(..) | 11ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:31:05.697 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][1984b96d] <-- DoctorController.getDoctorById(..) | 11ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:31:05.900 INFO  [doctor-service] [traceId=ab3a6d5e] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][ab3a6d5e] --> DoctorController.getDoctorById(..) | args: [1]
+2026-05-16 14:31:05.900 INFO  [doctor-service] [traceId=ab3a6d5e] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][ab3a6d5e] --> DoctorService.getDoctorById(..) | args: [1]
+2026-05-16 14:31:05.900 INFO  [doctor-service] [traceId=ab3a6d5e] c.m.doctor.service.DoctorService - Fetching doctor with id: 1
+2026-05-16 14:31:05.908 INFO  [doctor-service] [traceId=ab3a6d5e] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][ab3a6d5e] <-- DoctorService.getDoctorById(..) | 8ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:31:05.908 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][ab3a6d5e] <-- DoctorController.getDoctorById(..) | 8ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:31:09.343 INFO  [doctor-service] [traceId=caa29feb] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][caa29feb] --> DoctorController.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:31:09.344 INFO  [doctor-service] [traceId=caa29feb] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][caa29feb] --> DoctorService.getDoctorByEmail(..) | args: [ravikumar@meditrack.in]
+2026-05-16 14:31:09.353 INFO  [doctor-service] [traceId=caa29feb] c.meditrack.doctor.aop.LoggingAspect - [SERVICE][caa29feb] <-- DoctorService.getDoctorByEmail(..) | 9ms | result: DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true)
+2026-05-16 14:31:09.354 INFO  [doctor-service] [traceId=none] c.meditrack.doctor.aop.LoggingAspect - [CONTROLLER][caa29feb] <-- DoctorController.getDoctorByEmail(..) | 11ms | result: <200 OK OK,DoctorResponse(id=1, name=Ravi Kumar, email=ravikumar@meditrack.in, phone=9740144166, specialization=ORTHOPEDIC, experience=20, qualification=MBBS,MD,Surgeon, consultationFee=800.0, hospital=Medicare Hospital, available=true),[]>
+2026-05-16 14:41:41.114 INFO  [doctor-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-16 14:41:41.194 INFO  [doctor-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DOCTOR-SERVICE with eureka with status DOWN
+2026-05-16 14:41:41.317 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-16 14:41:41.337 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8083"]
+2026-05-16 14:41:41.366 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 14:41:41.376 INFO  [doctor-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-16 14:41:41.379 INFO  [doctor-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8083"]
+2026-05-16 14:41:41.367 WARN  [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 14:41:41.395 WARN  [doctor-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-16 14:41:41.414 INFO  [doctor-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16 14:41:41.451 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-16 14:41:41.467 INFO  [doctor-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-16 14:41:44.530 WARN  [doctor-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-16 14:41:44.530 ERROR [doctor-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_DOCTOR-SERVICE/DESKTOP-TE08QKM:doctor-service:8083 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)

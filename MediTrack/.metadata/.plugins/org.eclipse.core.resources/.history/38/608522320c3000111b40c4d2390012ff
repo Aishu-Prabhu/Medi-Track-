@@ -1,0 +1,5 @@
+package com.meditrack.doctor.service;
+
+public class DoctorService {
+
+}

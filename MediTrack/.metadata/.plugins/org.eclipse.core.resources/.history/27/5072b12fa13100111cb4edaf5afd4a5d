@@ -1,0 +1,5 @@
+package com.meditrack.prescription.repsitory;
+
+public interface PrescriptionRepository {
+
+}

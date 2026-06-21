@@ -1,0 +1,238 @@
+package com.meditrack.patient.controller;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.meditrack.patient.dto.PatientRequest;
+import com.meditrack.patient.dto.PatientResponse;
+import com.meditrack.patient.entity.Patient;
+import com.meditrack.patient.service.PatientService;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import org.mockito.Mockito;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+
+import org.springframework.boot.test.mock.mockito.MockBean;
+
+import org.springframework.http.MediaType;
+
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+
+import org.springframework.test.web.servlet.MockMvc;
+
+import java.util.List;
+
+import static org.mockito.ArgumentMatchers.*;
+import static org.mockito.Mockito.when;
+
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+@WebMvcTest(PatientController.class)
+class PatientControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @MockBean
+    private PatientService patientService;
+
+    @Autowired
+    private ObjectMapper objectMapper;
+
+    private Patient patient;
+
+    @BeforeEach
+    void setUp() {
+
+        patient = new Patient();
+
+        patient.setId(1L);
+        patient.setName("Aishu");
+        patient.setEmail("aishu@gmail.com");
+        patient.setPhone("9876543210");
+        patient.setAge(22);
+        patient.setBloodGroup("O+");
+        patient.setAddress("Bangalore");
+        patient.setMedicalHistory("None");
+        patient.setRole("PATIENT");
+    }
+
+    @Test
+    void testAddPatient() throws Exception {
+
+        when(patientService.addPatient(any(Patient.class)))
+                .thenReturn(patient);
+
+        mockMvc.perform(
+                post("/patients/add")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(patient))
+        )
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.name").value("Aishu"));
+    }
+
+    @Test
+    void testGetPatientById() throws Exception {
+
+        when(patientService.getPatientById(1L))
+                .thenReturn(patient);
+
+        mockMvc.perform(
+                get("/patients/id/1")
+        )
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.email")
+                .value("aishu@gmail.com"));
+    }
+
+    @Test
+    void testGetAllPatients() throws Exception {
+
+        when(patientService.getAllPatients())
+                .thenReturn(List.of(patient));
+
+        mockMvc.perform(
+                get("/patients/all")
+        )
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$[0].name")
+                .value("Aishu"));
+    }
+
+    @Test
+    void testUpdatePatient() throws Exception {
+
+        when(patientService.updatePatient(
+                eq(1L),
+                any(Patient.class))
+        ).thenReturn(patient);
+
+        mockMvc.perform(
+                put("/patients/update/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(patient))
+        )
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.name")
+                .value("Aishu"));
+    }
+
+    @Test
+    void testDeletePatient() throws Exception {
+
+        when(patientService.deletePatient(1L))
+                .thenReturn(
+                        "Patient deleted successfully with id: 1"
+                );
+
+        mockMvc.perform(
+                delete("/patients/delete/1")
+        )
+        .andExpect(status().isOk())
+        .andExpect(content().string(
+                "Patient deleted successfully with id: 1"
+        ));
+    }
+
+    @Test
+    void testUpdateMedicalHistory() throws Exception {
+
+        when(patientService.updateMedicalHistory(
+                eq(1L),
+                anyString())
+        ).thenReturn(patient);
+
+        mockMvc.perform(
+                put("/patients/update-history/1")
+                        .param("history", "Diabetes")
+        )
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.name")
+                .value("Aishu"));
+    }
+
+    @Test
+    void testGetPatientByEmail() throws Exception {
+
+        PatientResponse response =
+                new PatientResponse();
+
+        response.setId(1L);
+        response.setName("Aishu");
+        response.setEmail("aishu@gmail.com");
+
+        when(patientService.getPatientByEmail(
+                "aishu@gmail.com")
+        ).thenReturn(response);
+
+        mockMvc.perform(
+                get("/patients/email/aishu@gmail.com")
+        )
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.email")
+                .value("aishu@gmail.com"));
+    }
+
+    @Test
+    void testGetMyProfile() throws Exception {
+
+        PatientResponse response =
+                new PatientResponse();
+
+        response.setId(1L);
+        response.setName("Aishu");
+        response.setEmail("aishu@gmail.com");
+
+        when(patientService.getPatientByEmail(
+                "aishu@gmail.com")
+        ).thenReturn(response);
+
+        Authentication auth =
+                new UsernamePasswordAuthenticationToken(
+                        "aishu@gmail.com",
+                        null
+                );
+
+        mockMvc.perform(
+                get("/patients/me")
+                        .principal(auth)
+        )
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.email")
+                .value("aishu@gmail.com"));
+    }
+
+    @Test
+    void testCreateProfile() throws Exception {
+
+        PatientRequest request =
+                new PatientRequest();
+
+        request.setName("Aishu");
+        request.setEmail("aishu@gmail.com");
+        request.setPhone("9876543210");
+        request.setAge(22);
+        request.setBloodGroup("O+");
+        request.setAddress("Bangalore");
+        request.setRole("PATIENT");
+
+        when(patientService.createProfile(
+                any(PatientRequest.class))
+        ).thenReturn(patient);
+
+        mockMvc.perform(
+                post("/patients/register-profile")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(request))
+        )
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.name")
+                .value("Aishu"));
+    }
+}

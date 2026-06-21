@@ -1,0 +1,5 @@
+package com.meditrack.doctor.repository;
+
+public class DoctorRepository {
+
+}

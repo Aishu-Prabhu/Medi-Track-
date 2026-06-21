@@ -1,0 +1,472 @@
+package com.meditrack.appointment.service;
+
+import com.meditrack.appointment.client.AuthClient;
+import com.meditrack.appointment.client.DoctorClient;
+import com.meditrack.appointment.client.PatientClient;
+import com.meditrack.appointment.client.PaymentClient;
+import com.meditrack.appointment.dto.*;
+import com.meditrack.appointment.entity.Appointment;
+import com.meditrack.appointment.entity.AppointmentStatus;
+import com.meditrack.appointment.event.NotificationEvent;
+import com.meditrack.appointment.exception.AccessDeniedException;
+import com.meditrack.appointment.exception.BadRequestException;
+import com.meditrack.appointment.exception.ResourceNotFoundException;
+import com.meditrack.appointment.repository.AppointmentRepository;
+import com.meditrack.appointment.security.SecurityUtil;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockedStatic;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+@ExtendWith(MockitoExtension.class)
+class AppointmentServiceTest {
+
+    @InjectMocks
+    private AppointmentService service;
+
+    @Mock
+    private AppointmentRepository appointmentRepository;
+
+    @Mock
+    private DoctorClient doctorClient;
+
+    @Mock
+    private SlotService slotService;
+
+    @Mock
+    private AuthClient authClient;
+
+    @Mock
+    private PatientClient patientClient;
+
+    @Mock
+    private PaymentClient paymentClient;
+
+    @Mock
+    private KafkaProducerService kafkaProducerService;
+
+    private Appointment appointment;
+
+    @BeforeEach
+    void setup() {
+
+        appointment = new Appointment();
+
+        appointment.setId(1L);
+        appointment.setPatientId(10L);
+        appointment.setPatientName("Aishu");
+
+        appointment.setDoctorId(2L);
+        appointment.setDoctorName("Raj");
+
+        appointment.setAppointmentDate(LocalDate.now());
+        appointment.setSlot("09:00 AM");
+
+        appointment.setStatus(AppointmentStatus.CONFIRMED);
+    }
+
+    // BOOK APPOINTMENT
+
+    @Test
+    void testBookRequestNull() {
+
+        assertThrows(
+                BadRequestException.class,
+                () -> service.bookAppointment(null)
+        );
+    }
+
+    @Test
+    void testBookAppointmentSuccess() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getLoggedInUserEmail)
+                    .thenReturn("test@gmail.com");
+
+            UserResponse user = new UserResponse();
+            user.setId(10L);
+
+            PatientResponse patient = new PatientResponse();
+            patient.setId(10L);
+            patient.setName("Aishu");
+
+            DoctorResponse doctor = new DoctorResponse();
+            doctor.setId(2L);
+            doctor.setName("Raj");
+            doctor.setSpecialization("Cardio");
+            doctor.setConsultationFee(500.0);
+
+            when(authClient.getUserByEmail("test@gmail.com"))
+                    .thenReturn(user);
+
+            when(patientClient.getPatientByEmail("test@gmail.com"))
+                    .thenReturn(patient);
+
+            when(doctorClient.getDoctorById(2L))
+                    .thenReturn(doctor);
+
+            when(appointmentRepository.save(any(Appointment.class)))
+                    .thenReturn(appointment);
+
+            AppointmentRequest req = new AppointmentRequest();
+
+            req.setDoctorId(2L);
+            req.setAppointmentDate(LocalDate.now());
+            req.setSlot("09:00 AM");
+
+            Appointment result =
+                    service.bookAppointment(req);
+
+            assertNotNull(result);
+
+            verify(kafkaProducerService, times(2))
+                    .sendNotification(any(NotificationEvent.class));
+        }
+    }
+
+    @Test
+    void testBookDoctorNotFound() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getLoggedInUserEmail)
+                    .thenReturn("test@gmail.com");
+
+            UserResponse user = new UserResponse();
+            user.setId(10L);
+
+            PatientResponse patient = new PatientResponse();
+            patient.setId(10L);
+
+            when(authClient.getUserByEmail("test@gmail.com"))
+                    .thenReturn(user);
+
+            when(patientClient.getPatientByEmail("test@gmail.com"))
+                    .thenReturn(patient);
+
+            when(doctorClient.getDoctorById(2L))
+                    .thenThrow(new RuntimeException());
+
+            AppointmentRequest req = new AppointmentRequest();
+
+            req.setDoctorId(2L);
+            req.setAppointmentDate(LocalDate.now());
+            req.setSlot("09:00 AM");
+
+            assertThrows(
+                    ResourceNotFoundException.class,
+                    () -> service.bookAppointment(req)
+            );
+        }
+    }
+
+    // GET APPOINTMENT BY ID
+
+    @Test
+    void testGetAppointmentAdmin() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getLoggedInUserRole)
+                    .thenReturn("ROLE_ADMIN");
+
+            mocked.when(SecurityUtil::getLoggedInUserEmail)
+                    .thenReturn("admin@gmail.com");
+
+            when(appointmentRepository.findById(1L))
+                    .thenReturn(Optional.of(appointment));
+
+            Appointment result =
+                    service.getAppointmentById(1L);
+
+            assertEquals(1L, result.getId());
+        }
+    }
+
+    @Test
+    void testGetAppointmentPatientDenied() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getLoggedInUserRole)
+                    .thenReturn("ROLE_PATIENT");
+
+            mocked.when(SecurityUtil::getLoggedInUserEmail)
+                    .thenReturn("test@gmail.com");
+
+            when(appointmentRepository.findById(1L))
+                    .thenReturn(Optional.of(appointment));
+
+            PatientResponse patient = new PatientResponse();
+            patient.setId(99L);
+
+            when(patientClient.getPatientByEmail("test@gmail.com"))
+                    .thenReturn(patient);
+
+            assertThrows(
+                    AccessDeniedException.class,
+                    () -> service.getAppointmentById(1L)
+            );
+        }
+    }
+
+    // GET ALL
+
+    @Test
+    void testGetAllAdmin() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getLoggedInUserRole)
+                    .thenReturn("ROLE_ADMIN");
+
+            when(appointmentRepository.findAll())
+                    .thenReturn(List.of(appointment));
+
+            List<Appointment> list =
+                    service.getAllAppointments();
+
+            assertEquals(1, list.size());
+        }
+    }
+
+    @Test
+    void testGetAllDenied() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getLoggedInUserRole)
+                    .thenReturn("ROLE_PATIENT");
+
+            assertThrows(
+                    AccessDeniedException.class,
+                    () -> service.getAllAppointments()
+            );
+        }
+    }
+
+    // CANCEL APPOINTMENT
+
+    @Test
+    void testCancelSuccess() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getLoggedInUserRole)
+                    .thenReturn("ROLE_ADMIN");
+
+            mocked.when(SecurityUtil::getLoggedInUserEmail)
+                    .thenReturn("admin@gmail.com");
+
+            when(appointmentRepository.findById(1L))
+                    .thenReturn(Optional.of(appointment));
+
+            when(appointmentRepository.save(any(Appointment.class)))
+                    .thenReturn(appointment);
+
+            Appointment result =
+                    service.cancelAppointment(1L, "Leave");
+
+            assertEquals(
+                    AppointmentStatus.CANCELLED,
+                    result.getStatus()
+            );
+
+            verify(kafkaProducerService, times(2))
+                    .sendNotification(any(NotificationEvent.class));
+        }
+    }
+
+    @Test
+    void testCancelAlreadyCancelled() {
+
+        appointment.setStatus(AppointmentStatus.CANCELLED);
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getLoggedInUserRole)
+                    .thenReturn("ROLE_ADMIN");
+
+            mocked.when(SecurityUtil::getLoggedInUserEmail)
+                    .thenReturn("admin@gmail.com");
+
+            when(appointmentRepository.findById(1L))
+                    .thenReturn(Optional.of(appointment));
+
+            assertThrows(
+                    BadRequestException.class,
+                    () -> service.cancelAppointment(1L, "x")
+            );
+        }
+    }
+
+    @Test
+    void testCancelCompleted() {
+
+        appointment.setStatus(AppointmentStatus.COMPLETED);
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getLoggedInUserRole)
+                    .thenReturn("ROLE_ADMIN");
+
+            mocked.when(SecurityUtil::getLoggedInUserEmail)
+                    .thenReturn("admin@gmail.com");
+
+            when(appointmentRepository.findById(1L))
+                    .thenReturn(Optional.of(appointment));
+
+            assertThrows(
+                    BadRequestException.class,
+                    () -> service.cancelAppointment(1L, "x")
+            );
+        }
+    }
+
+    // COMPLETE APPOINTMENT
+
+    @Test
+    void testCompleteSuccess() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getLoggedInUserRole)
+                    .thenReturn("ROLE_ADMIN");
+
+            mocked.when(SecurityUtil::getLoggedInUserEmail)
+                    .thenReturn("admin@gmail.com");
+
+            when(appointmentRepository.findById(1L))
+                    .thenReturn(Optional.of(appointment));
+
+            when(appointmentRepository.save(any(Appointment.class)))
+                    .thenReturn(appointment);
+
+            Appointment result =
+                    service.completeAppointment(1L);
+
+            assertEquals(
+                    AppointmentStatus.COMPLETED,
+                    result.getStatus()
+            );
+
+            verify(kafkaProducerService, times(1))
+                    .sendNotification(any(NotificationEvent.class));
+        }
+    }
+
+    @Test
+    void testCompleteCancelled() {
+
+        appointment.setStatus(AppointmentStatus.CANCELLED);
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getLoggedInUserRole)
+                    .thenReturn("ROLE_ADMIN");
+
+            mocked.when(SecurityUtil::getLoggedInUserEmail)
+                    .thenReturn("admin@gmail.com");
+
+            when(appointmentRepository.findById(1L))
+                    .thenReturn(Optional.of(appointment));
+
+            assertThrows(
+                    BadRequestException.class,
+                    () -> service.completeAppointment(1L)
+            );
+        }
+    }
+
+    // PAYMENT SUCCESS
+
+    @Test
+    void testPaymentSuccess() {
+
+        appointment.setStatus(AppointmentStatus.PENDING_PAYMENT);
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getLoggedInUserRole)
+                    .thenReturn("ROLE_ADMIN");
+
+            mocked.when(SecurityUtil::getLoggedInUserEmail)
+                    .thenReturn("admin@gmail.com");
+
+            when(appointmentRepository.findById(1L))
+                    .thenReturn(Optional.of(appointment));
+
+            when(appointmentRepository.save(any(Appointment.class)))
+                    .thenReturn(appointment);
+
+            Appointment result =
+                    service.markPaymentSuccess(1L);
+
+            assertEquals(
+                    AppointmentStatus.CONFIRMED,
+                    result.getStatus()
+            );
+
+            verify(kafkaProducerService, times(2))
+                    .sendNotification(any(NotificationEvent.class));
+        }
+    }
+
+    // REFUND COMPLETED
+
+    @Test
+    void testRefundCompleted() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getLoggedInUserRole)
+                    .thenReturn("ROLE_ADMIN");
+
+            mocked.when(SecurityUtil::getLoggedInUserEmail)
+                    .thenReturn("admin@gmail.com");
+
+            when(appointmentRepository.findById(1L))
+                    .thenReturn(Optional.of(appointment));
+
+            when(appointmentRepository.save(any(Appointment.class)))
+                    .thenReturn(appointment);
+
+            Appointment result =
+                    service.markRefundCompleted(1L);
+
+            assertEquals(
+                    "REFUNDED",
+                    result.getRefundStatus()
+            );
+
+            verify(kafkaProducerService, times(1))
+                    .sendNotification(any(NotificationEvent.class));
+        }
+    }
+}

@@ -1,0 +1,5 @@
+package com.meditrack.patient.excpetion;
+
+public class GlobalExceptionHandlerTest {
+
+}

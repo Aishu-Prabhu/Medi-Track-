@@ -1,0 +1,119 @@
+package com.meditrack.patient.entity;
+
+import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
+
+@Entity
+@Table(name = "patients")
+public class Patient {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @NotBlank(message = "Name cannot be empty")
+    @Size(min = 2, max = 50, message = "Name must be between 2 and 50 characters")
+    private String name;
+
+    @NotBlank(message = "Email cannot be empty")
+    @Email(message = "Please enter a valid email address")
+    private String email;
+
+    @NotBlank(message = "Phone cannot be empty")
+    @Pattern(regexp = "^[0-9]{10}$",
+             message = "Phone must be exactly 10 digits")
+    private String phone;
+
+    @Min(value = 1, message = "Age must be greater than 0")
+    @Max(value = 120, message = "Age cannot be more than 120")
+    private int age;
+
+    @NotBlank(message = "Blood group cannot be empty")
+    @Pattern(regexp = "A\\+|A-|B\\+|B-|O\\+|O-|AB\\+|AB-",
+             message = "Blood group must be A+, A-, B+, B-, O+, O-, AB+ or AB-")
+    private String bloodGroup;
+
+    @NotBlank(message = "Address cannot be empty")
+    private String address;
+
+    private String medicalHistory;
+
+    private String role = "PATIENT";
+
+    public Patient() {}
+
+    public Patient(Long id, String name, String email, String phone,
+                   int age, String bloodGroup, String address,
+                   String medicalHistory, String role) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.age = age;
+        this.bloodGroup = bloodGroup;
+        this.address = address;
+        this.medicalHistory = medicalHistory;
+        this.role = role;
+    }
+
+    public Long getId() { 
+    	return id; 
+    	}
+    public void setId(Long id) { 
+    	this.id = id; 
+    	}
+
+    public String getName() { 
+    	return name;
+    	}
+    public void setName(String name) { 
+    	this.name = name;
+    	}
+
+    public String getEmail() { return email; }
+    public void setEmail(String email) { 
+    	this.email = email; 
+    	}
+
+    public String getPhone() { 
+    	return phone; 
+    	}
+    public void setPhone(String phone) { 
+    	this.phone = phone; 
+    	}
+
+    public int getAge() { 
+    	return age;
+    	}
+    public void setAge(int age) { 
+    	this.age = age; 
+    	}
+
+    public String getBloodGroup() { 
+    	return bloodGroup; 
+    	}
+    public void setBloodGroup(String bloodGroup) { 
+    	this.bloodGroup = bloodGroup; 
+    	}
+
+    public String getAddress() { 
+    	return address; 
+    	}
+    public void setAddress(String address) {
+    	this.address = address; 
+    	}
+
+    public String getMedicalHistory() {
+    	return medicalHistory; 
+    	}
+    public void setMedicalHistory(String medicalHistory) {
+        this.medicalHistory = medicalHistory;
+        }
+
+    public String getRole() { 
+    	return role; 
+    	}
+    public void setRole(String role) { 
+    	this.role = role; 
+    	}
+}

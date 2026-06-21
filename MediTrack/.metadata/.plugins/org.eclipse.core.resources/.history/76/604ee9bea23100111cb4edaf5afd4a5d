@@ -1,0 +1,119 @@
+package com.meditrack.prescription.entity;
+
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import java.time.LocalDate;
+
+@Entity
+@Table(name = "prescriptions")
+public class Prescription {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @NotNull(message = "Appointment id is required")
+    private Long appointmentId;
+
+    @NotNull(message = "Patient id is required")
+    private Long patientId;
+
+    @NotNull(message = "Doctor id is required")
+    private Long doctorId;
+
+    private String patientName;
+    private String doctorName;
+
+    @NotBlank(message = "Diagnosis cannot be empty")
+    private String diagnosis;
+
+    @NotBlank(message = "Medicines cannot be empty")
+    private String medicines;
+
+    private String notes;
+
+    @NotBlank(message = "Follow up date cannot be empty")
+    private String followUpDate;
+
+    private LocalDate prescriptionDate = LocalDate.now();
+
+    public Prescription() {}
+
+    public Long getId() { 
+    	return id; 
+    	}
+    public void setId(Long id) {
+    	this.id = id; 
+    	}
+
+    public Long getAppointmentId() { 
+    	return appointmentId; 
+    	}
+    public void setAppointmentId(Long appointmentId) {
+        this.appointmentId = appointmentId;
+        }
+
+    public Long getPatientId() { 
+    	return patientId; 
+    	}
+    public void setPatientId(Long patientId) {
+        this.patientId = patientId; 
+        }
+
+    public Long getDoctorId() { 
+    	return doctorId; 
+    	}
+    public void setDoctorId(Long doctorId) {
+        this.doctorId = doctorId; 
+        }
+
+    public String getPatientName() { 
+    	return patientName; 
+    	}
+    public void setPatientName(String patientName) {
+        this.patientName = patientName; 
+        }
+
+    public String getDoctorName() { 
+    	return doctorName; 
+    	}
+    public void setDoctorName(String doctorName) {
+        this.doctorName = doctorName;
+        }
+
+    public String getDiagnosis() { 
+    	return diagnosis; 
+    	}
+    public void setDiagnosis(String diagnosis) {
+        this.diagnosis = diagnosis; 
+        }
+
+    public String getMedicines() {
+    	return medicines; 
+    	}
+    public void setMedicines(String medicines) {
+        this.medicines = medicines; 
+        }
+
+    public String getNotes() { 
+    	return notes; 
+    	}
+    public void setNotes(String notes) { 
+    	this.notes = notes; 
+    	}
+
+    public String getFollowUpDate() { 
+    	return followUpDate; 
+    	}
+    public void setFollowUpDate(String followUpDate) {
+        this.followUpDate = followUpDate; 
+        }
+
+    public LocalDate getPrescriptionDate() { 
+    	return prescriptionDate; 
+    	}
+    public void setPrescriptionDate(LocalDate prescriptionDate) {
+        this.prescriptionDate = prescriptionDate; 
+        }
+}

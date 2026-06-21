@@ -1,0 +1,5 @@
+package com.meditrack.prescription.entity;
+
+public class Prescription {
+
+}

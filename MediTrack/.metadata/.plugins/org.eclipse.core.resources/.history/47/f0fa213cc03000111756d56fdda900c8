@@ -1,0 +1,43 @@
+package com.meditrack.appointment.controller;
+
+import com.meditrack.appointment.entity.DoctorSlot;
+import com.meditrack.appointment.service.SlotService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDate;
+import java.util.List;
+
+@RestController
+@RequestMapping("/slots")
+public class SlotController {
+
+    @Autowired
+    private SlotService slotService;
+
+    @GetMapping("/doctor/{doctorId}")
+    public ResponseEntity<List<DoctorSlot>> getAllSlots(
+            @PathVariable Long doctorId,
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+            LocalDate date) {
+        return ResponseEntity.ok(slotService.getSlots(doctorId, date));
+    }
+
+    @GetMapping("/doctor/{doctorId}/available")
+    public ResponseEntity<List<DoctorSlot>> getAvailableSlots(
+            @PathVariable Long doctorId,
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+            LocalDate date) {
+        return ResponseEntity.ok(slotService.getAvailableSlots(doctorId, date));
+    }
+
+    @PostMapping("/generate/{doctorId}")
+    public ResponseEntity<List<DoctorSlot>> generateSlots(
+            @PathVariable Long doctorId,
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+            LocalDate date) {
+        return ResponseEntity.ok(slotService.generateSlots(doctorId, date));
+    }
+}

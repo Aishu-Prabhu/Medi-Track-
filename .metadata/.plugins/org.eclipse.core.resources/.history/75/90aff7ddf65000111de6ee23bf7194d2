@@ -1,0 +1,5 @@
+package com.meditrack.payment.gateway;
+
+public class RazorpayGatewayTest {
+
+}

@@ -1,0 +1,66 @@
+package com.meditrack.appointment.config;
+
+import com.meditrack.appointment.filter.JwtFilter;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.web.SecurityFilterChain;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.Mockito.*;
+
+class SecurityConfigTest {
+
+    private SecurityConfig securityConfig;
+
+    @BeforeEach
+    void setUp() {
+        securityConfig = new SecurityConfig();
+    }
+
+    @Test
+    void testJwtFilterBean() {
+
+        JwtFilter jwtFilter = securityConfig.jwtFilter();
+
+        assertNotNull(jwtFilter);
+    }
+
+    @Test
+    void testFilterChain() throws Exception {
+
+        HttpSecurity httpSecurity = mock(HttpSecurity.class, RETURNS_DEEP_STUBS);
+
+        // Mock all chained methods
+        when(httpSecurity
+                .csrf(any()))
+                .thenReturn(httpSecurity);
+
+        when(httpSecurity
+                .sessionManagement(any()))
+                .thenReturn(httpSecurity);
+
+        when(httpSecurity
+                .authorizeHttpRequests(any()))
+                .thenReturn(httpSecurity);
+
+        when(httpSecurity
+                .addFilterBefore(any(JwtFilter.class), any()))
+                .thenReturn(httpSecurity);
+
+        SecurityFilterChain mockChain = mock(SecurityFilterChain.class);
+
+        when(httpSecurity.build()).thenReturn(mockChain);
+
+        SecurityFilterChain result =
+                securityConfig.filterChain(httpSecurity);
+
+        assertNotNull(result);
+
+        verify(httpSecurity).csrf(any());
+        verify(httpSecurity).sessionManagement(any());
+        verify(httpSecurity).authorizeHttpRequests(any());
+        verify(httpSecurity).addFilterBefore(any(JwtFilter.class), any());
+        verify(httpSecurity).build();
+    }
+}

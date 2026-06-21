@@ -1,0 +1,474 @@
+2026-05-13 18:42:29.983 INFO  [patient-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-13 18:42:30.257 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplication - Starting PatientServiceApplication using Java 20.0.2 with PID 14276 (C:\Users\Aishu\C_MediTrack\MediTrack\patient-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\patient-service)
+2026-05-13 18:42:30.260 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-13 18:42:35.969 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-13 18:42:37.696 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1655 ms. Found 1 JPA repository interface.
+2026-05-13 18:42:39.388 INFO  [patient-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=21da2f07-95f3-3cc0-9b20-5633a7eb8d92
+2026-05-13 18:42:43.052 INFO  [patient-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-05-13 18:42:43.124 INFO  [patient-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-05-13 18:42:43.132 INFO  [patient-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-13 18:42:43.139 INFO  [patient-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-13 18:42:43.586 INFO  [patient-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-13 18:42:43.588 INFO  [patient-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12931 ms
+2026-05-13 18:42:45.062 INFO  [patient-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-13 18:42:45.316 INFO  [patient-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-13 18:42:45.435 INFO  [patient-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-13 18:42:46.814 INFO  [patient-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-13 18:42:46.943 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-13 18:42:48.225 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3794b7b1
+2026-05-13 18:42:48.234 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-13 18:42:48.682 INFO  [patient-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-13 18:42:53.423 INFO  [patient-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-13 18:42:54.505 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-13 18:42:59.214 WARN  [patient-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-13 18:43:00.730 WARN  [patient-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d0ebb179-946f-4002-8983-75f78ccac37f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-13 18:43:05.851 INFO  [patient-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-13 18:43:06.222 WARN  [patient-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-13 18:43:06.528 INFO  [patient-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-13 18:43:08.580 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-05-13 18:43:08.587 INFO  [patient-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-05-13 18:43:08.738 INFO  [patient-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-05-13 18:43:08.740 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2026-05-13 18:43:09.468 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplication - Started PatientServiceApplication in 51.556 seconds (process running for 56.648)
+2026-05-13 18:46:52.923 INFO  [patient-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-13 18:46:52.990 INFO  [patient-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-13 18:46:53.997 INFO  [patient-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 987 ms
+2026-05-13 18:46:54.979 INFO  [patient-service] [traceId=b8219dd0] c.m.patient.aop.LoggingAspect - [CONTROLLER][b8219dd0] --> PatientController.getAllPatients() | args: []
+2026-05-13 18:46:54.980 INFO  [patient-service] [traceId=b8219dd0] c.m.patient.aop.LoggingAspect - [SERVICE][b8219dd0] --> PatientService.getAllPatients() | args: []
+2026-05-13 18:46:54.985 INFO  [patient-service] [traceId=b8219dd0] c.m.patient.service.PatientService - Get all patients request by admin@gmail.com role=ROLE_SUPER_ADMIN
+2026-05-13 18:46:56.650 INFO  [patient-service] [traceId=b8219dd0] c.m.patient.service.PatientService - Total patients fetched = 1
+2026-05-13 18:46:56.651 INFO  [patient-service] [traceId=b8219dd0] c.m.patient.aop.LoggingAspect - [SERVICE][b8219dd0] <-- PatientService.getAllPatients() | 1671ms | result: [Patient(id=1, name=Aishwarya Prabhu, email=aishuprabhu2024@gmail.com, phone=7892839328, age=22, bloodGroup=B+, address=Mysore, medicalHistory=Right Hand Injured, role=PATIENT)]
+2026-05-13 18:46:56.684 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][b8219dd0] <-- PatientController.getAllPatients() | 1705ms | result: <200 OK OK,[Patient(id=1, name=Aishwarya Prabhu, email=aishuprabhu2024@gmail.com, phone=7892839328, age=22, bloodGroup=B+, address=Mysore, medicalHistory=Right Hand Injured, role=PATIENT)],[]>
+2026-05-13 18:46:57.243 INFO  [patient-service] [traceId=e692c998] c.m.patient.aop.LoggingAspect - [CONTROLLER][e692c998] --> PatientController.getAllPatients() | args: []
+2026-05-13 18:46:57.244 INFO  [patient-service] [traceId=e692c998] c.m.patient.aop.LoggingAspect - [SERVICE][e692c998] --> PatientService.getAllPatients() | args: []
+2026-05-13 18:46:57.244 INFO  [patient-service] [traceId=e692c998] c.m.patient.service.PatientService - Get all patients request by admin@gmail.com role=ROLE_SUPER_ADMIN
+2026-05-13 18:46:57.261 INFO  [patient-service] [traceId=e692c998] c.m.patient.service.PatientService - Total patients fetched = 1
+2026-05-13 18:46:57.261 INFO  [patient-service] [traceId=e692c998] c.m.patient.aop.LoggingAspect - [SERVICE][e692c998] <-- PatientService.getAllPatients() | 17ms | result: [Patient(id=1, name=Aishwarya Prabhu, email=aishuprabhu2024@gmail.com, phone=7892839328, age=22, bloodGroup=B+, address=Mysore, medicalHistory=Right Hand Injured, role=PATIENT)]
+2026-05-13 18:46:57.262 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][e692c998] <-- PatientController.getAllPatients() | 19ms | result: <200 OK OK,[Patient(id=1, name=Aishwarya Prabhu, email=aishuprabhu2024@gmail.com, phone=7892839328, age=22, bloodGroup=B+, address=Mysore, medicalHistory=Right Hand Injured, role=PATIENT)],[]>
+2026-05-13 18:49:51.566 INFO  [patient-service] [traceId=5741e3bc] c.m.patient.aop.LoggingAspect - [CONTROLLER][5741e3bc] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:49:51.585 INFO  [patient-service] [traceId=5741e3bc] c.m.patient.aop.LoggingAspect - [SERVICE][5741e3bc] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:49:51.589 INFO  [patient-service] [traceId=5741e3bc] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:49:51.770 INFO  [patient-service] [traceId=c67858bd] c.m.patient.aop.LoggingAspect - [CONTROLLER][c67858bd] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:49:51.771 INFO  [patient-service] [traceId=c67858bd] c.m.patient.aop.LoggingAspect - [SERVICE][c67858bd] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:49:51.771 INFO  [patient-service] [traceId=c67858bd] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:49:52.025 INFO  [patient-service] [traceId=c67858bd] c.m.patient.aop.LoggingAspect - [SERVICE][c67858bd] <-- PatientService.getPatientByEmail(..) | 254ms | result: com.meditrack.patient.dto.PatientResponse@3bde4f4b
+2026-05-13 18:49:52.025 INFO  [patient-service] [traceId=5741e3bc] c.m.patient.aop.LoggingAspect - [SERVICE][5741e3bc] <-- PatientService.getPatientByEmail(..) | 440ms | result: com.meditrack.patient.dto.PatientResponse@7304f2e0
+2026-05-13 18:49:52.026 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][c67858bd] <-- PatientController.getPatientByEmail(..) | 256ms | result: com.meditrack.patient.dto.PatientResponse@3bde4f4b
+2026-05-13 18:49:52.026 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][5741e3bc] <-- PatientController.getMyProfile(..) | 467ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@7304f2e0,[]>
+2026-05-13 18:49:52.110 INFO  [patient-service] [traceId=48eeb958] c.m.patient.aop.LoggingAspect - [CONTROLLER][48eeb958] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:49:52.110 INFO  [patient-service] [traceId=48eeb958] c.m.patient.aop.LoggingAspect - [SERVICE][48eeb958] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:49:52.110 INFO  [patient-service] [traceId=48eeb958] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:49:52.119 INFO  [patient-service] [traceId=2f6ab08b] c.m.patient.aop.LoggingAspect - [CONTROLLER][2f6ab08b] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:49:52.119 INFO  [patient-service] [traceId=48eeb958] c.m.patient.aop.LoggingAspect - [SERVICE][48eeb958] <-- PatientService.getPatientByEmail(..) | 9ms | result: com.meditrack.patient.dto.PatientResponse@15cad30a
+2026-05-13 18:49:52.120 INFO  [patient-service] [traceId=2f6ab08b] c.m.patient.aop.LoggingAspect - [SERVICE][2f6ab08b] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:49:52.120 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][48eeb958] <-- PatientController.getMyProfile(..) | 11ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@15cad30a,[]>
+2026-05-13 18:49:52.120 INFO  [patient-service] [traceId=2f6ab08b] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:49:52.131 INFO  [patient-service] [traceId=2f6ab08b] c.m.patient.aop.LoggingAspect - [SERVICE][2f6ab08b] <-- PatientService.getPatientByEmail(..) | 11ms | result: com.meditrack.patient.dto.PatientResponse@15c78614
+2026-05-13 18:49:52.131 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][2f6ab08b] <-- PatientController.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@15c78614
+2026-05-13 18:49:52.368 INFO  [patient-service] [traceId=a881922b] c.m.patient.aop.LoggingAspect - [CONTROLLER][a881922b] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:49:52.369 INFO  [patient-service] [traceId=a881922b] c.m.patient.aop.LoggingAspect - [SERVICE][a881922b] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:49:52.369 INFO  [patient-service] [traceId=a881922b] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:49:52.378 INFO  [patient-service] [traceId=a881922b] c.m.patient.aop.LoggingAspect - [SERVICE][a881922b] <-- PatientService.getPatientByEmail(..) | 9ms | result: com.meditrack.patient.dto.PatientResponse@3ba6115a
+2026-05-13 18:49:52.379 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][a881922b] <-- PatientController.getPatientByEmail(..) | 11ms | result: com.meditrack.patient.dto.PatientResponse@3ba6115a
+2026-05-13 18:49:52.466 INFO  [patient-service] [traceId=f5b3a13e] c.m.patient.aop.LoggingAspect - [CONTROLLER][f5b3a13e] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:49:52.467 INFO  [patient-service] [traceId=f5b3a13e] c.m.patient.aop.LoggingAspect - [SERVICE][f5b3a13e] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:49:52.467 INFO  [patient-service] [traceId=f5b3a13e] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:49:52.478 INFO  [patient-service] [traceId=f5b3a13e] c.m.patient.aop.LoggingAspect - [SERVICE][f5b3a13e] <-- PatientService.getPatientByEmail(..) | 11ms | result: com.meditrack.patient.dto.PatientResponse@2acd1b4c
+2026-05-13 18:49:52.479 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][f5b3a13e] <-- PatientController.getPatientByEmail(..) | 13ms | result: com.meditrack.patient.dto.PatientResponse@2acd1b4c
+2026-05-13 18:50:00.948 INFO  [patient-service] [traceId=1b1a3475] c.m.patient.aop.LoggingAspect - [CONTROLLER][1b1a3475] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:00.948 INFO  [patient-service] [traceId=1b1a3475] c.m.patient.aop.LoggingAspect - [SERVICE][1b1a3475] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:00.949 INFO  [patient-service] [traceId=1b1a3475] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:50:00.966 INFO  [patient-service] [traceId=1b1a3475] c.m.patient.aop.LoggingAspect - [SERVICE][1b1a3475] <-- PatientService.getPatientByEmail(..) | 17ms | result: com.meditrack.patient.dto.PatientResponse@7534953c
+2026-05-13 18:50:00.967 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][1b1a3475] <-- PatientController.getPatientByEmail(..) | 19ms | result: com.meditrack.patient.dto.PatientResponse@7534953c
+2026-05-13 18:50:11.328 INFO  [patient-service] [traceId=ace45087] c.m.patient.aop.LoggingAspect - [CONTROLLER][ace45087] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:11.329 INFO  [patient-service] [traceId=ace45087] c.m.patient.aop.LoggingAspect - [SERVICE][ace45087] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:11.330 INFO  [patient-service] [traceId=ace45087] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:50:11.344 INFO  [patient-service] [traceId=ace45087] c.m.patient.aop.LoggingAspect - [SERVICE][ace45087] <-- PatientService.getPatientByEmail(..) | 15ms | result: com.meditrack.patient.dto.PatientResponse@741a7d91
+2026-05-13 18:50:11.344 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][ace45087] <-- PatientController.getPatientByEmail(..) | 16ms | result: com.meditrack.patient.dto.PatientResponse@741a7d91
+2026-05-13 18:50:21.362 INFO  [patient-service] [traceId=33399efc] c.m.patient.aop.LoggingAspect - [CONTROLLER][33399efc] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:21.364 INFO  [patient-service] [traceId=33399efc] c.m.patient.aop.LoggingAspect - [SERVICE][33399efc] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:21.364 INFO  [patient-service] [traceId=33399efc] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:50:21.379 INFO  [patient-service] [traceId=33399efc] c.m.patient.aop.LoggingAspect - [SERVICE][33399efc] <-- PatientService.getPatientByEmail(..) | 16ms | result: com.meditrack.patient.dto.PatientResponse@1412d265
+2026-05-13 18:50:21.379 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][33399efc] <-- PatientController.getPatientByEmail(..) | 17ms | result: com.meditrack.patient.dto.PatientResponse@1412d265
+2026-05-13 18:50:31.345 INFO  [patient-service] [traceId=eb9d8ba5] c.m.patient.aop.LoggingAspect - [CONTROLLER][eb9d8ba5] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:31.346 INFO  [patient-service] [traceId=eb9d8ba5] c.m.patient.aop.LoggingAspect - [SERVICE][eb9d8ba5] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:31.346 INFO  [patient-service] [traceId=eb9d8ba5] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:50:31.363 INFO  [patient-service] [traceId=eb9d8ba5] c.m.patient.aop.LoggingAspect - [SERVICE][eb9d8ba5] <-- PatientService.getPatientByEmail(..) | 17ms | result: com.meditrack.patient.dto.PatientResponse@41fa111
+2026-05-13 18:50:31.364 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][eb9d8ba5] <-- PatientController.getPatientByEmail(..) | 19ms | result: com.meditrack.patient.dto.PatientResponse@41fa111
+2026-05-13 18:50:41.339 INFO  [patient-service] [traceId=1a3023be] c.m.patient.aop.LoggingAspect - [CONTROLLER][1a3023be] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:41.340 INFO  [patient-service] [traceId=1a3023be] c.m.patient.aop.LoggingAspect - [SERVICE][1a3023be] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:41.340 INFO  [patient-service] [traceId=1a3023be] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:50:41.351 INFO  [patient-service] [traceId=1a3023be] c.m.patient.aop.LoggingAspect - [SERVICE][1a3023be] <-- PatientService.getPatientByEmail(..) | 11ms | result: com.meditrack.patient.dto.PatientResponse@1032c5e2
+2026-05-13 18:50:41.351 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][1a3023be] <-- PatientController.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@1032c5e2
+2026-05-13 18:50:46.548 INFO  [patient-service] [traceId=06a1d72a] c.m.patient.aop.LoggingAspect - [CONTROLLER][06a1d72a] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:50:46.550 INFO  [patient-service] [traceId=06a1d72a] c.m.patient.aop.LoggingAspect - [SERVICE][06a1d72a] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:46.550 INFO  [patient-service] [traceId=06a1d72a] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:50:46.561 INFO  [patient-service] [traceId=06a1d72a] c.m.patient.aop.LoggingAspect - [SERVICE][06a1d72a] <-- PatientService.getPatientByEmail(..) | 11ms | result: com.meditrack.patient.dto.PatientResponse@550d41e0
+2026-05-13 18:50:46.562 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][06a1d72a] <-- PatientController.getMyProfile(..) | 14ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@550d41e0,[]>
+2026-05-13 18:50:46.596 INFO  [patient-service] [traceId=075c069b] c.m.patient.aop.LoggingAspect - [CONTROLLER][075c069b] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:50:46.598 INFO  [patient-service] [traceId=075c069b] c.m.patient.aop.LoggingAspect - [SERVICE][075c069b] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:46.598 INFO  [patient-service] [traceId=075c069b] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:50:46.609 INFO  [patient-service] [traceId=075c069b] c.m.patient.aop.LoggingAspect - [SERVICE][075c069b] <-- PatientService.getPatientByEmail(..) | 11ms | result: com.meditrack.patient.dto.PatientResponse@79e13fe6
+2026-05-13 18:50:46.609 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][075c069b] <-- PatientController.getMyProfile(..) | 13ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@79e13fe6,[]>
+2026-05-13 18:50:50.953 INFO  [patient-service] [traceId=569927b6] c.m.patient.aop.LoggingAspect - [CONTROLLER][569927b6] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:50.953 INFO  [patient-service] [traceId=569927b6] c.m.patient.aop.LoggingAspect - [SERVICE][569927b6] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:50.953 INFO  [patient-service] [traceId=569927b6] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:50:50.969 INFO  [patient-service] [traceId=569927b6] c.m.patient.aop.LoggingAspect - [SERVICE][569927b6] <-- PatientService.getPatientByEmail(..) | 16ms | result: com.meditrack.patient.dto.PatientResponse@451fbac0
+2026-05-13 18:50:50.969 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][569927b6] <-- PatientController.getPatientByEmail(..) | 16ms | result: com.meditrack.patient.dto.PatientResponse@451fbac0
+2026-05-13 18:50:52.043 INFO  [patient-service] [traceId=6344cf0f] c.m.patient.aop.LoggingAspect - [CONTROLLER][6344cf0f] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:50:52.044 INFO  [patient-service] [traceId=6344cf0f] c.m.patient.aop.LoggingAspect - [SERVICE][6344cf0f] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:52.045 INFO  [patient-service] [traceId=6344cf0f] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:50:52.054 INFO  [patient-service] [traceId=6344cf0f] c.m.patient.aop.LoggingAspect - [SERVICE][6344cf0f] <-- PatientService.getPatientByEmail(..) | 10ms | result: com.meditrack.patient.dto.PatientResponse@78f914d2
+2026-05-13 18:50:52.054 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][6344cf0f] <-- PatientController.getMyProfile(..) | 11ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@78f914d2,[]>
+2026-05-13 18:50:52.079 INFO  [patient-service] [traceId=5abd6764] c.m.patient.aop.LoggingAspect - [CONTROLLER][5abd6764] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:50:52.080 INFO  [patient-service] [traceId=5abd6764] c.m.patient.aop.LoggingAspect - [SERVICE][5abd6764] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:52.080 INFO  [patient-service] [traceId=5abd6764] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:50:52.091 INFO  [patient-service] [traceId=5abd6764] c.m.patient.aop.LoggingAspect - [SERVICE][5abd6764] <-- PatientService.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@4ff16211
+2026-05-13 18:50:52.092 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][5abd6764] <-- PatientController.getMyProfile(..) | 13ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@4ff16211,[]>
+2026-05-13 18:50:55.720 INFO  [patient-service] [traceId=6e0494e2] c.m.patient.aop.LoggingAspect - [CONTROLLER][6e0494e2] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:55.722 INFO  [patient-service] [traceId=6e0494e2] c.m.patient.aop.LoggingAspect - [SERVICE][6e0494e2] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:55.722 INFO  [patient-service] [traceId=6e0494e2] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:50:55.732 INFO  [patient-service] [traceId=6e0494e2] c.m.patient.aop.LoggingAspect - [SERVICE][6e0494e2] <-- PatientService.getPatientByEmail(..) | 10ms | result: com.meditrack.patient.dto.PatientResponse@24a82238
+2026-05-13 18:50:55.733 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][6e0494e2] <-- PatientController.getPatientByEmail(..) | 13ms | result: com.meditrack.patient.dto.PatientResponse@24a82238
+2026-05-13 18:50:56.498 INFO  [patient-service] [traceId=946cb097] c.m.patient.aop.LoggingAspect - [CONTROLLER][946cb097] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:56.500 INFO  [patient-service] [traceId=946cb097] c.m.patient.aop.LoggingAspect - [SERVICE][946cb097] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:56.500 INFO  [patient-service] [traceId=946cb097] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:50:56.512 INFO  [patient-service] [traceId=946cb097] c.m.patient.aop.LoggingAspect - [SERVICE][946cb097] <-- PatientService.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@48a12ad8
+2026-05-13 18:50:56.512 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][946cb097] <-- PatientController.getPatientByEmail(..) | 14ms | result: com.meditrack.patient.dto.PatientResponse@48a12ad8
+2026-05-13 18:50:59.966 INFO  [patient-service] [traceId=7894dbc0] c.m.patient.aop.LoggingAspect - [CONTROLLER][7894dbc0] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:50:59.966 INFO  [patient-service] [traceId=7894dbc0] c.m.patient.aop.LoggingAspect - [SERVICE][7894dbc0] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:50:59.967 INFO  [patient-service] [traceId=7894dbc0] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:50:59.980 INFO  [patient-service] [traceId=7894dbc0] c.m.patient.aop.LoggingAspect - [SERVICE][7894dbc0] <-- PatientService.getPatientByEmail(..) | 14ms | result: com.meditrack.patient.dto.PatientResponse@c5ad20b
+2026-05-13 18:50:59.980 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][7894dbc0] <-- PatientController.getMyProfile(..) | 14ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@c5ad20b,[]>
+2026-05-13 18:51:00.005 INFO  [patient-service] [traceId=4fba6694] c.m.patient.aop.LoggingAspect - [CONTROLLER][4fba6694] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:51:00.005 INFO  [patient-service] [traceId=4fba6694] c.m.patient.aop.LoggingAspect - [SERVICE][4fba6694] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:00.006 INFO  [patient-service] [traceId=4fba6694] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:51:00.014 INFO  [patient-service] [traceId=4fba6694] c.m.patient.aop.LoggingAspect - [SERVICE][4fba6694] <-- PatientService.getPatientByEmail(..) | 9ms | result: com.meditrack.patient.dto.PatientResponse@7bfb0efc
+2026-05-13 18:51:00.015 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][4fba6694] <-- PatientController.getMyProfile(..) | 10ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@7bfb0efc,[]>
+2026-05-13 18:51:00.226 INFO  [patient-service] [traceId=3bb7d522] c.m.patient.aop.LoggingAspect - [CONTROLLER][3bb7d522] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:00.227 INFO  [patient-service] [traceId=3bb7d522] c.m.patient.aop.LoggingAspect - [SERVICE][3bb7d522] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:00.228 INFO  [patient-service] [traceId=3bb7d522] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:51:00.235 INFO  [patient-service] [traceId=3bb7d522] c.m.patient.aop.LoggingAspect - [SERVICE][3bb7d522] <-- PatientService.getPatientByEmail(..) | 8ms | result: com.meditrack.patient.dto.PatientResponse@4cc9c9d4
+2026-05-13 18:51:00.235 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][3bb7d522] <-- PatientController.getPatientByEmail(..) | 9ms | result: com.meditrack.patient.dto.PatientResponse@4cc9c9d4
+2026-05-13 18:51:00.378 INFO  [patient-service] [traceId=b2dbb5a5] c.m.patient.aop.LoggingAspect - [CONTROLLER][b2dbb5a5] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:00.378 INFO  [patient-service] [traceId=b2dbb5a5] c.m.patient.aop.LoggingAspect - [SERVICE][b2dbb5a5] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:00.378 INFO  [patient-service] [traceId=b2dbb5a5] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:51:00.390 INFO  [patient-service] [traceId=b2dbb5a5] c.m.patient.aop.LoggingAspect - [SERVICE][b2dbb5a5] <-- PatientService.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@d3ed15a
+2026-05-13 18:51:00.391 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][b2dbb5a5] <-- PatientController.getPatientByEmail(..) | 13ms | result: com.meditrack.patient.dto.PatientResponse@d3ed15a
+2026-05-13 18:51:00.923 INFO  [patient-service] [traceId=6b0d62f1] c.m.patient.aop.LoggingAspect - [CONTROLLER][6b0d62f1] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:00.923 INFO  [patient-service] [traceId=6b0d62f1] c.m.patient.aop.LoggingAspect - [SERVICE][6b0d62f1] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:00.923 INFO  [patient-service] [traceId=6b0d62f1] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:51:00.934 INFO  [patient-service] [traceId=6b0d62f1] c.m.patient.aop.LoggingAspect - [SERVICE][6b0d62f1] <-- PatientService.getPatientByEmail(..) | 11ms | result: com.meditrack.patient.dto.PatientResponse@47b4d2e4
+2026-05-13 18:51:00.934 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][6b0d62f1] <-- PatientController.getPatientByEmail(..) | 11ms | result: com.meditrack.patient.dto.PatientResponse@47b4d2e4
+2026-05-13 18:51:10.931 INFO  [patient-service] [traceId=61cfb16d] c.m.patient.aop.LoggingAspect - [CONTROLLER][61cfb16d] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:10.932 INFO  [patient-service] [traceId=61cfb16d] c.m.patient.aop.LoggingAspect - [SERVICE][61cfb16d] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:10.932 INFO  [patient-service] [traceId=61cfb16d] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:51:10.949 INFO  [patient-service] [traceId=61cfb16d] c.m.patient.aop.LoggingAspect - [SERVICE][61cfb16d] <-- PatientService.getPatientByEmail(..) | 17ms | result: com.meditrack.patient.dto.PatientResponse@470fcf84
+2026-05-13 18:51:10.949 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][61cfb16d] <-- PatientController.getPatientByEmail(..) | 18ms | result: com.meditrack.patient.dto.PatientResponse@470fcf84
+2026-05-13 18:51:21.319 INFO  [patient-service] [traceId=6af8d5d1] c.m.patient.aop.LoggingAspect - [CONTROLLER][6af8d5d1] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:21.320 INFO  [patient-service] [traceId=6af8d5d1] c.m.patient.aop.LoggingAspect - [SERVICE][6af8d5d1] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:21.320 INFO  [patient-service] [traceId=6af8d5d1] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:51:21.333 INFO  [patient-service] [traceId=6af8d5d1] c.m.patient.aop.LoggingAspect - [SERVICE][6af8d5d1] <-- PatientService.getPatientByEmail(..) | 13ms | result: com.meditrack.patient.dto.PatientResponse@242f701a
+2026-05-13 18:51:21.333 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][6af8d5d1] <-- PatientController.getPatientByEmail(..) | 14ms | result: com.meditrack.patient.dto.PatientResponse@242f701a
+2026-05-13 18:51:31.306 INFO  [patient-service] [traceId=2d436da6] c.m.patient.aop.LoggingAspect - [CONTROLLER][2d436da6] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:31.307 INFO  [patient-service] [traceId=2d436da6] c.m.patient.aop.LoggingAspect - [SERVICE][2d436da6] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:31.307 INFO  [patient-service] [traceId=2d436da6] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:51:31.317 INFO  [patient-service] [traceId=2d436da6] c.m.patient.aop.LoggingAspect - [SERVICE][2d436da6] <-- PatientService.getPatientByEmail(..) | 10ms | result: com.meditrack.patient.dto.PatientResponse@509f2f35
+2026-05-13 18:51:31.318 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][2d436da6] <-- PatientController.getPatientByEmail(..) | 11ms | result: com.meditrack.patient.dto.PatientResponse@509f2f35
+2026-05-13 18:51:33.701 INFO  [patient-service] [traceId=bcc2529f] c.m.patient.aop.LoggingAspect - [CONTROLLER][bcc2529f] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:51:33.702 INFO  [patient-service] [traceId=bcc2529f] c.m.patient.aop.LoggingAspect - [SERVICE][bcc2529f] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:33.702 INFO  [patient-service] [traceId=bcc2529f] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:51:33.719 INFO  [patient-service] [traceId=bcc2529f] c.m.patient.aop.LoggingAspect - [SERVICE][bcc2529f] <-- PatientService.getPatientByEmail(..) | 17ms | result: com.meditrack.patient.dto.PatientResponse@4be19721
+2026-05-13 18:51:33.719 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][bcc2529f] <-- PatientController.getMyProfile(..) | 18ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@4be19721,[]>
+2026-05-13 18:51:33.744 INFO  [patient-service] [traceId=5e1ea151] c.m.patient.aop.LoggingAspect - [CONTROLLER][5e1ea151] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:51:33.745 INFO  [patient-service] [traceId=5e1ea151] c.m.patient.aop.LoggingAspect - [SERVICE][5e1ea151] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:33.745 INFO  [patient-service] [traceId=5e1ea151] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:51:33.755 INFO  [patient-service] [traceId=5e1ea151] c.m.patient.aop.LoggingAspect - [SERVICE][5e1ea151] <-- PatientService.getPatientByEmail(..) | 10ms | result: com.meditrack.patient.dto.PatientResponse@61679734
+2026-05-13 18:51:33.755 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][5e1ea151] <-- PatientController.getMyProfile(..) | 11ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@61679734,[]>
+2026-05-13 18:51:40.934 INFO  [patient-service] [traceId=9d0c56b3] c.m.patient.aop.LoggingAspect - [CONTROLLER][9d0c56b3] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:40.934 INFO  [patient-service] [traceId=9d0c56b3] c.m.patient.aop.LoggingAspect - [SERVICE][9d0c56b3] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:40.935 INFO  [patient-service] [traceId=9d0c56b3] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:51:40.946 INFO  [patient-service] [traceId=9d0c56b3] c.m.patient.aop.LoggingAspect - [SERVICE][9d0c56b3] <-- PatientService.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@3bdb3a75
+2026-05-13 18:51:40.947 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][9d0c56b3] <-- PatientController.getPatientByEmail(..) | 13ms | result: com.meditrack.patient.dto.PatientResponse@3bdb3a75
+2026-05-13 18:51:50.930 INFO  [patient-service] [traceId=4b7fb1de] c.m.patient.aop.LoggingAspect - [CONTROLLER][4b7fb1de] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:50.932 INFO  [patient-service] [traceId=4b7fb1de] c.m.patient.aop.LoggingAspect - [SERVICE][4b7fb1de] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:51:50.932 INFO  [patient-service] [traceId=4b7fb1de] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:51:50.942 INFO  [patient-service] [traceId=4b7fb1de] c.m.patient.aop.LoggingAspect - [SERVICE][4b7fb1de] <-- PatientService.getPatientByEmail(..) | 10ms | result: com.meditrack.patient.dto.PatientResponse@7930a3f6
+2026-05-13 18:51:50.942 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][4b7fb1de] <-- PatientController.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@7930a3f6
+2026-05-13 18:52:00.936 INFO  [patient-service] [traceId=d9170c02] c.m.patient.aop.LoggingAspect - [CONTROLLER][d9170c02] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:00.936 INFO  [patient-service] [traceId=d9170c02] c.m.patient.aop.LoggingAspect - [SERVICE][d9170c02] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:00.936 INFO  [patient-service] [traceId=d9170c02] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:52:00.946 INFO  [patient-service] [traceId=d9170c02] c.m.patient.aop.LoggingAspect - [SERVICE][d9170c02] <-- PatientService.getPatientByEmail(..) | 10ms | result: com.meditrack.patient.dto.PatientResponse@31f378df
+2026-05-13 18:52:00.946 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][d9170c02] <-- PatientController.getPatientByEmail(..) | 10ms | result: com.meditrack.patient.dto.PatientResponse@31f378df
+2026-05-13 18:52:03.111 INFO  [patient-service] [traceId=9fece175] c.m.patient.aop.LoggingAspect - [CONTROLLER][9fece175] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:52:03.111 INFO  [patient-service] [traceId=9fece175] c.m.patient.aop.LoggingAspect - [SERVICE][9fece175] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:03.111 INFO  [patient-service] [traceId=9fece175] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:52:03.126 INFO  [patient-service] [traceId=9fece175] c.m.patient.aop.LoggingAspect - [SERVICE][9fece175] <-- PatientService.getPatientByEmail(..) | 15ms | result: com.meditrack.patient.dto.PatientResponse@61aabc73
+2026-05-13 18:52:03.126 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][9fece175] <-- PatientController.getMyProfile(..) | 15ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@61aabc73,[]>
+2026-05-13 18:52:03.147 INFO  [patient-service] [traceId=b3d722d9] c.m.patient.aop.LoggingAspect - [CONTROLLER][b3d722d9] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:52:03.148 INFO  [patient-service] [traceId=b3d722d9] c.m.patient.aop.LoggingAspect - [SERVICE][b3d722d9] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:03.148 INFO  [patient-service] [traceId=b3d722d9] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:52:03.156 INFO  [patient-service] [traceId=b3d722d9] c.m.patient.aop.LoggingAspect - [SERVICE][b3d722d9] <-- PatientService.getPatientByEmail(..) | 8ms | result: com.meditrack.patient.dto.PatientResponse@4268bc7b
+2026-05-13 18:52:03.156 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][b3d722d9] <-- PatientController.getMyProfile(..) | 9ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@4268bc7b,[]>
+2026-05-13 18:52:09.783 INFO  [patient-service] [traceId=e6567770] c.m.patient.aop.LoggingAspect - [CONTROLLER][e6567770] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:52:09.783 INFO  [patient-service] [traceId=e6567770] c.m.patient.aop.LoggingAspect - [SERVICE][e6567770] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:09.783 INFO  [patient-service] [traceId=e6567770] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:52:09.795 INFO  [patient-service] [traceId=e6567770] c.m.patient.aop.LoggingAspect - [SERVICE][e6567770] <-- PatientService.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@43a2b8cf
+2026-05-13 18:52:09.795 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][e6567770] <-- PatientController.getMyProfile(..) | 12ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@43a2b8cf,[]>
+2026-05-13 18:52:09.820 INFO  [patient-service] [traceId=df9b6e43] c.m.patient.aop.LoggingAspect - [CONTROLLER][df9b6e43] --> PatientController.getMyProfile(..) | args: [UsernamePasswordAuthenticationToken [Principal=aishuprabhu2024@gmail.com, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_PATIENT]]]
+2026-05-13 18:52:09.820 INFO  [patient-service] [traceId=df9b6e43] c.m.patient.aop.LoggingAspect - [SERVICE][df9b6e43] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:09.820 INFO  [patient-service] [traceId=df9b6e43] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:52:09.829 INFO  [patient-service] [traceId=df9b6e43] c.m.patient.aop.LoggingAspect - [SERVICE][df9b6e43] <-- PatientService.getPatientByEmail(..) | 9ms | result: com.meditrack.patient.dto.PatientResponse@70ccc9f1
+2026-05-13 18:52:09.829 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][df9b6e43] <-- PatientController.getMyProfile(..) | 10ms | result: <200 OK OK,com.meditrack.patient.dto.PatientResponse@70ccc9f1,[]>
+2026-05-13 18:52:09.965 INFO  [patient-service] [traceId=c545e5dc] c.m.patient.aop.LoggingAspect - [CONTROLLER][c545e5dc] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:09.965 INFO  [patient-service] [traceId=c545e5dc] c.m.patient.aop.LoggingAspect - [SERVICE][c545e5dc] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:09.967 INFO  [patient-service] [traceId=c545e5dc] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:52:09.974 INFO  [patient-service] [traceId=c545e5dc] c.m.patient.aop.LoggingAspect - [SERVICE][c545e5dc] <-- PatientService.getPatientByEmail(..) | 9ms | result: com.meditrack.patient.dto.PatientResponse@2e706c4c
+2026-05-13 18:52:09.974 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][c545e5dc] <-- PatientController.getPatientByEmail(..) | 9ms | result: com.meditrack.patient.dto.PatientResponse@2e706c4c
+2026-05-13 18:52:10.039 INFO  [patient-service] [traceId=8406b988] c.m.patient.aop.LoggingAspect - [CONTROLLER][8406b988] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:10.040 INFO  [patient-service] [traceId=8406b988] c.m.patient.aop.LoggingAspect - [SERVICE][8406b988] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:10.040 INFO  [patient-service] [traceId=8406b988] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:52:10.051 INFO  [patient-service] [traceId=8406b988] c.m.patient.aop.LoggingAspect - [SERVICE][8406b988] <-- PatientService.getPatientByEmail(..) | 11ms | result: com.meditrack.patient.dto.PatientResponse@48414259
+2026-05-13 18:52:10.051 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][8406b988] <-- PatientController.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@48414259
+2026-05-13 18:52:10.929 INFO  [patient-service] [traceId=34afc6b2] c.m.patient.aop.LoggingAspect - [CONTROLLER][34afc6b2] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:10.930 INFO  [patient-service] [traceId=34afc6b2] c.m.patient.aop.LoggingAspect - [SERVICE][34afc6b2] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:10.930 INFO  [patient-service] [traceId=34afc6b2] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:52:10.937 INFO  [patient-service] [traceId=34afc6b2] c.m.patient.aop.LoggingAspect - [SERVICE][34afc6b2] <-- PatientService.getPatientByEmail(..) | 7ms | result: com.meditrack.patient.dto.PatientResponse@85df93a
+2026-05-13 18:52:10.937 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][34afc6b2] <-- PatientController.getPatientByEmail(..) | 8ms | result: com.meditrack.patient.dto.PatientResponse@85df93a
+2026-05-13 18:52:20.930 INFO  [patient-service] [traceId=1e1742d1] c.m.patient.aop.LoggingAspect - [CONTROLLER][1e1742d1] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:20.931 INFO  [patient-service] [traceId=1e1742d1] c.m.patient.aop.LoggingAspect - [SERVICE][1e1742d1] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:20.931 INFO  [patient-service] [traceId=1e1742d1] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:52:20.942 INFO  [patient-service] [traceId=1e1742d1] c.m.patient.aop.LoggingAspect - [SERVICE][1e1742d1] <-- PatientService.getPatientByEmail(..) | 11ms | result: com.meditrack.patient.dto.PatientResponse@ac56d7b
+2026-05-13 18:52:20.942 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][1e1742d1] <-- PatientController.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@ac56d7b
+2026-05-13 18:52:31.319 INFO  [patient-service] [traceId=ec5ca436] c.m.patient.aop.LoggingAspect - [CONTROLLER][ec5ca436] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:31.319 INFO  [patient-service] [traceId=ec5ca436] c.m.patient.aop.LoggingAspect - [SERVICE][ec5ca436] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:31.320 INFO  [patient-service] [traceId=ec5ca436] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:52:31.330 INFO  [patient-service] [traceId=ec5ca436] c.m.patient.aop.LoggingAspect - [SERVICE][ec5ca436] <-- PatientService.getPatientByEmail(..) | 11ms | result: com.meditrack.patient.dto.PatientResponse@468e2212
+2026-05-13 18:52:31.331 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][ec5ca436] <-- PatientController.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@468e2212
+2026-05-13 18:52:41.317 INFO  [patient-service] [traceId=3efeeaae] c.m.patient.aop.LoggingAspect - [CONTROLLER][3efeeaae] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:41.317 INFO  [patient-service] [traceId=3efeeaae] c.m.patient.aop.LoggingAspect - [SERVICE][3efeeaae] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:41.318 INFO  [patient-service] [traceId=3efeeaae] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:52:41.329 INFO  [patient-service] [traceId=3efeeaae] c.m.patient.aop.LoggingAspect - [SERVICE][3efeeaae] <-- PatientService.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@6d0c803
+2026-05-13 18:52:41.329 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][3efeeaae] <-- PatientController.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@6d0c803
+2026-05-13 18:52:51.318 INFO  [patient-service] [traceId=fd2216f5] c.m.patient.aop.LoggingAspect - [CONTROLLER][fd2216f5] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:51.318 INFO  [patient-service] [traceId=fd2216f5] c.m.patient.aop.LoggingAspect - [SERVICE][fd2216f5] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:52:51.318 INFO  [patient-service] [traceId=fd2216f5] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:52:51.333 INFO  [patient-service] [traceId=fd2216f5] c.m.patient.aop.LoggingAspect - [SERVICE][fd2216f5] <-- PatientService.getPatientByEmail(..) | 15ms | result: com.meditrack.patient.dto.PatientResponse@62a935c3
+2026-05-13 18:52:51.334 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][fd2216f5] <-- PatientController.getPatientByEmail(..) | 16ms | result: com.meditrack.patient.dto.PatientResponse@62a935c3
+2026-05-13 18:53:01.326 INFO  [patient-service] [traceId=8af8773f] c.m.patient.aop.LoggingAspect - [CONTROLLER][8af8773f] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:53:01.327 INFO  [patient-service] [traceId=8af8773f] c.m.patient.aop.LoggingAspect - [SERVICE][8af8773f] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:53:01.327 INFO  [patient-service] [traceId=8af8773f] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:53:01.339 INFO  [patient-service] [traceId=8af8773f] c.m.patient.aop.LoggingAspect - [SERVICE][8af8773f] <-- PatientService.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@1f90709c
+2026-05-13 18:53:01.339 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][8af8773f] <-- PatientController.getPatientByEmail(..) | 13ms | result: com.meditrack.patient.dto.PatientResponse@1f90709c
+2026-05-13 18:53:11.336 INFO  [patient-service] [traceId=6161c4e3] c.m.patient.aop.LoggingAspect - [CONTROLLER][6161c4e3] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:53:11.336 INFO  [patient-service] [traceId=6161c4e3] c.m.patient.aop.LoggingAspect - [SERVICE][6161c4e3] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:53:11.337 INFO  [patient-service] [traceId=6161c4e3] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:53:11.348 INFO  [patient-service] [traceId=6161c4e3] c.m.patient.aop.LoggingAspect - [SERVICE][6161c4e3] <-- PatientService.getPatientByEmail(..) | 12ms | result: com.meditrack.patient.dto.PatientResponse@673a7e48
+2026-05-13 18:53:11.349 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][6161c4e3] <-- PatientController.getPatientByEmail(..) | 13ms | result: com.meditrack.patient.dto.PatientResponse@673a7e48
+2026-05-13 18:53:20.933 INFO  [patient-service] [traceId=4c580c26] c.m.patient.aop.LoggingAspect - [CONTROLLER][4c580c26] --> PatientController.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:53:20.934 INFO  [patient-service] [traceId=4c580c26] c.m.patient.aop.LoggingAspect - [SERVICE][4c580c26] --> PatientService.getPatientByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-13 18:53:20.934 INFO  [patient-service] [traceId=4c580c26] c.m.patient.service.PatientService - Fetching patient by email=aishuprabhu2024@gmail.com
+2026-05-13 18:53:20.942 INFO  [patient-service] [traceId=4c580c26] c.m.patient.aop.LoggingAspect - [SERVICE][4c580c26] <-- PatientService.getPatientByEmail(..) | 8ms | result: com.meditrack.patient.dto.PatientResponse@27897acb
+2026-05-13 18:53:20.942 INFO  [patient-service] [traceId=none] c.m.patient.aop.LoggingAspect - [CONTROLLER][4c580c26] <-- PatientController.getPatientByEmail(..) | 9ms | result: com.meditrack.patient.dto.PatientResponse@27897acb
+2026-05-13 18:56:17.652 INFO  [patient-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-13 18:56:17.841 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - Starting PatientServiceApplicationTests using Java 20.0.2 with PID 20084 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\patient-service)
+2026-05-13 18:56:17.844 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-13 18:56:21.402 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-13 18:56:21.935 INFO  [patient-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 496 ms. Found 1 JPA repository interface.
+2026-05-13 18:56:22.860 INFO  [patient-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=d6e47205-c530-3e12-81d2-06691240980f
+2026-05-13 18:56:24.529 INFO  [patient-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-13 18:56:24.737 INFO  [patient-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-13 18:56:24.860 INFO  [patient-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-13 18:56:26.238 INFO  [patient-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-13 18:56:26.370 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-13 18:56:27.612 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28cf53bc
+2026-05-13 18:56:27.617 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-13 18:56:27.978 INFO  [patient-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-13 18:56:30.724 INFO  [patient-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-13 18:56:30.991 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-13 18:56:32.836 WARN  [patient-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-13 18:56:33.984 WARN  [patient-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a3d3fc82-316f-494a-92e0-2e2f4123ecf4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-13 18:56:36.729 INFO  [patient-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-13 18:56:36.891 WARN  [patient-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-13 18:56:36.960 INFO  [patient-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-13 18:56:38.159 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-05-13 18:56:38.223 INFO  [patient-service] [traceId=none] c.m.p.PatientServiceApplicationTests - Started PatientServiceApplicationTests in 22.495 seconds (process running for 29.083)
+2026-05-13 18:56:39.523 INFO  [patient-service] [traceId=none] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.meditrack.patient.controller.PatientControllerTest]: PatientControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-13 18:56:39.606 INFO  [patient-service] [traceId=none] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.meditrack.patient.PatientServiceApplication for test class com.meditrack.patient.controller.PatientControllerTest
+2026-05-13 18:56:39.925 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - Starting PatientControllerTest using Java 20.0.2 with PID 20084 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\patient-service)
+2026-05-13 18:56:39.926 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-13 18:56:41.556 WARN  [patient-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 43f7687e-1c8c-4f3b-8e56-966c7078beec
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-13 18:56:41.794 INFO  [patient-service] [traceId=none] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-05-13 18:56:41.795 INFO  [patient-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-05-13 18:56:41.799 INFO  [patient-service] [traceId=none] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2026-05-13 18:56:41.871 INFO  [patient-service] [traceId=none] c.m.p.c.PatientControllerTest - Started PatientControllerTest in 2.257 seconds (process running for 32.731)
+2026-05-13 18:56:44.198 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by id 1
+2026-05-13 18:56:44.200 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Access requested by john@test.com role=ROLE_PATIENT
+2026-05-13 18:56:44.208 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Update medical history patient id=1
+2026-05-13 18:56:44.214 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Get all patients request by admin@test.com role=ROLE_ADMIN
+2026-05-13 18:56:44.215 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Total patients fetched = 1
+2026-05-13 18:56:44.223 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Update patient request id=1
+2026-05-13 18:56:44.225 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient updated successfully id=1
+2026-05-13 18:56:44.232 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Add patient request by john@test.com with role ROLE_PATIENT
+2026-05-13 18:56:44.233 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient created successfully id=1
+2026-05-13 18:56:44.240 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Delete patient request id=1 by admin@test.com role=ROLE_ADMIN
+2026-05-13 18:56:44.240 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient deleted successfully id=1
+2026-05-13 18:56:44.249 INFO  [patient-service] [traceId=none] c.m.patient.service.PatientService - Fetching patient by id 1
+2026-05-13 18:56:44.249 ERROR [patient-service] [traceId=none] c.m.patient.service.PatientService - Patient not found id=1
+2026-05-13 18:56:47.115 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-05-13 18:56:47.180 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-13 18:56:47.210 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-13 18:56:47.360 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-13 19:07:44.134 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-13 19:07:44.293 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-13 19:07:44.577 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-13 19:07:44.619 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-13 19:07:44.619 ERROR [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:860)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1418)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-13 19:07:45.000 INFO  [patient-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-13 19:07:45.046 INFO  [patient-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-05-13 19:07:45.088 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-13 19:07:45.088 WARN  [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-13 19:07:45.089 WARN  [patient-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-13 19:07:45.124 INFO  [patient-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-13 19:07:45.144 INFO  [patient-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+2026-05-13 19:07:45.206 INFO  [patient-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-13 19:07:45.214 INFO  [patient-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+2026-05-13 19:07:45.281 INFO  [patient-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-13 19:07:45.359 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-13 19:07:45.375 INFO  [patient-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-13 19:07:48.463 WARN  [patient-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-13 19:07:48.463 ERROR [patient-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/DESKTOP-TE08QKM:patient-service:8082 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:934)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:915)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)

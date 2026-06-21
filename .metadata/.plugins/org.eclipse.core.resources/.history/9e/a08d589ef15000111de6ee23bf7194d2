@@ -1,0 +1,5 @@
+package com.meditrack.notification.aop;
+
+public class LoggingAspectTest {
+
+}

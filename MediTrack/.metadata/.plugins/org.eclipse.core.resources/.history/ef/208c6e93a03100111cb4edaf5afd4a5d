@@ -1,0 +1,5 @@
+package com.meditrack.prescription.client;
+
+public interface PatientClient {
+
+}

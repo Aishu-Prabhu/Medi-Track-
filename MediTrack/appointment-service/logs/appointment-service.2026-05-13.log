@@ -1,0 +1,527 @@
+2026-05-13 18:42:34.642 INFO  [appointment-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-13 18:42:34.959 INFO  [appointment-service] [traceId=none] c.m.a.AppointmentServiceApplication - Starting AppointmentServiceApplication using Java 20.0.2 with PID 23288 (C:\Users\Aishu\C_MediTrack\MediTrack\appointment-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\appointment-service)
+2026-05-13 18:42:34.961 INFO  [appointment-service] [traceId=none] c.m.a.AppointmentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-13 18:42:41.263 INFO  [appointment-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-13 18:42:42.207 INFO  [appointment-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 911 ms. Found 2 JPA repository interfaces.
+2026-05-13 18:42:44.273 INFO  [appointment-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=cd6a3f49-762a-3e78-9be4-eeb90f644bb8
+2026-05-13 18:42:45.550 WARN  [appointment-service] [traceId=none] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-05-13 18:42:45.562 WARN  [appointment-service] [traceId=none] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-05-13 18:42:46.967 INFO  [appointment-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8084 (http)
+2026-05-13 18:42:47.005 INFO  [appointment-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2026-05-13 18:42:47.016 INFO  [appointment-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-13 18:42:47.016 INFO  [appointment-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-13 18:42:47.289 INFO  [appointment-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-13 18:42:47.290 INFO  [appointment-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12099 ms
+2026-05-13 18:42:48.266 INFO  [appointment-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-13 18:42:48.671 INFO  [appointment-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-13 18:42:48.845 INFO  [appointment-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-13 18:42:50.151 INFO  [appointment-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-13 18:42:50.342 INFO  [appointment-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-13 18:42:52.116 INFO  [appointment-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32cde414
+2026-05-13 18:42:52.121 INFO  [appointment-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-13 18:43:00.470 INFO  [appointment-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-13 18:43:00.698 INFO  [appointment-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-13 18:43:04.098 WARN  [appointment-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-13 18:43:06.123 INFO  [appointment-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'doctor-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-13 18:43:06.864 INFO  [appointment-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'auth-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-13 18:43:06.930 INFO  [appointment-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-13 18:43:07.007 INFO  [appointment-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'payment-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-13 18:43:07.846 WARN  [appointment-service] [traceId=none] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9d4eff42-69ea-4fcc-b885-ac248cc37e9e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-13 18:43:13.341 INFO  [appointment-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-13 18:43:13.438 WARN  [appointment-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-13 18:43:13.607 INFO  [appointment-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-13 18:43:14.870 INFO  [appointment-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application APPOINTMENT-SERVICE with eureka with status UP
+2026-05-13 18:43:14.873 INFO  [appointment-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2026-05-13 18:43:14.920 INFO  [appointment-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8084 (http) with context path ''
+2026-05-13 18:43:14.921 INFO  [appointment-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8084
+2026-05-13 18:43:15.176 INFO  [appointment-service] [traceId=none] c.m.a.AppointmentServiceApplication - Started AppointmentServiceApplication in 43.414 seconds (process running for 58.461)
+2026-05-13 18:46:52.907 INFO  [appointment-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-13 18:46:52.980 INFO  [appointment-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-13 18:46:53.729 INFO  [appointment-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 746 ms
+2026-05-13 18:46:57.505 INFO  [appointment-service] [traceId=398b5eb6] c.m.appointment.aop.LoggingAspect - [CONTROLLER][398b5eb6] --> AppointmentController.getAll() | args: []
+2026-05-13 18:46:57.521 INFO  [appointment-service] [traceId=398b5eb6] c.m.appointment.aop.LoggingAspect - [SERVICE][398b5eb6] --> AppointmentService.getAllAppointments() | args: []
+2026-05-13 18:46:57.530 INFO  [appointment-service] [traceId=398b5eb6] c.m.a.service.AppointmentService - Get all appointments role=ROLE_SUPER_ADMIN
+2026-05-13 18:46:59.554 INFO  [appointment-service] [traceId=398b5eb6] c.m.appointment.aop.LoggingAspect - [SERVICE][398b5eb6] <-- AppointmentService.getAllAppointments() | 2033ms | result: [com.meditrack.appointment.entity.Appointment@2378379d, com.meditrack.appointment.entity.Appointment@4232c968]
+2026-05-13 18:46:59.558 INFO  [appointment-service] [traceId=none] c.m.appointment.aop.LoggingAspect - [CONTROLLER][398b5eb6] <-- AppointmentController.getAll() | 2059ms | result: <200 OK OK,[com.meditrack.appointment.entity.Appointment@2378379d, com.meditrack.appointment.entity.Appointment@4232c968],[]>
+2026-05-13 18:46:59.942 INFO  [appointment-service] [traceId=1ae37f0a] c.m.appointment.aop.LoggingAspect - [CONTROLLER][1ae37f0a] --> AppointmentController.getAll() | args: []
+2026-05-13 18:46:59.942 INFO  [appointment-service] [traceId=1ae37f0a] c.m.appointment.aop.LoggingAspect - [SERVICE][1ae37f0a] --> AppointmentService.getAllAppointments() | args: []
+2026-05-13 18:46:59.942 INFO  [appointment-service] [traceId=1ae37f0a] c.m.a.service.AppointmentService - Get all appointments role=ROLE_SUPER_ADMIN
+2026-05-13 18:46:59.958 INFO  [appointment-service] [traceId=1ae37f0a] c.m.appointment.aop.LoggingAspect - [SERVICE][1ae37f0a] <-- AppointmentService.getAllAppointments() | 16ms | result: [com.meditrack.appointment.entity.Appointment@114a42e8, com.meditrack.appointment.entity.Appointment@2fe6beb2]
+2026-05-13 18:46:59.960 INFO  [appointment-service] [traceId=none] c.m.appointment.aop.LoggingAspect - [CONTROLLER][1ae37f0a] <-- AppointmentController.getAll() | 18ms | result: <200 OK OK,[com.meditrack.appointment.entity.Appointment@114a42e8, com.meditrack.appointment.entity.Appointment@2fe6beb2],[]>
+2026-05-13 18:48:39.969 INFO  [appointment-service] [traceId=f06ffeba] c.m.appointment.aop.LoggingAspect - [CONTROLLER][f06ffeba] --> AppointmentController.getByDoctor(..) | args: [3]
+2026-05-13 18:48:39.971 INFO  [appointment-service] [traceId=f06ffeba] c.m.appointment.aop.LoggingAspect - [SERVICE][f06ffeba] --> AppointmentService.getAppointmentsByDoctor(..) | args: [3]
+2026-05-13 18:48:39.972 INFO  [appointment-service] [traceId=f06ffeba] c.m.a.service.AppointmentService - Get appointments by doctor=3 role=ROLE_DOCTOR
+2026-05-13 18:48:41.547 INFO  [appointment-service] [traceId=f06ffeba] c.m.appointment.aop.LoggingAspect - [SERVICE][f06ffeba] <-- AppointmentService.getAppointmentsByDoctor(..) | 1576ms | result: [com.meditrack.appointment.entity.Appointment@3428e435]
+2026-05-13 18:48:41.547 INFO  [appointment-service] [traceId=none] c.m.appointment.aop.LoggingAspect - [CONTROLLER][f06ffeba] <-- AppointmentController.getByDoctor(..) | 1578ms | result: <200 OK OK,[com.meditrack.appointment.entity.Appointment@3428e435],[]>
+2026-05-13 18:48:41.667 INFO  [appointment-service] [traceId=7102b198] c.m.appointment.aop.LoggingAspect - [CONTROLLER][7102b198] --> AppointmentController.getByDoctor(..) | args: [3]
+2026-05-13 18:48:41.669 INFO  [appointment-service] [traceId=7102b198] c.m.appointment.aop.LoggingAspect - [SERVICE][7102b198] --> AppointmentService.getAppointmentsByDoctor(..) | args: [3]
+2026-05-13 18:48:41.669 INFO  [appointment-service] [traceId=7102b198] c.m.a.service.AppointmentService - Get appointments by doctor=3 role=ROLE_DOCTOR
+2026-05-13 18:48:42.173 INFO  [appointment-service] [traceId=7102b198] c.m.appointment.aop.LoggingAspect - [SERVICE][7102b198] <-- AppointmentService.getAppointmentsByDoctor(..) | 504ms | result: [com.meditrack.appointment.entity.Appointment@1f3ff898]
+2026-05-13 18:48:42.174 INFO  [appointment-service] [traceId=none] c.m.appointment.aop.LoggingAspect - [CONTROLLER][7102b198] <-- AppointmentController.getByDoctor(..) | 507ms | result: <200 OK OK,[com.meditrack.appointment.entity.Appointment@1f3ff898],[]>
+2026-05-13 18:49:52.172 INFO  [appointment-service] [traceId=e2aabdcf] c.m.appointment.aop.LoggingAspect - [CONTROLLER][e2aabdcf] --> AppointmentController.getByPatient(..) | args: [1]
+2026-05-13 18:49:52.179 INFO  [appointment-service] [traceId=e2aabdcf] c.m.appointment.aop.LoggingAspect - [SERVICE][e2aabdcf] --> AppointmentService.getAppointmentsByPatient(..) | args: [1]
+2026-05-13 18:49:52.180 INFO  [appointment-service] [traceId=e2aabdcf] c.m.a.service.AppointmentService - Get appointments by patient=1 role=ROLE_PATIENT
+2026-05-13 18:49:52.418 INFO  [appointment-service] [traceId=e2aabdcf] c.m.appointment.aop.LoggingAspect - [SERVICE][e2aabdcf] <-- AppointmentService.getAppointmentsByPatient(..) | 239ms | result: [com.meditrack.appointment.entity.Appointment@207a86a1, com.meditrack.appointment.entity.Appointment@4195e81f]
+2026-05-13 18:49:52.418 INFO  [appointment-service] [traceId=none] c.m.appointment.aop.LoggingAspect - [CONTROLLER][e2aabdcf] <-- AppointmentController.getByPatient(..) | 246ms | result: <200 OK OK,[com.meditrack.appointment.entity.Appointment@207a86a1, com.meditrack.appointment.entity.Appointment@4195e81f],[]>
+2026-05-13 18:49:52.449 INFO  [appointment-service] [traceId=57515cf7] c.m.appointment.aop.LoggingAspect - [CONTROLLER][57515cf7] --> AppointmentController.getByPatient(..) | args: [1]
+2026-05-13 18:49:52.449 INFO  [appointment-service] [traceId=57515cf7] c.m.appointment.aop.LoggingAspect - [SERVICE][57515cf7] --> AppointmentService.getAppointmentsByPatient(..) | args: [1]
+2026-05-13 18:49:52.450 INFO  [appointment-service] [traceId=57515cf7] c.m.a.service.AppointmentService - Get appointments by patient=1 role=ROLE_PATIENT
+2026-05-13 18:49:52.493 INFO  [appointment-service] [traceId=57515cf7] c.m.appointment.aop.LoggingAspect - [SERVICE][57515cf7] <-- AppointmentService.getAppointmentsByPatient(..) | 44ms | result: [com.meditrack.appointment.entity.Appointment@45883133, com.meditrack.appointment.entity.Appointment@98f2152]
+2026-05-13 18:49:52.493 INFO  [appointment-service] [traceId=none] c.m.appointment.aop.LoggingAspect - [CONTROLLER][57515cf7] <-- AppointmentController.getByPatient(..) | 44ms | result: <200 OK OK,[com.meditrack.appointment.entity.Appointment@45883133, com.meditrack.appointment.entity.Appointment@98f2152],[]>
+2026-05-13 18:51:00.167 INFO  [appointment-service] [traceId=d46f97ed] c.m.appointment.aop.LoggingAspect - [CONTROLLER][d46f97ed] --> AppointmentController.getByPatient(..) | args: [1]
+2026-05-13 18:51:00.176 INFO  [appointment-service] [traceId=d46f97ed] c.m.appointment.aop.LoggingAspect - [SERVICE][d46f97ed] --> AppointmentService.getAppointmentsByPatient(..) | args: [1]
+2026-05-13 18:51:00.176 INFO  [appointment-service] [traceId=d46f97ed] c.m.a.service.AppointmentService - Get appointments by patient=1 role=ROLE_PATIENT
+2026-05-13 18:51:00.318 INFO  [appointment-service] [traceId=d46f97ed] c.m.appointment.aop.LoggingAspect - [SERVICE][d46f97ed] <-- AppointmentService.getAppointmentsByPatient(..) | 142ms | result: [com.meditrack.appointment.entity.Appointment@27e83527, com.meditrack.appointment.entity.Appointment@3791341d]
+2026-05-13 18:51:00.318 INFO  [appointment-service] [traceId=none] c.m.appointment.aop.LoggingAspect - [CONTROLLER][d46f97ed] <-- AppointmentController.getByPatient(..) | 152ms | result: <200 OK OK,[com.meditrack.appointment.entity.Appointment@27e83527, com.meditrack.appointment.entity.Appointment@3791341d],[]>
+2026-05-13 18:51:00.363 INFO  [appointment-service] [traceId=3199d106] c.m.appointment.aop.LoggingAspect - [CONTROLLER][3199d106] --> AppointmentController.getByPatient(..) | args: [1]
+2026-05-13 18:51:00.363 INFO  [appointment-service] [traceId=3199d106] c.m.appointment.aop.LoggingAspect - [SERVICE][3199d106] --> AppointmentService.getAppointmentsByPatient(..) | args: [1]
+2026-05-13 18:51:00.364 INFO  [appointment-service] [traceId=3199d106] c.m.a.service.AppointmentService - Get appointments by patient=1 role=ROLE_PATIENT
+2026-05-13 18:51:00.407 INFO  [appointment-service] [traceId=3199d106] c.m.appointment.aop.LoggingAspect - [SERVICE][3199d106] <-- AppointmentService.getAppointmentsByPatient(..) | 44ms | result: [com.meditrack.appointment.entity.Appointment@3b22b198, com.meditrack.appointment.entity.Appointment@d5cb81a]
+2026-05-13 18:51:00.407 INFO  [appointment-service] [traceId=none] c.m.appointment.aop.LoggingAspect - [CONTROLLER][3199d106] <-- AppointmentController.getByPatient(..) | 44ms | result: <200 OK OK,[com.meditrack.appointment.entity.Appointment@3b22b198, com.meditrack.appointment.entity.Appointment@d5cb81a],[]>
+2026-05-13 18:51:52.521 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.aop.LoggingAspect - [CONTROLLER][f59c4e08] --> SlotController.getAvailableSlots(..) | args: [1, 2026-05-13]
+2026-05-13 18:51:52.528 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.aop.LoggingAspect - [SERVICE][f59c4e08] --> SlotService.getAvailableSlots(..) | args: [1, 2026-05-13]
+2026-05-13 18:51:52.535 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Checking expired slots. Today=2026-05-13 CurrentTime(IST)=18:51:52.534423900
+2026-05-13 18:51:52.924 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=6 time=04:00 PM slotTime(parsed)=16:00
+2026-05-13 18:51:53.813 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=11 time=03:00 PM slotTime(parsed)=15:00
+2026-05-13 18:51:53.835 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=12 time=04:00 PM slotTime(parsed)=16:00
+2026-05-13 18:51:53.851 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=17 time=03:00 PM slotTime(parsed)=15:00
+2026-05-13 18:51:53.875 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=18 time=04:00 PM slotTime(parsed)=16:00
+2026-05-13 18:51:53.891 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=19 time=09:00 AM slotTime(parsed)=09:00
+2026-05-13 18:51:53.908 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=20 time=10:00 AM slotTime(parsed)=10:00
+2026-05-13 18:51:53.924 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=21 time=11:00 AM slotTime(parsed)=11:00
+2026-05-13 18:51:53.938 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=22 time=02:00 PM slotTime(parsed)=14:00
+2026-05-13 18:51:53.952 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=23 time=03:00 PM slotTime(parsed)=15:00
+2026-05-13 18:51:53.964 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=24 time=04:00 PM slotTime(parsed)=16:00
+2026-05-13 18:51:53.977 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=25 time=09:00 AM slotTime(parsed)=09:00
+2026-05-13 18:51:53.991 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=26 time=10:00 AM slotTime(parsed)=10:00
+2026-05-13 18:51:54.005 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=27 time=11:00 AM slotTime(parsed)=11:00
+2026-05-13 18:51:54.019 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=28 time=02:00 PM slotTime(parsed)=14:00
+2026-05-13 18:51:54.032 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=29 time=03:00 PM slotTime(parsed)=15:00
+2026-05-13 18:51:54.048 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=30 time=04:00 PM slotTime(parsed)=16:00
+2026-05-13 18:51:54.061 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=31 time=09:00 AM slotTime(parsed)=09:00
+2026-05-13 18:51:54.072 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=32 time=10:00 AM slotTime(parsed)=10:00
+2026-05-13 18:51:54.082 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=33 time=11:00 AM slotTime(parsed)=11:00
+2026-05-13 18:51:54.094 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=34 time=02:00 PM slotTime(parsed)=14:00
+2026-05-13 18:51:54.107 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=35 time=03:00 PM slotTime(parsed)=15:00
+2026-05-13 18:51:54.119 INFO  [appointment-service] [traceId=f59c4e08] c.m.appointment.service.SlotService - Expiring slot id=36 time=04:00 PM slotTime(parsed)=16:00
+2026-05-13 18:51:54.178 ERROR [appointment-service] [traceId=f59c4e08] c.m.appointment.aop.LoggingAspect - [SERVICE][f59c4e08] !! SlotService.getAvailableSlots(..) | 1649ms | error: All slots for today have already passed or booked.
+com.meditrack.appointment.exception.SlotNotAvailableException: All slots for today have already passed or booked.
+	at com.meditrack.appointment.service.SlotService.getAvailableSlots(SlotService.java:161)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.meditrack.appointment.aop.LoggingAspect.logExecution(LoggingAspect.java:44)
+	at com.meditrack.appointment.aop.LoggingAspect.logServiceMethods(LoggingAspect.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.meditrack.appointment.service.SlotService$$SpringCGLIB$$0.getAvailableSlots(<generated>)
+	at com.meditrack.appointment.controller.SlotController.getAvailableSlots(SlotController.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.meditrack.appointment.aop.LoggingAspect.logExecution(LoggingAspect.java:44)
+	at com.meditrack.appointment.aop.LoggingAspect.logControllerMethods(LoggingAspect.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.meditrack.appointment.controller.SlotController$$SpringCGLIB$$0.getAvailableSlots(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.meditrack.appointment.filter.JwtFilter.doFilterInternal(JwtFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-13 18:51:54.223 ERROR [appointment-service] [traceId=none] c.m.appointment.aop.LoggingAspect - [CONTROLLER][f59c4e08] !! SlotController.getAvailableSlots(..) | 1702ms | error: All slots for today have already passed or booked.
+com.meditrack.appointment.exception.SlotNotAvailableException: All slots for today have already passed or booked.
+	at com.meditrack.appointment.service.SlotService.getAvailableSlots(SlotService.java:161)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.meditrack.appointment.aop.LoggingAspect.logExecution(LoggingAspect.java:44)
+	at com.meditrack.appointment.aop.LoggingAspect.logServiceMethods(LoggingAspect.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.meditrack.appointment.service.SlotService$$SpringCGLIB$$0.getAvailableSlots(<generated>)
+	at com.meditrack.appointment.controller.SlotController.getAvailableSlots(SlotController.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.meditrack.appointment.aop.LoggingAspect.logExecution(LoggingAspect.java:44)
+	at com.meditrack.appointment.aop.LoggingAspect.logControllerMethods(LoggingAspect.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.meditrack.appointment.controller.SlotController$$SpringCGLIB$$0.getAvailableSlots(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.meditrack.appointment.filter.JwtFilter.doFilterInternal(JwtFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-13 18:53:50.613 INFO  [appointment-service] [traceId=none] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 3200 ms
+2026-05-13 19:07:47.189 WARN  [appointment-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/APPOINTMENT-SERVICE/DESKTOP-TE08QKM:appointment-service:8084": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2026-05-13 19:07:47.189 WARN  [appointment-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2026-05-13 19:07:47.369 WARN  [appointment-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/APPOINTMENT-SERVICE/DESKTOP-TE08QKM:appointment-service:8084": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2026-05-13 19:07:47.370 WARN  [appointment-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2026-05-13 19:07:47.370 ERROR [appointment-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_APPOINTMENT-SERVICE/DESKTOP-TE08QKM:appointment-service:8084 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:837)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1401)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-13 19:07:49.450 INFO  [appointment-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-13 19:07:49.519 INFO  [appointment-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application APPOINTMENT-SERVICE with eureka with status DOWN
+2026-05-13 19:07:49.592 WARN  [appointment-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/APPOINTMENT-SERVICE": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2026-05-13 19:07:49.592 WARN  [appointment-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_APPOINTMENT-SERVICE/DESKTOP-TE08QKM:appointment-service:8084 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-13 19:07:49.592 WARN  [appointment-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-13 19:07:49.634 INFO  [appointment-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8084"]
+2026-05-13 19:07:49.726 INFO  [appointment-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-13 19:07:49.790 INFO  [appointment-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-13 19:07:49.880 INFO  [appointment-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-13 19:07:52.907 WARN  [appointment-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: Connection pool shut down
+2026-05-13 19:07:52.907 ERROR [appointment-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_APPOINTMENT-SERVICE/DESKTOP-TE08QKM:appointment-service:8084 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1147)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)

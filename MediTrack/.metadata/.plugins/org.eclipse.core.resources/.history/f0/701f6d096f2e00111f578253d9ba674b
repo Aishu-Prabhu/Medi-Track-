@@ -1,0 +1,5 @@
+package com.meditrack.auth.service;
+
+public class AuthService {
+
+}

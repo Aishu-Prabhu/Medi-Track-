@@ -1,0 +1,332 @@
+package com.meditrack.prescription.service;
+
+import com.meditrack.prescription.client.AppointmentClient;
+import com.meditrack.prescription.client.NotificationClient;
+import com.meditrack.prescription.client.PatientClient;
+import com.meditrack.prescription.dto.*;
+import com.meditrack.prescription.entity.Prescription;
+import com.meditrack.prescription.exception.*;
+import com.meditrack.prescription.repository.PrescriptionRepository;
+import com.meditrack.prescription.security.SecurityUtil;
+
+import feign.FeignException;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockedStatic;
+
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+@ExtendWith(MockitoExtension.class)
+class PrescriptionServiceTest {
+
+    @InjectMocks
+    private PrescriptionService prescriptionService;
+
+    @Mock
+    private PrescriptionRepository prescriptionRepository;
+
+    @Mock
+    private AppointmentClient appointmentClient;
+
+    @Mock
+    private PatientClient patientClient;
+
+    @Mock
+    private NotificationClient notificationClient;
+
+    private Prescription prescription;
+
+    private AppointmentResponse appointment;
+
+    @BeforeEach
+    void setUp() {
+
+        prescription = new Prescription();
+
+        prescription.setId(1L);
+        prescription.setAppointmentId(100L);
+        prescription.setPatientId(10L);
+        prescription.setDoctorId(20L);
+        prescription.setPatientName("Aishu");
+        prescription.setDoctorName("Raj");
+        prescription.setDiagnosis("Fever");
+        prescription.setMedicines("Paracetamol");
+
+        appointment = new AppointmentResponse();
+
+        appointment.setId(100L);
+        appointment.setPatientId(10L);
+        appointment.setDoctorId(20L);
+        appointment.setPatientName("Aishu");
+        appointment.setDoctorName("Raj");
+        appointment.setStatus("COMPLETED");
+    }
+
+    @Test
+    void testAddPrescriptionSuccess() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getCurrentUserRole)
+                    .thenReturn("DOCTOR");
+
+            when(appointmentClient.getAppointmentById(100L))
+                    .thenReturn(appointment);
+
+            when(prescriptionRepository.findByAppointmentId(100L))
+                    .thenReturn(Optional.empty());
+
+            when(prescriptionRepository.save(any(Prescription.class)))
+                    .thenReturn(prescription);
+
+            Prescription result =
+                    prescriptionService.addPrescription(
+                            prescription
+                    );
+
+            assertNotNull(result);
+
+            verify(notificationClient, times(1))
+                    .create(any(NotificationRequest.class));
+        }
+    }
+
+    @Test
+    void testAddPrescriptionAccessDenied() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getCurrentUserRole)
+                    .thenReturn("PATIENT");
+
+            assertThrows(
+                    BadRequestException.class,
+                    () -> prescriptionService.addPrescription(
+                            prescription
+                    )
+            );
+        }
+    }
+
+    @Test
+    void testAddPrescriptionConflict() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getCurrentUserRole)
+                    .thenReturn("DOCTOR");
+
+            when(appointmentClient.getAppointmentById(100L))
+                    .thenReturn(appointment);
+
+            when(prescriptionRepository.findByAppointmentId(100L))
+                    .thenReturn(Optional.of(prescription));
+
+            assertThrows(
+                    ConflictException.class,
+                    () -> prescriptionService.addPrescription(
+                            prescription
+                    )
+            );
+        }
+    }
+
+    @Test
+    void testGetPrescriptionByIdSuccess() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getCurrentUserRole)
+                    .thenReturn("ADMIN");
+
+            when(prescriptionRepository.findById(1L))
+                    .thenReturn(Optional.of(prescription));
+
+            Prescription result =
+                    prescriptionService.getPrescriptionById(1L);
+
+            assertEquals(1L, result.getId());
+        }
+    }
+
+    @Test
+    void testGetPrescriptionByIdNotFound() {
+
+        when(prescriptionRepository.findById(1L))
+                .thenReturn(Optional.empty());
+
+        assertThrows(
+                ResourceNotFoundException.class,
+                () -> prescriptionService.getPrescriptionById(1L)
+        );
+    }
+
+    @Test
+    void testGetPrescriptionByAppointmentSuccess() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getCurrentUserRole)
+                    .thenReturn("ADMIN");
+
+            when(prescriptionRepository.findByAppointmentId(100L))
+                    .thenReturn(Optional.of(prescription));
+
+            Prescription result =
+                    prescriptionService
+                            .getPrescriptionByAppointment(100L);
+
+            assertNotNull(result);
+        }
+    }
+
+    @Test
+    void testGetPrescriptionsByPatientSuccess() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getCurrentUserRole)
+                    .thenReturn("ADMIN");
+
+            when(prescriptionRepository.findByPatientId(10L))
+                    .thenReturn(List.of(prescription));
+
+            List<Prescription> result =
+                    prescriptionService
+                            .getPrescriptionsByPatient(10L);
+
+            assertEquals(1, result.size());
+        }
+    }
+
+    @Test
+    void testGetPrescriptionsByDoctorSuccess() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getCurrentUserRole)
+                    .thenReturn("DOCTOR");
+
+            when(prescriptionRepository.findByDoctorId(20L))
+                    .thenReturn(List.of(prescription));
+
+            List<Prescription> result =
+                    prescriptionService
+                            .getPrescriptionsByDoctor(20L);
+
+            assertEquals(1, result.size());
+        }
+    }
+
+    @Test
+    void testGetAllPrescriptionsSuccess() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getCurrentUserRole)
+                    .thenReturn("ADMIN");
+
+            when(prescriptionRepository.findAll())
+                    .thenReturn(List.of(prescription));
+
+            List<Prescription> result =
+                    prescriptionService.getAllPrescriptions();
+
+            assertEquals(1, result.size());
+        }
+    }
+
+    @Test
+    void testGetAllPrescriptionsDenied() {
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getCurrentUserRole)
+                    .thenReturn("PATIENT");
+
+            assertThrows(
+                    BadRequestException.class,
+                    () -> prescriptionService.getAllPrescriptions()
+            );
+        }
+    }
+
+    @Test
+    void testUpdatePrescriptionSuccess() {
+
+        PrescriptionUpdateRequest req =
+                new PrescriptionUpdateRequest();
+
+        req.setDiagnosis("Updated Diagnosis");
+        req.setMedicines("Updated Medicine");
+        req.setNotes("Updated Notes");
+        req.setFollowUpDate(LocalDate.now().plusDays(7));
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getCurrentUserRole)
+                    .thenReturn("DOCTOR");
+
+            when(prescriptionRepository.findById(1L))
+                    .thenReturn(Optional.of(prescription));
+
+            when(prescriptionRepository.save(any(Prescription.class)))
+                    .thenReturn(prescription);
+
+            Prescription updated =
+                    prescriptionService.updatePrescription(
+                            1L,
+                            req
+                    );
+
+            assertNotNull(updated);
+
+            verify(notificationClient, times(1))
+                    .create(any(NotificationRequest.class));
+        }
+    }
+
+    @Test
+    void testUpdatePrescriptionDenied() {
+
+        PrescriptionUpdateRequest req =
+                new PrescriptionUpdateRequest();
+
+        try (MockedStatic<SecurityUtil> mocked =
+                     mockStatic(SecurityUtil.class)) {
+
+            mocked.when(SecurityUtil::getCurrentUserRole)
+                    .thenReturn("PATIENT");
+
+            assertThrows(
+                    BadRequestException.class,
+                    () -> prescriptionService.updatePrescription(
+                            1L,
+                            req
+                    )
+            );
+        }
+    }
+}

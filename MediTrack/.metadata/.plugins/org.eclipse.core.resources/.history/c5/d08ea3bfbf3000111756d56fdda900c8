@@ -1,0 +1,5 @@
+package com.meditrack.appointment.dto;
+
+public class DoctorResponse {
+
+}

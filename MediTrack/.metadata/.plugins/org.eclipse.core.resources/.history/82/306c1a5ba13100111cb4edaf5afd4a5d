@@ -1,0 +1,5 @@
+package com.meditrack.prescription.exception;
+
+public class GlobalExceptionHandler {
+
+}

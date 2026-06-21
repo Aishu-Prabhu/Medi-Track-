@@ -1,0 +1,5 @@
+package com.meditrack.prescription.service;
+
+public class PrescriptionService {
+
+}

@@ -1,0 +1,358 @@
+package com.meditrack.prescription.service;
+
+import com.meditrack.prescription.client.AppointmentClient;
+import com.meditrack.prescription.client.NotificationClient;
+import com.meditrack.prescription.client.PatientClient;
+import com.meditrack.prescription.dto.AppointmentResponse;
+import com.meditrack.prescription.dto.NotificationRequest;
+import com.meditrack.prescription.dto.PatientResponse;
+import com.meditrack.prescription.dto.PrescriptionUpdateRequest;
+import com.meditrack.prescription.entity.Prescription;
+import com.meditrack.prescription.exception.*;
+import com.meditrack.prescription.repository.PrescriptionRepository;
+import com.meditrack.prescription.security.SecurityUtil;
+
+import feign.FeignException;
+import lombok.RequiredArgsConstructor;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.time.LocalDate;
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+public class PrescriptionService {
+
+    private static final Logger log =
+            LoggerFactory.getLogger(PrescriptionService.class);
+
+    private final PrescriptionRepository prescriptionRepository;
+    private final AppointmentClient appointmentClient;
+    private final PatientClient patientClient;
+    private final NotificationClient notificationClient;
+    
+    
+    private static final String ROLE_DOCTOR = "DOCTOR";
+    private static final String ROLE_ADMIN = "ADMIN";
+    private static final String ROLE_SUPER_ADMIN = "SUPER_ADMIN";
+    private static final String ROLE_PATIENT = "PATIENT";
+    
+    
+    
+
+    //CREATE 
+    @Transactional
+    public Prescription addPrescription(Prescription prescription) {
+
+        String role = SecurityUtil.getCurrentUserRole();
+
+        if (!ROLE_DOCTOR.equals(role)) {
+            throw new BadRequestException(
+                    "Only doctors can create prescriptions");
+        }
+
+        AppointmentResponse appointment;
+
+        try {
+            appointment = appointmentClient.getAppointmentById(
+                    prescription.getAppointmentId());
+
+        } catch (FeignException.NotFound e) {
+
+            throw new ResourceNotFoundException(
+                    "Appointment with ID "
+                            + prescription.getAppointmentId()
+                            + " does not exist.");
+
+        } catch (FeignException e) {
+
+            throw new BadRequestException(
+                    "Could not reach appointment service.");
+        }
+
+        if ("CANCELLED".equalsIgnoreCase(
+                appointment.getStatus())) {
+
+            throw new BadRequestException(
+                    "Cannot add prescription for cancelled appointment");
+        }
+
+        prescriptionRepository
+                .findByAppointmentId(
+                        prescription.getAppointmentId())
+                .ifPresent(existing -> {
+                    throw new ConflictException(
+                            "Prescription already exists for this appointment");
+                });
+
+        prescription.setAppointmentId(
+                appointment.getId());
+
+        prescription.setPatientId(
+                appointment.getPatientId());
+
+        prescription.setDoctorId(
+                appointment.getDoctorId());
+
+        prescription.setPatientName(
+                appointment.getPatientName());
+
+        prescription.setDoctorName(
+                appointment.getDoctorName());
+
+        prescription.setPrescriptionDate(
+                LocalDate.now());
+
+        Prescription saved =
+                prescriptionRepository.save(prescription);
+
+        log.info(
+                "Prescription created successfully for appointmentId={}",
+                appointment.getId()
+        );
+
+        //Notification 
+        try {
+            NotificationRequest n =
+                    new NotificationRequest();
+
+            n.setPatientId(saved.getPatientId());
+            n.setTitle("Prescription Added");
+            n.setMessage(
+                    "Dr. "
+                            + saved.getDoctorName()
+                            + " has added your prescription."
+            );
+
+            notificationClient.create(n);
+
+        } catch (Exception e) {
+            log.error(
+                    "Failed to send prescription added notification",
+                    e
+            );
+        }
+
+        return saved;
+    }
+
+    // GET BY ID 
+    public Prescription getPrescriptionById(Long id) {
+
+        Prescription prescription =
+                prescriptionRepository.findById(id)
+                        .orElseThrow(() ->
+                                new ResourceNotFoundException(
+                                        "Prescription not found"));
+
+        String role =
+                SecurityUtil.getCurrentUserRole();
+
+        if (ROLE_PATIENT.equals(role)) {
+
+            String email =
+                    SecurityUtil.getCurrentUserEmail();
+
+            PatientResponse patient =
+                    patientClient.getPatientByEmail(email);
+
+            if (!prescription.getPatientId()
+                    .equals(patient.getId())) {
+
+                throw new BadRequestException(
+                        "Access denied ! You are allowed to see your own prescription.");
+            }
+        }
+
+        return prescription;
+    }
+
+    // GET BY APPOINTMENT 
+    public Prescription getPrescriptionByAppointment(
+            Long appointmentId) {
+
+        Prescription prescription =
+                prescriptionRepository
+                        .findByAppointmentId(
+                                appointmentId)
+                        .orElseThrow(() ->
+                                new ResourceNotFoundException(
+                                        "No prescription found"));
+
+        String role =
+                SecurityUtil.getCurrentUserRole();
+
+        if (ROLE_PATIENT.equals(role)) {
+
+            String email =
+                    SecurityUtil.getCurrentUserEmail();
+
+            PatientResponse patient =
+                    patientClient.getPatientByEmail(email);
+
+            if (!prescription.getPatientId()
+                    .equals(patient.getId())) {
+
+                throw new BadRequestException(
+                        "Access denied ! You are allowed to see your own prescription.");
+            }
+        }
+
+        return prescription;
+    }
+
+    // GET BY PATIENT 
+    public List<Prescription> getPrescriptionsByPatient(
+            Long patientId) {
+
+        String role =
+                SecurityUtil.getCurrentUserRole();
+
+        if (ROLE_ADMIN.equals(role)
+                || ROLE_SUPER_ADMIN.equals(role)
+                || ROLE_DOCTOR.equals(role)) {
+
+            return prescriptionRepository
+                    .findByPatientId(patientId);
+        }
+
+        String email =
+                SecurityUtil.getCurrentUserEmail();
+
+        PatientResponse patient;
+
+        try {
+            patient =
+                    patientClient.getPatientByEmail(email);
+
+        } catch (FeignException e) {
+
+            throw new BadRequestException(
+                    "Could not verify patient identity.");
+        }
+
+        if (!patient.getId().equals(patientId)) {
+
+            throw new BadRequestException(
+                    "Access denied. You can only view your own prescriptions.");
+        }
+
+        return prescriptionRepository
+                .findByPatientId(patientId);
+    }
+
+    // GET BY DOCTOR
+    public List<Prescription> getPrescriptionsByDoctor(
+            Long doctorId) {
+
+        String role =
+                SecurityUtil.getCurrentUserRole();
+
+        if (!ROLE_DOCTOR.equals(role)
+                && !ROLE_ADMIN.equals(role)
+                && !ROLE_SUPER_ADMIN.equals(role)) {
+
+            throw new BadRequestException(
+                    "Only doctors and admins can access this.");
+        }
+
+        return prescriptionRepository
+                .findByDoctorId(doctorId);
+    }
+
+    // GET ALL 
+    public List<Prescription> getAllPrescriptions() {
+
+        String role =
+                SecurityUtil.getCurrentUserRole();
+
+        log.info(
+                "getAllPrescriptions called by role: {}",
+                role
+        );
+
+        if (!ROLE_ADMIN.equals(role)
+                && !ROLE_SUPER_ADMIN.equals(role)) {
+
+            throw new BadRequestException(
+                    "Only admin can access");
+        }
+
+        return prescriptionRepository.findAll();
+    }
+
+    //UPDATE
+    @Transactional
+    public Prescription updatePrescription(
+            Long id,
+            PrescriptionUpdateRequest req) {
+
+        String role =
+                SecurityUtil.getCurrentUserRole();
+
+        if (!ROLE_DOCTOR.equals(role)) {
+
+            throw new BadRequestException(
+                    "Only doctors can update prescriptions");
+        }
+
+        Prescription existing =
+                getPrescriptionById(id);
+
+        if (req.getDiagnosis() != null) {
+            existing.setDiagnosis(
+                    req.getDiagnosis());
+        }
+
+        if (req.getMedicines() != null) {
+            existing.setMedicines(
+                    req.getMedicines());
+        }
+
+        if (req.getNotes() != null) {
+            existing.setNotes(
+                    req.getNotes());
+        }
+
+        if (req.getFollowUpDate() != null) {
+            existing.setFollowUpDate(
+                    req.getFollowUpDate());
+        }
+
+        Prescription updated =
+                prescriptionRepository.save(existing);
+
+        log.info(
+                "Prescription updated for id={}",
+                id
+        );
+
+        // Notification Updated
+        try {
+            NotificationRequest n =
+                    new NotificationRequest();
+
+            n.setPatientId(updated.getPatientId());
+            n.setTitle("Prescription Updated");
+            n.setMessage(
+                    "Dr. "
+                            + updated.getDoctorName()
+                            + " has updated your prescription."
+            );
+
+            notificationClient.create(n);
+
+        } catch (Exception e) {
+            log.error(
+                    "Failed to send prescription updated notification",
+                    e
+            );
+        }
+
+        return updated;
+    }
+}

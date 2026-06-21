@@ -1,0 +1,87 @@
+package com.meditrack.prescription.security;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.List;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Test;
+
+import org.springframework.security.authentication.
+UsernamePasswordAuthenticationToken;
+
+import org.springframework.security.core.context.
+SecurityContextHolder;
+
+import com.meditrack.prescription.exception.
+UnauthorizedException;
+
+class SecurityUtilTest {
+
+    @AfterEach
+    void clearContext() {
+        SecurityContextHolder.clearContext();
+    }
+
+    // Get email success
+    @Test
+    void testGetCurrentUserEmail() {
+
+        UsernamePasswordAuthenticationToken auth =
+                new UsernamePasswordAuthenticationToken(
+                        "doctor@test.com",
+                        null,
+                        List.of(() -> "ROLE_DOCTOR"));
+
+        SecurityContextHolder.getContext()
+                .setAuthentication(auth);
+
+        String email =
+                SecurityUtil.getCurrentUserEmail();
+
+        assertEquals("doctor@test.com", email);
+    }
+
+    // Get role success
+    @Test
+    void testGetCurrentUserRole() {
+
+        UsernamePasswordAuthenticationToken auth =
+                new UsernamePasswordAuthenticationToken(
+                        "doctor@test.com",
+                        null,
+                        List.of(() -> "ROLE_DOCTOR"));
+
+        SecurityContextHolder.getContext()
+                .setAuthentication(auth);
+
+        String role =
+                SecurityUtil.getCurrentUserRole();
+
+        assertEquals("DOCTOR", role);
+    }
+
+    // Email unauthorized
+    @Test
+    void testGetCurrentUserEmail_Unauthorized() {
+
+        SecurityContextHolder.clearContext();
+
+        assertThrows(
+                UnauthorizedException.class,
+                () -> SecurityUtil.getCurrentUserEmail()
+        );
+    }
+
+    // Role unauthorized
+    @Test
+    void testGetCurrentUserRole_Unauthorized() {
+
+        SecurityContextHolder.clearContext();
+
+        assertThrows(
+                UnauthorizedException.class,
+                SecurityUtil::getCurrentUserRole
+        );
+    }
+}

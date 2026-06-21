@@ -1,0 +1,108 @@
+package com.meditrack.appointment.service;
+
+import com.meditrack.appointment.entity.DoctorSlot;
+import com.meditrack.appointment.entity.SlotStatus;
+import com.meditrack.appointment.repository.DoctorSlotRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.List;
+import java.util.logging.Logger;
+
+@Service
+public class SlotService {
+
+    private static final Logger logger = Logger.getLogger(SlotService.class.getName());
+
+    private static final List<String> DEFAULT_SLOTS = Arrays.asList(
+        "09:00 AM", "10:00 AM", "11:00 AM",
+        "02:00 PM", "03:00 PM", "04:00 PM"
+    );
+
+    @Autowired
+    private DoctorSlotRepository slotRepository;
+
+    // Generate slots for a doctor for a specific date
+    public List<DoctorSlot> generateSlots(Long doctorId, LocalDate date) {
+        logger.info("Generating slots for doctor: " + doctorId + " on " + date);
+
+        // Check if slots already exist for this date
+        List<DoctorSlot> existing = slotRepository
+            .findByDoctorIdAndSlotDate(doctorId, date);
+
+        if (!existing.isEmpty()) {
+            return existing;
+        }
+
+        // Create fresh slots
+        for (String time : DEFAULT_SLOTS) {
+            DoctorSlot slot = new DoctorSlot();
+            slot.setDoctorId(doctorId);
+            slot.setSlotDate(date);
+            slot.setSlotTime(time);
+            slot.setStatus(SlotStatus.AVAILABLE);
+            slotRepository.save(slot);
+        }
+
+        return slotRepository.findByDoctorIdAndSlotDate(doctorId, date);
+    }
+
+    // Get all slots for a doctor on a date
+    public List<DoctorSlot> getSlots(Long doctorId, LocalDate date) {
+        logger.info("Fetching slots for doctor: " + doctorId + " on " + date);
+        List<DoctorSlot> slots = slotRepository
+            .findByDoctorIdAndSlotDate(doctorId, date);
+
+        // Auto generate if no slots exist
+        if (slots.isEmpty()) {
+            return generateSlots(doctorId, date);
+        }
+        return slots;
+    }
+
+    // Get only available slots
+    public List<DoctorSlot> getAvailableSlots(Long doctorId, LocalDate date) {
+        logger.info("Fetching available slots for doctor: " + doctorId);
+        List<DoctorSlot> slots = slotRepository
+            .findByDoctorIdAndSlotDateAndStatus(doctorId, date, SlotStatus.AVAILABLE);
+
+        if (slots.isEmpty()) {
+            generateSlots(doctorId, date);
+            return slotRepository.findByDoctorIdAndSlotDateAndStatus(
+                doctorId, date, SlotStatus.AVAILABLE);
+        }
+        return slots;
+    }
+
+    // Book a specific slot
+    public DoctorSlot bookSlot(Long doctorId, LocalDate date, String slotTime) {
+        logger.info("Booking slot: " + slotTime + " for doctor: " + doctorId);
+
+        DoctorSlot slot = slotRepository
+            .findByDoctorIdAndSlotDateAndSlotTime(doctorId, date, slotTime)
+            .orElseThrow(() -> new RuntimeException(
+                "Slot " + slotTime + " not found for doctor " + doctorId));
+
+        if (slot.getStatus() == SlotStatus.BOOKED) {
+            throw new RuntimeException(
+                "Slot " + slotTime + " is already booked!");
+        }
+
+        slot.setStatus(SlotStatus.BOOKED);
+        return slotRepository.save(slot);
+    }
+
+    // Release a slot (when appointment cancelled)
+    public DoctorSlot releaseSlot(Long doctorId, LocalDate date, String slotTime) {
+        logger.info("Releasing slot: " + slotTime + " for doctor: " + doctorId);
+
+        DoctorSlot slot = slotRepository
+            .findByDoctorIdAndSlotDateAndSlotTime(doctorId, date, slotTime)
+            .orElseThrow(() -> new RuntimeException("Slot not found"));
+
+        slot.setStatus(SlotStatus.AVAILABLE);
+        return slotRepository.save(slot);
+    }
+}

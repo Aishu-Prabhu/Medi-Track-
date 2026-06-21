@@ -1,0 +1,51 @@
+package com.meditrack.patient.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.meditrack.patient.entity.Patient;
+import com.meditrack.patient.service.PatientService;
+
+@RestController
+@RequestMapping("/patients")
+public class PatientController {
+	
+	@Autowired
+	private PatientService service;
+	
+	@PostMapping("/add")
+	public ResponseEntity<Patient> addPatient(@RequestBody Patient patient){
+		return ResponseEntity.ok(service.addPatient(patient));
+	}
+	
+	@GetMapping("/{id}")
+	public ResponseEntity<Patient> getPatientById(@PathVariable Long id){
+		return ResponseEntity.ok(service.getPatientById(id));
+	}
+	
+	@GetMapping("/all")
+	public ResponseEntity<List<Patient>> getAllPatients(){
+		return ResponseEntity.ok(service.getAllPatients());
+	}
+	
+	@PutMapping("/update/{id}")
+	public ResponseEntity<Patient> updatePatient(@PathVariable Long id, @RequestBody Patient patient){
+		return ResponseEntity.ok(service.updatePatient(id, patient));
+	}
+	
+	@DeleteMapping("/delete/{id}")
+	public ResponseEntity<String> deletPatient(@PathVariable Long id){
+		return ResponseEntity.ok(service.deletePatient(id));
+	}
+
+}

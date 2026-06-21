@@ -1,0 +1,5 @@
+package com.meditrack.appointment.exception;
+
+public class GlobalExceptionHandlerTest {
+
+}

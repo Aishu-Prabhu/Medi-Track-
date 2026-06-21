@@ -1,0 +1,39 @@
+package com.meditrack.doctor.dto;
+
+import com.meditrack.doctor.entity.Specialization;
+import jakarta.validation.constraints.*;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class DoctorRequest {
+
+    @NotBlank(message = "Name cannot be empty")
+    @Size(min = 2, max = 50)
+    private String name;
+
+    @NotBlank(message = "Email is required")
+    @Email(message = "Invalid email format")
+    @Pattern(
+        regexp = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$",
+        message = "Email must be like user@gmail.com"
+    )
+    private String email;
+
+    @NotBlank(message = "Phone cannot be empty")
+    @Pattern(regexp = "^\\d{10}$", message = "Phone must be 10 digits")
+    private String phone;
+
+    @NotNull(message = "Specialization is required")
+    private Specialization specialization;
+
+    @Min(value = 0)
+    @Max(value = 60)
+    private Integer experience;
+
+    @NotBlank(message = "Qualification required")
+    private String qualification;
+
+    
+}

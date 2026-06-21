@@ -1,0 +1,5 @@
+package com.meditrack.auth.exception;
+
+public class GlobalExceptionHandler {
+
+}

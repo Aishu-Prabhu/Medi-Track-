@@ -1,0 +1,1455 @@
+2026-05-09 13:46:53.980 INFO  [auth-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-09 13:46:54.050 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Starting AuthServiceApplication using Java 20.0.2 with PID 15616 (C:\Users\Aishu\C_MediTrack\MediTrack\auth-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\auth-service)
+2026-05-09 13:46:54.051 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 13:46:55.308 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 13:46:55.617 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 277 ms. Found 1 JPA repository interface.
+2026-05-09 13:46:56.080 INFO  [auth-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=8bed9a3d-0133-33d8-9ee1-4f0efff3d5fb
+2026-05-09 13:46:57.168 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 13:46:57.194 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 13:46:57.198 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 13:46:57.200 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-09 13:46:57.333 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 13:46:57.334 INFO  [auth-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3227 ms
+2026-05-09 13:46:57.715 INFO  [auth-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 13:46:57.813 INFO  [auth-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-09 13:46:57.879 INFO  [auth-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 13:46:58.348 INFO  [auth-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 13:46:58.405 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 13:46:59.025 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6765b6a2
+2026-05-09 13:46:59.028 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 13:46:59.208 INFO  [auth-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-09 13:47:02.601 INFO  [auth-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 13:47:04.442 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 13:47:10.324 INFO  [auth-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-09 13:47:13.117 INFO  [auth-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-09 13:47:13.206 WARN  [auth-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-09 13:47:13.387 INFO  [auth-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-09 13:47:14.811 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application AUTH-SERVICE with eureka with status UP
+2026-05-09 13:47:14.821 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-09 13:47:14.882 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-05-09 13:47:14.884 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-05-09 13:47:15.098 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Started AuthServiceApplication in 21.779 seconds (process running for 28.74)
+2026-05-09 13:53:32.144 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-09 13:53:32.168 INFO  [auth-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-09 13:53:32.337 INFO  [auth-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 165 ms
+2026-05-09 13:53:33.410 INFO  [auth-service] [traceId=297d2e6b] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][297d2e6b] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@7447e7be]
+2026-05-09 13:53:33.415 INFO  [auth-service] [traceId=297d2e6b] c.meditrack.auth.aop.LoggingAspect - [SERVICE][297d2e6b] --> AuthService.login(..) | args: [admin@gmail.com, admin123]
+2026-05-09 13:53:34.064 INFO  [auth-service] [traceId=297d2e6b] c.meditrack.auth.aop.LoggingAspect - [SERVICE][297d2e6b] <-- AuthService.login(..) | 649ms | result: com.meditrack.auth.dto.AuthResponse@6ca4c83c
+2026-05-09 13:53:34.066 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][297d2e6b] <-- AuthController.login(..) | 657ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@6ca4c83c,[]>
+2026-05-09 13:53:34.735 INFO  [auth-service] [traceId=e3619887] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][e3619887] --> AuthController.getAllAdmins() | args: []
+2026-05-09 13:53:34.736 INFO  [auth-service] [traceId=e3619887] c.meditrack.auth.aop.LoggingAspect - [SERVICE][e3619887] --> AuthService.getAllAdmins() | args: []
+2026-05-09 13:53:34.891 INFO  [auth-service] [traceId=e3619887] c.meditrack.auth.aop.LoggingAspect - [SERVICE][e3619887] <-- AuthService.getAllAdmins() | 155ms | result: [com.meditrack.auth.entity.User@7a41aecd, com.meditrack.auth.entity.User@83a18f0]
+2026-05-09 13:53:34.892 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][e3619887] <-- AuthController.getAllAdmins() | 157ms | result: <200 OK OK,[com.meditrack.auth.entity.User@7a41aecd, com.meditrack.auth.entity.User@83a18f0],[]>
+2026-05-09 13:53:35.010 INFO  [auth-service] [traceId=02ea9adf] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][02ea9adf] --> AuthController.getAllAdmins() | args: []
+2026-05-09 13:53:35.011 INFO  [auth-service] [traceId=02ea9adf] c.meditrack.auth.aop.LoggingAspect - [SERVICE][02ea9adf] --> AuthService.getAllAdmins() | args: []
+2026-05-09 13:53:35.028 INFO  [auth-service] [traceId=02ea9adf] c.meditrack.auth.aop.LoggingAspect - [SERVICE][02ea9adf] <-- AuthService.getAllAdmins() | 17ms | result: [com.meditrack.auth.entity.User@5fd992d1, com.meditrack.auth.entity.User@44808bc3]
+2026-05-09 13:53:35.029 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][02ea9adf] <-- AuthController.getAllAdmins() | 19ms | result: <200 OK OK,[com.meditrack.auth.entity.User@5fd992d1, com.meditrack.auth.entity.User@44808bc3],[]>
+2026-05-09 13:54:54.039 INFO  [auth-service] [traceId=6edf1ca5] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][6edf1ca5] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@2c98273f]
+2026-05-09 13:54:54.049 INFO  [auth-service] [traceId=6edf1ca5] c.meditrack.auth.aop.LoggingAspect - [SERVICE][6edf1ca5] --> AuthService.login(..) | args: [aishwaryaprabhu87@gmail.com, komala123]
+2026-05-09 13:54:54.434 INFO  [auth-service] [traceId=6edf1ca5] c.meditrack.auth.aop.LoggingAspect - [SERVICE][6edf1ca5] <-- AuthService.login(..) | 385ms | result: com.meditrack.auth.dto.AuthResponse@1be27b3
+2026-05-09 13:54:54.435 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][6edf1ca5] <-- AuthController.login(..) | 398ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@1be27b3,[]>
+2026-05-09 13:55:37.238 INFO  [auth-service] [traceId=3f1262f8] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][3f1262f8] --> AuthController.getUserByEmail(..) | args: [aishwaryaprabhu87@gmail.com]
+2026-05-09 13:55:37.291 INFO  [auth-service] [traceId=3f1262f8] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][3f1262f8] <-- AuthController.getUserByEmail(..) | 52ms | result: <200 OK OK,com.meditrack.auth.dto.UserResponse@66954375,[]>
+2026-05-09 14:05:25.364 INFO  [auth-service] [traceId=3239b5ac] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][3239b5ac] --> AuthController.getUserByEmail(..) | args: [aishwaryaprabhu87@gmail.com]
+2026-05-09 14:05:25.748 INFO  [auth-service] [traceId=3239b5ac] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][3239b5ac] <-- AuthController.getUserByEmail(..) | 392ms | result: <200 OK OK,com.meditrack.auth.dto.UserResponse@4f3c5851,[]>
+2026-05-09 14:18:05.028 INFO  [auth-service] [traceId=52dc26e5] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][52dc26e5] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@132532f1]
+2026-05-09 14:18:05.090 INFO  [auth-service] [traceId=52dc26e5] c.meditrack.auth.aop.LoggingAspect - [SERVICE][52dc26e5] --> AuthService.login(..) | args: [aishwaryaprabhu87@gmail.com, komala123]
+2026-05-09 14:18:05.966 INFO  [auth-service] [traceId=52dc26e5] c.meditrack.auth.aop.LoggingAspect - [SERVICE][52dc26e5] <-- AuthService.login(..) | 876ms | result: com.meditrack.auth.dto.AuthResponse@1f97e527
+2026-05-09 14:18:05.967 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][52dc26e5] <-- AuthController.login(..) | 943ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@1f97e527,[]>
+2026-05-09 14:18:46.385 INFO  [auth-service] [traceId=a26f2609] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][a26f2609] --> AuthController.getUserByEmail(..) | args: [aishwaryaprabhu87@gmail.com]
+2026-05-09 14:18:46.396 INFO  [auth-service] [traceId=a26f2609] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][a26f2609] <-- AuthController.getUserByEmail(..) | 11ms | result: <200 OK OK,com.meditrack.auth.dto.UserResponse@3dcd63b6,[]>
+2026-05-09 14:27:28.255 INFO  [auth-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-09 14:27:28.414 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application AUTH-SERVICE with eureka with status DOWN
+2026-05-09 14:27:28.828 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-09 14:27:28.920 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2026-05-09 14:27:29.067 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-09 14:27:29.075 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 14:27:29.077 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/AUTH-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 14:27:29.087 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-05-09 14:27:29.232 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/AUTH-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 14:27:29.294 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 14:27:29.320 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 14:27:29.233 WARN  [auth-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 14:27:29.370 WARN  [auth-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 14:27:29.477 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-09 14:27:29.541 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-09 14:27:32.671 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 14:27:32.672 ERROR [auth-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 14:32:43.207 INFO  [auth-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-09 14:32:43.313 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Starting AuthServiceApplication using Java 20.0.2 with PID 19776 (C:\Users\Aishu\C_MediTrack\MediTrack\auth-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\auth-service)
+2026-05-09 14:32:43.316 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 14:32:45.278 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 14:32:45.804 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 500 ms. Found 1 JPA repository interface.
+2026-05-09 14:32:46.520 INFO  [auth-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=8bed9a3d-0133-33d8-9ee1-4f0efff3d5fb
+2026-05-09 14:32:47.718 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 14:32:47.744 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 14:32:47.749 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 14:32:47.751 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-09 14:32:47.888 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 14:32:47.889 INFO  [auth-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4489 ms
+2026-05-09 14:32:48.361 INFO  [auth-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 14:32:48.491 INFO  [auth-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-09 14:32:48.558 INFO  [auth-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 14:32:49.127 INFO  [auth-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 14:32:49.198 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 14:32:49.935 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b94c200
+2026-05-09 14:32:49.939 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 14:32:50.161 INFO  [auth-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-09 14:32:52.053 INFO  [auth-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 14:32:52.201 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 14:32:54.534 INFO  [auth-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-09 14:32:57.695 INFO  [auth-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-09 14:32:57.808 WARN  [auth-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-09 14:32:57.957 INFO  [auth-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-09 14:32:58.971 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application AUTH-SERVICE with eureka with status UP
+2026-05-09 14:32:58.975 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-09 14:32:59.022 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-05-09 14:32:59.023 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-05-09 14:32:59.220 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Started AuthServiceApplication in 17.226 seconds (process running for 18.607)
+2026-05-09 14:33:28.939 INFO  [auth-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-09 14:33:28.942 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application AUTH-SERVICE with eureka with status DOWN
+2026-05-09 14:33:28.946 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-09 14:33:28.947 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2026-05-09 14:33:28.954 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/AUTH-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 14:33:28.965 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 14:33:28.979 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/AUTH-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 14:33:28.980 WARN  [auth-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 14:33:28.986 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 14:33:28.986 WARN  [auth-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 14:33:28.998 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-09 14:33:28.999 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-05-09 14:33:29.005 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 14:33:29.005 ERROR [auth-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1403)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 14:33:29.012 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 14:33:29.025 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-09 14:33:29.035 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-09 14:33:56.022 INFO  [auth-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-09 14:33:56.140 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Starting AuthServiceApplication using Java 20.0.2 with PID 11352 (C:\Users\Aishu\C_MediTrack\MediTrack\auth-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\auth-service)
+2026-05-09 14:33:56.142 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 14:34:00.184 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 14:34:00.915 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 700 ms. Found 1 JPA repository interface.
+2026-05-09 14:34:02.204 INFO  [auth-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=8bed9a3d-0133-33d8-9ee1-4f0efff3d5fb
+2026-05-09 14:34:04.634 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 14:34:04.753 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 14:34:04.758 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 14:34:04.760 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-09 14:34:05.081 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 14:34:05.081 INFO  [auth-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8834 ms
+2026-05-09 14:34:11.482 INFO  [auth-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 14:34:11.751 INFO  [auth-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-09 14:34:11.950 INFO  [auth-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 14:34:13.720 INFO  [auth-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 14:34:13.826 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 14:34:15.376 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5cba474f
+2026-05-09 14:34:15.380 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 14:34:15.684 INFO  [auth-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-09 14:34:19.989 INFO  [auth-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 14:34:20.169 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 14:34:29.295 INFO  [auth-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-09 14:34:36.938 INFO  [auth-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-09 14:34:37.137 WARN  [auth-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-09 14:34:37.495 INFO  [auth-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-09 14:34:39.525 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application AUTH-SERVICE with eureka with status UP
+2026-05-09 14:34:39.603 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-09 14:34:39.737 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-05-09 14:34:39.739 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-05-09 14:34:40.193 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Started AuthServiceApplication in 46.046 seconds (process running for 47.693)
+2026-05-09 14:45:29.788 INFO  [auth-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-09 14:45:30.028 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application AUTH-SERVICE with eureka with status DOWN
+2026-05-09 14:45:30.777 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-09 14:45:30.902 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2026-05-09 14:45:31.059 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-09 14:45:31.091 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-05-09 14:45:31.089 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/AUTH-SERVICE": localhost:8761 failed to respond
+2026-05-09 14:45:31.460 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 14:45:31.652 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/AUTH-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 14:45:31.688 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-09 14:45:31.653 WARN  [auth-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 14:45:31.775 WARN  [auth-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 14:45:31.919 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-09 14:45:34.992 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 14:45:34.992 ERROR [auth-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 15:01:46.848 INFO  [auth-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-09 15:01:46.987 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Starting AuthServiceApplication using Java 20.0.2 with PID 21048 (C:\Users\Aishu\C_MediTrack\MediTrack\auth-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\auth-service)
+2026-05-09 15:01:46.991 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 15:01:50.474 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 15:01:50.991 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 490 ms. Found 1 JPA repository interface.
+2026-05-09 15:01:52.376 INFO  [auth-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=8bed9a3d-0133-33d8-9ee1-4f0efff3d5fb
+2026-05-09 15:01:54.124 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 15:01:54.156 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 15:01:54.161 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 15:01:54.161 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-09 15:01:54.316 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 15:01:54.317 INFO  [auth-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7089 ms
+2026-05-09 15:01:54.991 INFO  [auth-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 15:01:55.166 INFO  [auth-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-09 15:01:55.276 INFO  [auth-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 15:01:56.238 INFO  [auth-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 15:01:56.358 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 15:01:57.693 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c215642
+2026-05-09 15:01:57.697 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 15:01:57.933 INFO  [auth-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-09 15:02:00.924 INFO  [auth-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 15:02:01.173 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 15:02:05.018 INFO  [auth-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-09 15:02:09.747 INFO  [auth-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-09 15:02:09.864 WARN  [auth-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-09 15:02:10.059 INFO  [auth-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-09 15:02:10.765 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application AUTH-SERVICE with eureka with status UP
+2026-05-09 15:02:10.768 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-09 15:02:10.798 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-05-09 15:02:10.799 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-05-09 15:02:10.977 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Started AuthServiceApplication in 25.438 seconds (process running for 28.174)
+2026-05-09 15:03:52.412 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-09 15:03:52.424 INFO  [auth-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-09 15:03:52.490 INFO  [auth-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 66 ms
+2026-05-09 15:03:53.212 INFO  [auth-service] [traceId=9f9069d9] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][9f9069d9] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@55eb722f]
+2026-05-09 15:03:53.213 INFO  [auth-service] [traceId=9f9069d9] c.meditrack.auth.aop.LoggingAspect - [SERVICE][9f9069d9] --> AuthService.login(..) | args: [aishuprabhu2024@gmail.com, aishu123]
+2026-05-09 15:03:53.557 ERROR [auth-service] [traceId=9f9069d9] c.meditrack.auth.aop.LoggingAspect - [SERVICE][9f9069d9] !! AuthService.login(..) | 343ms | error: Invalid email or password
+com.meditrack.auth.exception.InvalidCredentialsException: Invalid email or password
+	at com.meditrack.auth.service.AuthService.login(AuthService.java:100)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.meditrack.auth.aop.LoggingAspect.logExecution(LoggingAspect.java:43)
+	at com.meditrack.auth.aop.LoggingAspect.logServiceMethods(LoggingAspect.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.meditrack.auth.service.AuthService$$SpringCGLIB$$0.login(<generated>)
+	at com.meditrack.auth.controller.AuthController.login(AuthController.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.meditrack.auth.aop.LoggingAspect.logExecution(LoggingAspect.java:43)
+	at com.meditrack.auth.aop.LoggingAspect.logControllerMethods(LoggingAspect.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.meditrack.auth.controller.AuthController$$SpringCGLIB$$0.login(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.meditrack.auth.filter.JwtFilter.doFilterInternal(JwtFilter.java:49)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 15:03:53.618 ERROR [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][9f9069d9] !! AuthController.login(..) | 407ms | error: Invalid email or password
+com.meditrack.auth.exception.InvalidCredentialsException: Invalid email or password
+	at com.meditrack.auth.service.AuthService.login(AuthService.java:100)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.meditrack.auth.aop.LoggingAspect.logExecution(LoggingAspect.java:43)
+	at com.meditrack.auth.aop.LoggingAspect.logServiceMethods(LoggingAspect.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.meditrack.auth.service.AuthService$$SpringCGLIB$$0.login(<generated>)
+	at com.meditrack.auth.controller.AuthController.login(AuthController.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.meditrack.auth.aop.LoggingAspect.logExecution(LoggingAspect.java:43)
+	at com.meditrack.auth.aop.LoggingAspect.logControllerMethods(LoggingAspect.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.meditrack.auth.controller.AuthController$$SpringCGLIB$$0.login(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.meditrack.auth.filter.JwtFilter.doFilterInternal(JwtFilter.java:49)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 15:04:06.840 INFO  [auth-service] [traceId=bcbb6c67] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][bcbb6c67] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@13da7ead]
+2026-05-09 15:04:06.840 INFO  [auth-service] [traceId=bcbb6c67] c.meditrack.auth.aop.LoggingAspect - [SERVICE][bcbb6c67] --> AuthService.login(..) | args: [aishuprabhu2024@gmail.com, aish123]
+2026-05-09 15:04:06.964 INFO  [auth-service] [traceId=bcbb6c67] c.meditrack.auth.aop.LoggingAspect - [SERVICE][bcbb6c67] <-- AuthService.login(..) | 124ms | result: com.meditrack.auth.dto.AuthResponse@7eaad83e
+2026-05-09 15:04:06.965 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][bcbb6c67] <-- AuthController.login(..) | 125ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@7eaad83e,[]>
+2026-05-09 15:04:30.445 INFO  [auth-service] [traceId=afe6b55e] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][afe6b55e] --> AuthController.getUserByEmail(..) | args: [aishuprabhu2024@gmail.com]
+2026-05-09 15:04:30.508 INFO  [auth-service] [traceId=afe6b55e] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][afe6b55e] <-- AuthController.getUserByEmail(..) | 63ms | result: <200 OK OK,com.meditrack.auth.dto.UserResponse@7239934e,[]>
+2026-05-09 15:37:27.417 INFO  [auth-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-09 15:37:27.657 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application AUTH-SERVICE with eureka with status DOWN
+2026-05-09 15:37:28.101 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-09 15:37:28.180 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2026-05-09 15:37:28.331 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-09 15:37:28.373 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-05-09 15:37:29.206 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 15:37:29.775 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-09 15:37:30.090 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-09 15:37:33.473 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 15:37:33.600 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 15:37:33.601 ERROR [auth-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:203)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:196)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1499)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1492)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1243)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1204)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 15:56:27.089 INFO  [auth-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-09 15:56:27.402 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Starting AuthServiceApplication using Java 20.0.2 with PID 20272 (C:\Users\Aishu\C_MediTrack\MediTrack\auth-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\auth-service)
+2026-05-09 15:56:27.403 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 15:56:32.305 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 15:56:33.055 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 708 ms. Found 1 JPA repository interface.
+2026-05-09 15:56:34.444 INFO  [auth-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=8bed9a3d-0133-33d8-9ee1-4f0efff3d5fb
+2026-05-09 15:56:37.088 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 15:56:37.143 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 15:56:37.148 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 15:56:37.149 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-09 15:56:37.343 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 15:56:37.345 INFO  [auth-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9643 ms
+2026-05-09 15:56:38.310 INFO  [auth-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 15:56:38.471 INFO  [auth-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-09 15:56:38.635 INFO  [auth-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 15:56:39.902 INFO  [auth-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 15:56:40.033 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 15:56:41.606 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38197e82
+2026-05-09 15:56:41.610 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 15:56:42.117 INFO  [auth-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-09 15:56:46.009 INFO  [auth-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 15:56:46.176 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 15:56:49.303 INFO  [auth-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-09 15:56:52.758 INFO  [auth-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-09 15:56:52.975 WARN  [auth-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-09 15:56:53.196 INFO  [auth-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-09 15:56:54.225 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application AUTH-SERVICE with eureka with status UP
+2026-05-09 15:56:54.231 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-09 15:56:54.266 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-05-09 15:56:54.268 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-05-09 15:56:54.404 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Started AuthServiceApplication in 29.202 seconds (process running for 32.343)
+2026-05-09 15:58:12.868 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-09 15:58:12.877 INFO  [auth-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-09 15:58:12.928 INFO  [auth-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 51 ms
+2026-05-09 15:58:13.547 INFO  [auth-service] [traceId=90139417] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][90139417] --> AuthController.register(..) | args: [com.meditrack.auth.dto.RegisterRequest@5687dd2]
+2026-05-09 15:58:13.548 INFO  [auth-service] [traceId=90139417] c.meditrack.auth.aop.LoggingAspect - [SERVICE][90139417] --> AuthService.register(..) | args: [com.meditrack.auth.dto.RegisterRequest@5687dd2]
+2026-05-09 15:58:14.400 INFO  [auth-service] [traceId=90139417] c.meditrack.auth.aop.LoggingAspect - [SERVICE][90139417] <-- AuthService.register(..) | 852ms | result: com.meditrack.auth.entity.User@60b9c85e
+2026-05-09 15:58:14.400 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][90139417] <-- AuthController.register(..) | 853ms | result: <200 OK OK,com.meditrack.auth.entity.User@60b9c85e,[]>
+2026-05-09 15:58:43.776 INFO  [auth-service] [traceId=242bfec3] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][242bfec3] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@638256e6]
+2026-05-09 15:58:45.828 INFO  [auth-service] [traceId=242bfec3] c.meditrack.auth.aop.LoggingAspect - [SERVICE][242bfec3] --> AuthService.login(..) | args: [shreyas2024m@gmail.com, shreee123]
+2026-05-09 15:58:58.686 ERROR [auth-service] [traceId=242bfec3] c.meditrack.auth.aop.LoggingAspect - [SERVICE][242bfec3] !! AuthService.login(..) | 12857ms | error: Invalid email or password
+com.meditrack.auth.exception.InvalidCredentialsException: Invalid email or password
+	at com.meditrack.auth.service.AuthService.login(AuthService.java:100)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.meditrack.auth.aop.LoggingAspect.logExecution(LoggingAspect.java:43)
+	at com.meditrack.auth.aop.LoggingAspect.logServiceMethods(LoggingAspect.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.meditrack.auth.service.AuthService$$SpringCGLIB$$0.login(<generated>)
+	at com.meditrack.auth.controller.AuthController.login(AuthController.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.meditrack.auth.aop.LoggingAspect.logExecution(LoggingAspect.java:43)
+	at com.meditrack.auth.aop.LoggingAspect.logControllerMethods(LoggingAspect.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.meditrack.auth.controller.AuthController$$SpringCGLIB$$0.login(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.meditrack.auth.filter.JwtFilter.doFilterInternal(JwtFilter.java:49)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 15:58:58.715 ERROR [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][242bfec3] !! AuthController.login(..) | 14940ms | error: Invalid email or password
+com.meditrack.auth.exception.InvalidCredentialsException: Invalid email or password
+	at com.meditrack.auth.service.AuthService.login(AuthService.java:100)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.meditrack.auth.aop.LoggingAspect.logExecution(LoggingAspect.java:43)
+	at com.meditrack.auth.aop.LoggingAspect.logServiceMethods(LoggingAspect.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.meditrack.auth.service.AuthService$$SpringCGLIB$$0.login(<generated>)
+	at com.meditrack.auth.controller.AuthController.login(AuthController.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.meditrack.auth.aop.LoggingAspect.logExecution(LoggingAspect.java:43)
+	at com.meditrack.auth.aop.LoggingAspect.logControllerMethods(LoggingAspect.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.meditrack.auth.controller.AuthController$$SpringCGLIB$$0.login(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.meditrack.auth.filter.JwtFilter.doFilterInternal(JwtFilter.java:49)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 15:59:26.053 INFO  [auth-service] [traceId=5e2455a7] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][5e2455a7] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@495d0e2a]
+2026-05-09 15:59:26.054 INFO  [auth-service] [traceId=5e2455a7] c.meditrack.auth.aop.LoggingAspect - [SERVICE][5e2455a7] --> AuthService.login(..) | args: [shreyas2024m@gmail.com, shreyee123]
+2026-05-09 15:59:26.319 INFO  [auth-service] [traceId=5e2455a7] c.meditrack.auth.aop.LoggingAspect - [SERVICE][5e2455a7] <-- AuthService.login(..) | 265ms | result: com.meditrack.auth.dto.AuthResponse@3928149d
+2026-05-09 15:59:26.320 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][5e2455a7] <-- AuthController.login(..) | 267ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@3928149d,[]>
+2026-05-09 16:20:29.891 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 16:20:30.151 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 16:20:36.736 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 16:20:40.808 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 16:20:40.810 ERROR [auth-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1403)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 16:25:43.475 INFO  [auth-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-09 16:25:43.546 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Starting AuthServiceApplication using Java 20.0.2 with PID 6816 (C:\Users\Aishu\C_MediTrack\MediTrack\auth-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\auth-service)
+2026-05-09 16:25:43.547 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 16:25:47.044 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 16:25:47.647 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 578 ms. Found 1 JPA repository interface.
+2026-05-09 16:25:48.535 INFO  [auth-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=8bed9a3d-0133-33d8-9ee1-4f0efff3d5fb
+2026-05-09 16:25:50.477 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 16:25:50.504 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 16:25:50.510 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 16:25:50.511 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-09 16:25:50.718 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 16:25:50.719 INFO  [auth-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6996 ms
+2026-05-09 16:25:51.319 INFO  [auth-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 16:25:51.408 INFO  [auth-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-09 16:25:51.464 INFO  [auth-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 16:25:52.028 INFO  [auth-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 16:25:52.108 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 16:25:53.165 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f65af91
+2026-05-09 16:25:53.168 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 16:25:53.467 INFO  [auth-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-09 16:25:56.418 INFO  [auth-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 16:25:56.571 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 16:26:00.497 INFO  [auth-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-09 16:26:05.111 INFO  [auth-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-09 16:26:05.302 WARN  [auth-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-09 16:26:05.489 INFO  [auth-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-09 16:26:06.465 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application AUTH-SERVICE with eureka with status UP
+2026-05-09 16:26:06.468 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-09 16:26:06.498 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-05-09 16:26:06.500 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-05-09 16:26:06.693 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Started AuthServiceApplication in 25.198 seconds (process running for 27.255)
+2026-05-09 16:27:26.068 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-09 16:27:26.071 INFO  [auth-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-09 16:27:26.189 INFO  [auth-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 117 ms
+2026-05-09 16:27:27.319 INFO  [auth-service] [traceId=c9224ab6] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][c9224ab6] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@2ea8499c]
+2026-05-09 16:27:27.323 INFO  [auth-service] [traceId=c9224ab6] c.meditrack.auth.aop.LoggingAspect - [SERVICE][c9224ab6] --> AuthService.login(..) | args: [shreyas2024m@gmail.com, shreyee123]
+2026-05-09 16:27:28.131 INFO  [auth-service] [traceId=c9224ab6] c.meditrack.auth.aop.LoggingAspect - [SERVICE][c9224ab6] <-- AuthService.login(..) | 808ms | result: com.meditrack.auth.dto.AuthResponse@c5d3a67
+2026-05-09 16:27:28.132 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][c9224ab6] <-- AuthController.login(..) | 813ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@c5d3a67,[]>
+2026-05-09 16:29:00.386 INFO  [auth-service] [traceId=ad1936bd] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][ad1936bd] --> AuthController.register(..) | args: [com.meditrack.auth.dto.RegisterRequest@3e945cd3]
+2026-05-09 16:29:00.394 INFO  [auth-service] [traceId=ad1936bd] c.meditrack.auth.aop.LoggingAspect - [SERVICE][ad1936bd] --> AuthService.register(..) | args: [com.meditrack.auth.dto.RegisterRequest@3e945cd3]
+2026-05-09 16:29:01.996 INFO  [auth-service] [traceId=ad1936bd] c.meditrack.auth.aop.LoggingAspect - [SERVICE][ad1936bd] <-- AuthService.register(..) | 1602ms | result: com.meditrack.auth.entity.User@25d1d604
+2026-05-09 16:29:01.998 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][ad1936bd] <-- AuthController.register(..) | 1611ms | result: <200 OK OK,com.meditrack.auth.entity.User@25d1d604,[]>
+2026-05-09 16:29:14.233 INFO  [auth-service] [traceId=a6bee302] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][a6bee302] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@6fe9d4c3]
+2026-05-09 16:29:14.234 INFO  [auth-service] [traceId=a6bee302] c.meditrack.auth.aop.LoggingAspect - [SERVICE][a6bee302] --> AuthService.login(..) | args: [neha@gmail.com, neha123]
+2026-05-09 16:29:14.390 INFO  [auth-service] [traceId=a6bee302] c.meditrack.auth.aop.LoggingAspect - [SERVICE][a6bee302] <-- AuthService.login(..) | 156ms | result: com.meditrack.auth.dto.AuthResponse@8399369
+2026-05-09 16:29:14.390 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][a6bee302] <-- AuthController.login(..) | 157ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@8399369,[]>
+2026-05-09 16:29:58.945 INFO  [auth-service] [traceId=09293608] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][09293608] --> AuthController.getUserByEmail(..) | args: [neha@gmail.com]
+2026-05-09 16:29:58.959 INFO  [auth-service] [traceId=09293608] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][09293608] <-- AuthController.getUserByEmail(..) | 14ms | result: <200 OK OK,com.meditrack.auth.dto.UserResponse@13cc0cca,[]>
+2026-05-09 16:58:47.048 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 16:58:47.325 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 16:59:02.098 INFO  [auth-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-09 16:59:02.156 INFO  [auth-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-09 16:59:02.170 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application AUTH-SERVICE with eureka with status DOWN
+2026-05-09 16:59:02.255 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/AUTH-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 16:59:02.300 WARN  [auth-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/AUTH-SERVICE": Connect to http://localhost:8761 failed: Connection refused: no further information
+2026-05-09 16:59:02.328 INFO  [auth-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-09 16:59:02.385 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-09 16:59:02.433 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2026-05-09 16:59:02.300 WARN  [auth-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_AUTH-SERVICE/DESKTOP-TE08QKM:auth-service:8081 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 16:59:02.434 WARN  [auth-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-09 16:59:02.509 INFO  [auth-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-09 16:59:02.513 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-09 16:59:02.525 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-05-09 16:59:02.627 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 17:00:28.083 INFO  [auth-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-09 17:00:28.783 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Starting AuthServiceApplication using Java 20.0.2 with PID 9520 (C:\Users\Aishu\C_MediTrack\MediTrack\auth-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\auth-service)
+2026-05-09 17:00:28.789 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-09 17:00:33.982 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-09 17:00:34.580 INFO  [auth-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 571 ms. Found 1 JPA repository interface.
+2026-05-09 17:00:36.667 INFO  [auth-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=8bed9a3d-0133-33d8-9ee1-4f0efff3d5fb
+2026-05-09 17:00:39.288 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-09 17:00:39.337 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-05-09 17:00:39.360 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-09 17:00:39.360 INFO  [auth-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-05-09 17:00:39.635 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-09 17:00:39.636 INFO  [auth-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10333 ms
+2026-05-09 17:00:40.630 INFO  [auth-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-09 17:00:40.867 INFO  [auth-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-09 17:00:40.988 INFO  [auth-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-09 17:00:41.931 INFO  [auth-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-09 17:00:42.145 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-09 17:00:43.996 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c215642
+2026-05-09 17:00:44.002 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-09 17:00:44.281 INFO  [auth-service] [traceId=none] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-09 17:00:48.569 INFO  [auth-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-09 17:00:48.862 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 17:00:54.098 INFO  [auth-service] [traceId=none] o.s.c.o.FeignClientFactoryBean - For 'patient-service' URL not provided. Will try picking an instance via load-balancing.
+2026-05-09 17:00:57.133 INFO  [auth-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-09 17:00:57.301 WARN  [auth-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-09 17:00:57.384 INFO  [auth-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-09 17:01:00.990 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application AUTH-SERVICE with eureka with status UP
+2026-05-09 17:01:00.993 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-05-09 17:01:01.283 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-05-09 17:01:01.285 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-05-09 17:01:01.610 INFO  [auth-service] [traceId=none] c.m.auth.AuthServiceApplication - Started AuthServiceApplication in 39.344 seconds (process running for 44.527)
+2026-05-09 17:02:57.248 INFO  [auth-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-09 17:02:57.260 INFO  [auth-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-09 17:02:57.333 INFO  [auth-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 73 ms
+2026-05-09 17:02:58.029 INFO  [auth-service] [traceId=ed454276] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][ed454276] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@6cd330]
+2026-05-09 17:02:58.034 INFO  [auth-service] [traceId=ed454276] c.meditrack.auth.aop.LoggingAspect - [SERVICE][ed454276] --> AuthService.login(..) | args: [neha@gmail.com, neha123]
+2026-05-09 17:02:58.696 INFO  [auth-service] [traceId=ed454276] c.meditrack.auth.aop.LoggingAspect - [SERVICE][ed454276] <-- AuthService.login(..) | 662ms | result: com.meditrack.auth.dto.AuthResponse@39c9e001
+2026-05-09 17:02:58.697 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][ed454276] <-- AuthController.login(..) | 668ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@39c9e001,[]>
+2026-05-09 17:04:23.547 INFO  [auth-service] [traceId=451413ab] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][451413ab] --> AuthController.getUserByEmail(..) | args: [neha@gmail.com]
+2026-05-09 17:04:23.674 INFO  [auth-service] [traceId=451413ab] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][451413ab] <-- AuthController.getUserByEmail(..) | 129ms | result: <200 OK OK,com.meditrack.auth.dto.UserResponse@63ee9552,[]>
+2026-05-09 17:08:51.480 INFO  [auth-service] [traceId=d2bf0526] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][d2bf0526] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@6f678ab4]
+2026-05-09 17:08:51.532 INFO  [auth-service] [traceId=d2bf0526] c.meditrack.auth.aop.LoggingAspect - [SERVICE][d2bf0526] --> AuthService.login(..) | args: [neha@gmail.com, neha123]
+2026-05-09 17:08:52.398 INFO  [auth-service] [traceId=d2bf0526] c.meditrack.auth.aop.LoggingAspect - [SERVICE][d2bf0526] <-- AuthService.login(..) | 866ms | result: com.meditrack.auth.dto.AuthResponse@44aeb836
+2026-05-09 17:08:52.399 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][d2bf0526] <-- AuthController.login(..) | 923ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@44aeb836,[]>
+2026-05-09 17:09:42.644 INFO  [auth-service] [traceId=296fbb8f] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][296fbb8f] --> AuthController.getUserByEmail(..) | args: [neha@gmail.com]
+2026-05-09 17:09:42.658 INFO  [auth-service] [traceId=296fbb8f] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][296fbb8f] <-- AuthController.getUserByEmail(..) | 14ms | result: <200 OK OK,com.meditrack.auth.dto.UserResponse@6786bf29,[]>
+2026-05-09 17:11:37.967 INFO  [auth-service] [traceId=cd47b2c9] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][cd47b2c9] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@5008aaf1]
+2026-05-09 17:11:37.991 INFO  [auth-service] [traceId=cd47b2c9] c.meditrack.auth.aop.LoggingAspect - [SERVICE][cd47b2c9] --> AuthService.login(..) | args: [ravikumar@meditrack.in, ravi123]
+2026-05-09 17:11:38.657 INFO  [auth-service] [traceId=cd47b2c9] c.meditrack.auth.aop.LoggingAspect - [SERVICE][cd47b2c9] <-- AuthService.login(..) | 666ms | result: com.meditrack.auth.dto.AuthResponse@210e1e46
+2026-05-09 17:11:38.658 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][cd47b2c9] <-- AuthController.login(..) | 694ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@210e1e46,[]>
+2026-05-09 17:26:51.935 INFO  [auth-service] [traceId=cef01826] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][cef01826] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@1820fd3]
+2026-05-09 17:26:51.973 INFO  [auth-service] [traceId=cef01826] c.meditrack.auth.aop.LoggingAspect - [SERVICE][cef01826] --> AuthService.login(..) | args: [neha@gmail.com, neha123]
+2026-05-09 17:26:52.650 INFO  [auth-service] [traceId=cef01826] c.meditrack.auth.aop.LoggingAspect - [SERVICE][cef01826] <-- AuthService.login(..) | 677ms | result: com.meditrack.auth.dto.AuthResponse@a7a1e46
+2026-05-09 17:26:52.651 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][cef01826] <-- AuthController.login(..) | 719ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@a7a1e46,[]>
+2026-05-09 17:36:19.281 INFO  [auth-service] [traceId=28b6af66] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][28b6af66] --> AuthController.getUserByEmail(..) | args: [neha@gmail.com]
+2026-05-09 17:36:19.472 INFO  [auth-service] [traceId=28b6af66] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][28b6af66] <-- AuthController.getUserByEmail(..) | 193ms | result: <200 OK OK,com.meditrack.auth.dto.UserResponse@6b588ea4,[]>
+2026-05-09 17:40:25.663 INFO  [auth-service] [traceId=fa5aece7] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][fa5aece7] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@6dd870bd]
+2026-05-09 17:40:25.691 INFO  [auth-service] [traceId=fa5aece7] c.meditrack.auth.aop.LoggingAspect - [SERVICE][fa5aece7] --> AuthService.login(..) | args: [ravikumar@meditrack.in, ravi123]
+2026-05-09 17:40:26.285 INFO  [auth-service] [traceId=fa5aece7] c.meditrack.auth.aop.LoggingAspect - [SERVICE][fa5aece7] <-- AuthService.login(..) | 594ms | result: com.meditrack.auth.dto.AuthResponse@4f77d5d4
+2026-05-09 17:40:26.286 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][fa5aece7] <-- AuthController.login(..) | 624ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@4f77d5d4,[]>
+2026-05-09 17:41:35.725 INFO  [auth-service] [traceId=be0ef4b8] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][be0ef4b8] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@37db2b4d]
+2026-05-09 17:41:35.726 INFO  [auth-service] [traceId=be0ef4b8] c.meditrack.auth.aop.LoggingAspect - [SERVICE][be0ef4b8] --> AuthService.login(..) | args: [admin@gmail.com, admin123]
+2026-05-09 17:41:36.081 INFO  [auth-service] [traceId=be0ef4b8] c.meditrack.auth.aop.LoggingAspect - [SERVICE][be0ef4b8] <-- AuthService.login(..) | 355ms | result: com.meditrack.auth.dto.AuthResponse@7bcaad0e
+2026-05-09 17:41:36.082 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][be0ef4b8] <-- AuthController.login(..) | 357ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@7bcaad0e,[]>
+2026-05-09 17:41:36.407 INFO  [auth-service] [traceId=5284e5f8] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][5284e5f8] --> AuthController.getAllAdmins() | args: []
+2026-05-09 17:41:36.409 INFO  [auth-service] [traceId=5284e5f8] c.meditrack.auth.aop.LoggingAspect - [SERVICE][5284e5f8] --> AuthService.getAllAdmins() | args: []
+2026-05-09 17:41:36.781 INFO  [auth-service] [traceId=5284e5f8] c.meditrack.auth.aop.LoggingAspect - [SERVICE][5284e5f8] <-- AuthService.getAllAdmins() | 372ms | result: [com.meditrack.auth.entity.User@860de9f, com.meditrack.auth.entity.User@78df575c]
+2026-05-09 17:41:36.782 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][5284e5f8] <-- AuthController.getAllAdmins() | 376ms | result: <200 OK OK,[com.meditrack.auth.entity.User@860de9f, com.meditrack.auth.entity.User@78df575c],[]>
+2026-05-09 17:41:37.047 INFO  [auth-service] [traceId=7ccbe673] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][7ccbe673] --> AuthController.getAllAdmins() | args: []
+2026-05-09 17:41:37.047 INFO  [auth-service] [traceId=7ccbe673] c.meditrack.auth.aop.LoggingAspect - [SERVICE][7ccbe673] --> AuthService.getAllAdmins() | args: []
+2026-05-09 17:41:37.055 INFO  [auth-service] [traceId=7ccbe673] c.meditrack.auth.aop.LoggingAspect - [SERVICE][7ccbe673] <-- AuthService.getAllAdmins() | 8ms | result: [com.meditrack.auth.entity.User@400f3a4a, com.meditrack.auth.entity.User@3aa78158]
+2026-05-09 17:41:37.056 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][7ccbe673] <-- AuthController.getAllAdmins() | 9ms | result: <200 OK OK,[com.meditrack.auth.entity.User@400f3a4a, com.meditrack.auth.entity.User@3aa78158],[]>
+2026-05-09 17:42:37.120 INFO  [auth-service] [traceId=f9a98df7] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][f9a98df7] --> AuthController.createDoctor(..) | args: [Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3NzgzMjg2OTYsImV4cCI6MTc3ODQxNTA5Nn0.ot_lHcumwNswImmNk3ms9_tNmZiKhZE_zEoi0hJwnYo, com.meditrack.auth.dto.DoctorRegisterRequest@449f4a65]
+2026-05-09 17:42:37.121 INFO  [auth-service] [traceId=f9a98df7] c.meditrack.auth.aop.LoggingAspect - [SERVICE][f9a98df7] --> AuthService.createDoctor(..) | args: [com.meditrack.auth.dto.DoctorRegisterRequest@449f4a65, eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJpYXQiOjE3NzgzMjg2OTYsImV4cCI6MTc3ODQxNTA5Nn0.ot_lHcumwNswImmNk3ms9_tNmZiKhZE_zEoi0hJwnYo]
+2026-05-09 17:42:38.875 INFO  [auth-service] [traceId=f9a98df7] c.meditrack.auth.aop.LoggingAspect - [SERVICE][f9a98df7] <-- AuthService.createDoctor(..) | 1754ms | result: com.meditrack.auth.entity.User@2f254d1e
+2026-05-09 17:42:38.875 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][f9a98df7] <-- AuthController.createDoctor(..) | 1755ms | result: <200 OK OK,com.meditrack.auth.entity.User@2f254d1e,[]>
+2026-05-09 17:42:56.967 INFO  [auth-service] [traceId=e7c513a0] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][e7c513a0] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@6e1568a8]
+2026-05-09 17:42:56.967 INFO  [auth-service] [traceId=e7c513a0] c.meditrack.auth.aop.LoggingAspect - [SERVICE][e7c513a0] --> AuthService.login(..) | args: [rohan@meditrack.in, rohan123]
+2026-05-09 17:42:57.299 INFO  [auth-service] [traceId=e7c513a0] c.meditrack.auth.aop.LoggingAspect - [SERVICE][e7c513a0] <-- AuthService.login(..) | 332ms | result: com.meditrack.auth.dto.AuthResponse@36dfd3ff
+2026-05-09 17:42:57.300 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][e7c513a0] <-- AuthController.login(..) | 333ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@36dfd3ff,[]>
+2026-05-09 17:43:51.095 INFO  [auth-service] [traceId=a7db6275] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][a7db6275] --> AuthController.register(..) | args: [com.meditrack.auth.dto.RegisterRequest@19e05970]
+2026-05-09 17:43:51.096 INFO  [auth-service] [traceId=a7db6275] c.meditrack.auth.aop.LoggingAspect - [SERVICE][a7db6275] --> AuthService.register(..) | args: [com.meditrack.auth.dto.RegisterRequest@19e05970]
+2026-05-09 17:43:53.907 INFO  [auth-service] [traceId=a7db6275] c.meditrack.auth.aop.LoggingAspect - [SERVICE][a7db6275] <-- AuthService.register(..) | 2811ms | result: com.meditrack.auth.entity.User@8e62810
+2026-05-09 17:43:53.908 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][a7db6275] <-- AuthController.register(..) | 2813ms | result: <200 OK OK,com.meditrack.auth.entity.User@8e62810,[]>
+2026-05-09 17:44:08.903 INFO  [auth-service] [traceId=54259194] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][54259194] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@326f720]
+2026-05-09 17:44:08.904 INFO  [auth-service] [traceId=54259194] c.meditrack.auth.aop.LoggingAspect - [SERVICE][54259194] --> AuthService.login(..) | args: [sahana@gmail.com, sahana123]
+2026-05-09 17:44:09.250 INFO  [auth-service] [traceId=54259194] c.meditrack.auth.aop.LoggingAspect - [SERVICE][54259194] <-- AuthService.login(..) | 346ms | result: com.meditrack.auth.dto.AuthResponse@28fb81c1
+2026-05-09 17:44:09.251 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][54259194] <-- AuthController.login(..) | 348ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@28fb81c1,[]>
+2026-05-09 17:44:26.059 INFO  [auth-service] [traceId=0faef8c0] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][0faef8c0] --> AuthController.getUserByEmail(..) | args: [sahana@gmail.com]
+2026-05-09 17:44:26.071 INFO  [auth-service] [traceId=0faef8c0] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][0faef8c0] <-- AuthController.getUserByEmail(..) | 12ms | result: <200 OK OK,com.meditrack.auth.dto.UserResponse@68646217,[]>
+2026-05-09 17:44:58.794 INFO  [auth-service] [traceId=39b727da] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][39b727da] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@7ef6830b]
+2026-05-09 17:44:58.794 INFO  [auth-service] [traceId=39b727da] c.meditrack.auth.aop.LoggingAspect - [SERVICE][39b727da] --> AuthService.login(..) | args: [rohan@meditrack.in, rohan123]
+2026-05-09 17:44:59.063 INFO  [auth-service] [traceId=39b727da] c.meditrack.auth.aop.LoggingAspect - [SERVICE][39b727da] <-- AuthService.login(..) | 269ms | result: com.meditrack.auth.dto.AuthResponse@24467db4
+2026-05-09 17:44:59.064 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][39b727da] <-- AuthController.login(..) | 270ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@24467db4,[]>
+2026-05-09 18:02:33.407 INFO  [auth-service] [traceId=7cc31fb5] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][7cc31fb5] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@635e5690]
+2026-05-09 18:02:33.429 INFO  [auth-service] [traceId=7cc31fb5] c.meditrack.auth.aop.LoggingAspect - [SERVICE][7cc31fb5] --> AuthService.login(..) | args: [sahana@gmail.com, sahana123]
+2026-05-09 18:02:33.953 INFO  [auth-service] [traceId=7cc31fb5] c.meditrack.auth.aop.LoggingAspect - [SERVICE][7cc31fb5] <-- AuthService.login(..) | 524ms | result: com.meditrack.auth.dto.AuthResponse@d4dfb09
+2026-05-09 18:02:33.956 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][7cc31fb5] <-- AuthController.login(..) | 551ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@d4dfb09,[]>
+2026-05-09 18:03:49.932 INFO  [auth-service] [traceId=e2d07a4d] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][e2d07a4d] --> AuthController.getUserByEmail(..) | args: [sahana@gmail.com]
+2026-05-09 18:03:49.946 INFO  [auth-service] [traceId=e2d07a4d] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][e2d07a4d] <-- AuthController.getUserByEmail(..) | 14ms | result: <200 OK OK,com.meditrack.auth.dto.UserResponse@c2fb231,[]>
+2026-05-09 18:13:01.215 INFO  [auth-service] [traceId=5fdc35fe] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][5fdc35fe] --> AuthController.getUserByEmail(..) | args: [sahana@gmail.com]
+2026-05-09 18:13:01.325 INFO  [auth-service] [traceId=5fdc35fe] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][5fdc35fe] <-- AuthController.getUserByEmail(..) | 111ms | result: <200 OK OK,com.meditrack.auth.dto.UserResponse@a4088b4,[]>
+2026-05-09 18:14:58.601 INFO  [auth-service] [traceId=c40034c3] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][c40034c3] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@3b6c8e88]
+2026-05-09 18:14:58.613 INFO  [auth-service] [traceId=c40034c3] c.meditrack.auth.aop.LoggingAspect - [SERVICE][c40034c3] --> AuthService.login(..) | args: [rohan@meditrack.in, rohan123]
+2026-05-09 18:14:58.863 INFO  [auth-service] [traceId=c40034c3] c.meditrack.auth.aop.LoggingAspect - [SERVICE][c40034c3] <-- AuthService.login(..) | 250ms | result: com.meditrack.auth.dto.AuthResponse@46ad1085
+2026-05-09 18:14:58.864 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][c40034c3] <-- AuthController.login(..) | 264ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@46ad1085,[]>
+2026-05-09 18:18:21.474 INFO  [auth-service] [traceId=d91a5b58] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][d91a5b58] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@186ad86b]
+2026-05-09 18:18:21.481 INFO  [auth-service] [traceId=d91a5b58] c.meditrack.auth.aop.LoggingAspect - [SERVICE][d91a5b58] --> AuthService.login(..) | args: [sahana@gmail.com, sahana123]
+2026-05-09 18:18:21.656 INFO  [auth-service] [traceId=d91a5b58] c.meditrack.auth.aop.LoggingAspect - [SERVICE][d91a5b58] <-- AuthService.login(..) | 175ms | result: com.meditrack.auth.dto.AuthResponse@124c7d68
+2026-05-09 18:18:21.657 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][d91a5b58] <-- AuthController.login(..) | 183ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@124c7d68,[]>
+2026-05-09 18:25:18.232 INFO  [auth-service] [traceId=7c45145e] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][7c45145e] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@53f817b8]
+2026-05-09 18:25:18.262 INFO  [auth-service] [traceId=7c45145e] c.meditrack.auth.aop.LoggingAspect - [SERVICE][7c45145e] --> AuthService.login(..) | args: [rohan@meditrack.in, rohan123]
+2026-05-09 18:25:18.550 INFO  [auth-service] [traceId=7c45145e] c.meditrack.auth.aop.LoggingAspect - [SERVICE][7c45145e] <-- AuthService.login(..) | 288ms | result: com.meditrack.auth.dto.AuthResponse@38a298bb
+2026-05-09 18:25:18.550 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][7c45145e] <-- AuthController.login(..) | 320ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@38a298bb,[]>
+2026-05-09 18:26:09.528 INFO  [auth-service] [traceId=e5db0a4e] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][e5db0a4e] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@5561f73c]
+2026-05-09 18:26:09.529 INFO  [auth-service] [traceId=e5db0a4e] c.meditrack.auth.aop.LoggingAspect - [SERVICE][e5db0a4e] --> AuthService.login(..) | args: [sahana@gmail.com, sahana123]
+2026-05-09 18:26:09.665 INFO  [auth-service] [traceId=e5db0a4e] c.meditrack.auth.aop.LoggingAspect - [SERVICE][e5db0a4e] <-- AuthService.login(..) | 136ms | result: com.meditrack.auth.dto.AuthResponse@6abf0e8b
+2026-05-09 18:26:09.665 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][e5db0a4e] <-- AuthController.login(..) | 137ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@6abf0e8b,[]>
+2026-05-09 18:35:08.152 INFO  [auth-service] [traceId=04e9c40d] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][04e9c40d] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@5622c408]
+2026-05-09 18:35:08.168 INFO  [auth-service] [traceId=04e9c40d] c.meditrack.auth.aop.LoggingAspect - [SERVICE][04e9c40d] --> AuthService.login(..) | args: [sahana@gmail.com, sahana123]
+2026-05-09 18:35:08.463 INFO  [auth-service] [traceId=04e9c40d] c.meditrack.auth.aop.LoggingAspect - [SERVICE][04e9c40d] <-- AuthService.login(..) | 295ms | result: com.meditrack.auth.dto.AuthResponse@63c9f4e5
+2026-05-09 18:35:08.464 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][04e9c40d] <-- AuthController.login(..) | 315ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@63c9f4e5,[]>
+2026-05-09 18:35:28.355 INFO  [auth-service] [traceId=95874879] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][95874879] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@766a49ef]
+2026-05-09 18:35:28.356 INFO  [auth-service] [traceId=95874879] c.meditrack.auth.aop.LoggingAspect - [SERVICE][95874879] --> AuthService.login(..) | args: [sahana@gmail.com, sahana123]
+2026-05-09 18:35:28.524 INFO  [auth-service] [traceId=95874879] c.meditrack.auth.aop.LoggingAspect - [SERVICE][95874879] <-- AuthService.login(..) | 168ms | result: com.meditrack.auth.dto.AuthResponse@7f626f85
+2026-05-09 18:35:28.524 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][95874879] <-- AuthController.login(..) | 169ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@7f626f85,[]>
+2026-05-09 18:35:51.402 INFO  [auth-service] [traceId=73611dbc] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][73611dbc] --> AuthController.getUserByEmail(..) | args: [sahana@gmail.com]
+2026-05-09 18:35:51.409 INFO  [auth-service] [traceId=73611dbc] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][73611dbc] <-- AuthController.getUserByEmail(..) | 7ms | result: <200 OK OK,com.meditrack.auth.dto.UserResponse@756c1e1f,[]>
+2026-05-09 18:36:49.139 INFO  [auth-service] [traceId=6562cdba] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][6562cdba] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@193841e1]
+2026-05-09 18:36:49.139 INFO  [auth-service] [traceId=6562cdba] c.meditrack.auth.aop.LoggingAspect - [SERVICE][6562cdba] --> AuthService.login(..) | args: [rohan@meditrack.in, rohan123]
+2026-05-09 18:36:49.251 INFO  [auth-service] [traceId=6562cdba] c.meditrack.auth.aop.LoggingAspect - [SERVICE][6562cdba] <-- AuthService.login(..) | 112ms | result: com.meditrack.auth.dto.AuthResponse@2bbc3f1
+2026-05-09 18:36:49.251 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][6562cdba] <-- AuthController.login(..) | 113ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@2bbc3f1,[]>
+2026-05-09 18:37:28.110 INFO  [auth-service] [traceId=ac2e3b8f] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][ac2e3b8f] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@29d578ad]
+2026-05-09 18:37:28.111 INFO  [auth-service] [traceId=ac2e3b8f] c.meditrack.auth.aop.LoggingAspect - [SERVICE][ac2e3b8f] --> AuthService.login(..) | args: [sahana@gmail.com, sahana123]
+2026-05-09 18:37:28.261 INFO  [auth-service] [traceId=ac2e3b8f] c.meditrack.auth.aop.LoggingAspect - [SERVICE][ac2e3b8f] <-- AuthService.login(..) | 150ms | result: com.meditrack.auth.dto.AuthResponse@210f7517
+2026-05-09 18:37:28.262 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][ac2e3b8f] <-- AuthController.login(..) | 152ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@210f7517,[]>
+2026-05-09 18:38:21.828 INFO  [auth-service] [traceId=2766f637] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][2766f637] --> AuthController.getUserByEmail(..) | args: [sahana@gmail.com]
+2026-05-09 18:38:21.836 INFO  [auth-service] [traceId=2766f637] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][2766f637] <-- AuthController.getUserByEmail(..) | 8ms | result: <200 OK OK,com.meditrack.auth.dto.UserResponse@3683761,[]>
+2026-05-09 18:39:03.781 INFO  [auth-service] [traceId=ee7b885f] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][ee7b885f] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@313fcbf7]
+2026-05-09 18:39:03.781 INFO  [auth-service] [traceId=ee7b885f] c.meditrack.auth.aop.LoggingAspect - [SERVICE][ee7b885f] --> AuthService.login(..) | args: [rohan@meditrack.in, rohan123]
+2026-05-09 18:39:04.002 INFO  [auth-service] [traceId=ee7b885f] c.meditrack.auth.aop.LoggingAspect - [SERVICE][ee7b885f] <-- AuthService.login(..) | 221ms | result: com.meditrack.auth.dto.AuthResponse@238c9bd7
+2026-05-09 18:39:04.003 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][ee7b885f] <-- AuthController.login(..) | 222ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@238c9bd7,[]>
+2026-05-09 18:40:10.138 INFO  [auth-service] [traceId=21782442] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][21782442] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@37b37ad5]
+2026-05-09 18:40:10.139 INFO  [auth-service] [traceId=21782442] c.meditrack.auth.aop.LoggingAspect - [SERVICE][21782442] --> AuthService.login(..) | args: [rohan@meditrack.in, rohan123]
+2026-05-09 18:40:10.279 INFO  [auth-service] [traceId=21782442] c.meditrack.auth.aop.LoggingAspect - [SERVICE][21782442] <-- AuthService.login(..) | 140ms | result: com.meditrack.auth.dto.AuthResponse@5cdf99de
+2026-05-09 18:40:10.279 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][21782442] <-- AuthController.login(..) | 141ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@5cdf99de,[]>
+2026-05-09 18:40:37.300 INFO  [auth-service] [traceId=da8f0194] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][da8f0194] --> AuthController.login(..) | args: [com.meditrack.auth.dto.LoginRequest@4b86ffdd]
+2026-05-09 18:40:37.300 INFO  [auth-service] [traceId=da8f0194] c.meditrack.auth.aop.LoggingAspect - [SERVICE][da8f0194] --> AuthService.login(..) | args: [sahana@gmail.com, sahana123]
+2026-05-09 18:40:37.421 INFO  [auth-service] [traceId=da8f0194] c.meditrack.auth.aop.LoggingAspect - [SERVICE][da8f0194] <-- AuthService.login(..) | 121ms | result: com.meditrack.auth.dto.AuthResponse@5ede3b9a
+2026-05-09 18:40:37.422 INFO  [auth-service] [traceId=none] c.meditrack.auth.aop.LoggingAspect - [CONTROLLER][da8f0194] <-- AuthController.login(..) | 122ms | result: <200 OK OK,com.meditrack.auth.dto.AuthResponse@5ede3b9a,[]>
+2026-05-09 18:41:50.914 INFO  [auth-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-09 18:41:50.969 INFO  [auth-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application AUTH-SERVICE with eureka with status DOWN
+2026-05-09 18:41:51.062 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-09 18:41:51.082 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2026-05-09 18:41:51.112 INFO  [auth-service] [traceId=none] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-09 18:41:51.117 INFO  [auth-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-05-09 18:41:51.164 INFO  [auth-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-09 18:41:51.218 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-09 18:41:51.231 INFO  [auth-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-09 18:41:54.259 WARN  [auth-service] [traceId=none] c.n.discovery.TimedSupervisorTask - task supervisor shutting down, can't accept the task

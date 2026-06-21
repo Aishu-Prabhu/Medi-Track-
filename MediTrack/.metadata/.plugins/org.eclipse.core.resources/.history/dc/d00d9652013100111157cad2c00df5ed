@@ -1,0 +1,39 @@
+package com.meditrack.auth.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.meditrack.auth.dto.AuthResponse;
+import com.meditrack.auth.entity.User;
+import com.meditrack.auth.repository.UserRepository;
+import com.meditrack.auth.util.JwtUtil;
+
+@Service
+public class AuthService {
+
+    @Autowired
+    private UserRepository userRepository;
+
+    @Autowired
+    private JwtUtil jwtUtil;
+
+    private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+
+    public User register(User user) {
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        return userRepository.save(user);
+    }
+
+    public AuthResponse login(String email, String password) {
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        if (passwordEncoder.matches(password, user.getPassword())) {
+            String token = jwtUtil.generateToken(user.getEmail(), user.getRole());
+            return new AuthResponse(token, user.getEmail(), user.getRole());
+        } else {
+            throw new RuntimeException("Invalid password");
+        }
+    }
+}

@@ -1,0 +1,209 @@
+package com.meditrack.notification.controller;
+
+import com.meditrack.notification.entity.Notification;
+import com.meditrack.notification.service.NotificationService;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+@ExtendWith(MockitoExtension.class)
+class NotificationControllerTest {
+
+    @Mock
+    private NotificationService service;
+
+    @InjectMocks
+    private NotificationController controller;
+
+    private Notification notification1;
+    private Notification notification2;
+
+    @BeforeEach
+    void setUp() {
+        // notification for patient 1, doctor 10
+        notification1 = new Notification();
+        notification1.setId(1L);
+        notification1.setPatientId(1L);
+        notification1.setDoctorId(10L);
+        notification1.setMessage("Appointment confirmed");
+        notification1.setRead(false);
+
+        // notification for patient 2, doctor 10
+        notification2 = new Notification();
+        notification2.setId(2L);
+        notification2.setPatientId(2L);
+        notification2.setDoctorId(10L);
+        notification2.setMessage("Prescription ready");
+        notification2.setRead(false);
+    }
+
+    // ─────────────────────────────────────────────
+    // POST /notifications/add
+    // ─────────────────────────────────────────────
+
+    @Test
+    void add_ShouldReturnCreatedNotification() {
+        when(service.create(notification1)).thenReturn(notification1);
+
+        Notification result = controller.add(notification1);
+
+        assertNotNull(result);
+        assertEquals(1L, result.getId());
+        assertEquals("Appointment confirmed", result.getMessage());
+        verify(service, times(1)).create(notification1);
+    }
+
+    @Test
+    void add_ShouldDelegateToServiceCreate() {
+        Notification input = new Notification();
+        input.setPatientId(5L);
+        input.setMessage("Test message");
+
+        when(service.create(input)).thenReturn(input);
+
+        controller.add(input);
+
+        verify(service).create(input);
+    }
+
+    
+
+    @Test
+    void patient_ShouldReturnListForGivenPatient() {
+        when(service.getByPatient(1L))
+                .thenReturn(Collections.singletonList(notification1));
+
+        List<Notification> result = controller.patient(1L);
+
+        assertNotNull(result);
+        assertEquals(1, result.size());
+        assertEquals(1L, result.get(0).getPatientId());
+        verify(service, times(1)).getByPatient(1L);
+    }
+
+    @Test
+    void patient_ShouldReturnEmptyListWhenNoNotifications() {
+        when(service.getByPatient(99L)).thenReturn(Collections.emptyList());
+
+        List<Notification> result = controller.patient(99L);
+
+        assertNotNull(result);
+        assertTrue(result.isEmpty());
+        verify(service).getByPatient(99L);
+    }
+
+    @Test
+    void patient_ShouldReturnMultipleNotifications() {
+        Notification n2 = new Notification();
+        n2.setId(3L);
+        n2.setPatientId(1L);
+        n2.setMessage("Follow-up reminder");
+
+        when(service.getByPatient(1L))
+                .thenReturn(Arrays.asList(notification1, n2));
+
+        List<Notification> result = controller.patient(1L);
+
+        assertEquals(2, result.size());
+    }
+
+    
+
+    @Test
+    void doctor_ShouldReturnListForGivenDoctor() {
+        when(service.getByDoctor(10L))
+                .thenReturn(Arrays.asList(notification1, notification2));
+
+        List<Notification> result = controller.doctor(10L);
+
+        assertNotNull(result);
+        assertEquals(2, result.size());
+        verify(service, times(1)).getByDoctor(10L);
+    }
+
+    @Test
+    void doctor_ShouldReturnEmptyListWhenNoNotifications() {
+        when(service.getByDoctor(99L)).thenReturn(Collections.emptyList());
+
+        List<Notification> result = controller.doctor(99L);
+
+        assertNotNull(result);
+        assertTrue(result.isEmpty());
+        verify(service).getByDoctor(99L);
+    }
+
+    
+
+    @Test
+    void unread_ShouldReturnUnreadCountForPatient() {
+        when(service.unread(1L)).thenReturn(3L);
+
+        long count = controller.unread(1L);
+
+        assertEquals(3L, count);
+        verify(service, times(1)).unread(1L);
+    }
+
+    @Test
+    void unread_ShouldReturnZeroWhenAllRead() {
+        when(service.unread(2L)).thenReturn(0L);
+
+        long count = controller.unread(2L);
+
+        assertEquals(0L, count);
+        verify(service).unread(2L);
+    }
+
+    @Test
+    void unread_ShouldReturnCorrectCountForDifferentPatients() {
+        when(service.unread(1L)).thenReturn(5L);
+        when(service.unread(2L)).thenReturn(2L);
+
+        assertEquals(5L, controller.unread(1L));
+        assertEquals(2L, controller.unread(2L));
+
+        verify(service).unread(1L);
+        verify(service).unread(2L);
+    }
+
+    
+
+    @Test
+    void read_ShouldCallMarkReadOnService() {
+        doNothing().when(service).markRead(1L);
+
+        controller.read(1L);
+
+        verify(service, times(1)).markRead(1L);
+    }
+
+    @Test
+    void read_ShouldCallMarkReadWithCorrectId() {
+        doNothing().when(service).markRead(42L);
+
+        controller.read(42L);
+
+        verify(service).markRead(42L);
+        verify(service, never()).markRead(1L); // ensure wrong ID not called
+    }
+
+    @Test
+    void read_ShouldNotInteractWithAnyOtherServiceMethod() {
+        doNothing().when(service).markRead(1L);
+
+        controller.read(1L);
+
+        verify(service, times(1)).markRead(1L);
+        verifyNoMoreInteractions(service);
+    }
+}

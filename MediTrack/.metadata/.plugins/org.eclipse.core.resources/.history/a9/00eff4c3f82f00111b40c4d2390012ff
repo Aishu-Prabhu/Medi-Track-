@@ -1,0 +1,5 @@
+package com.meditrack.auth.util;
+
+public class JwtUtil {
+
+}

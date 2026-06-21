@@ -1,0 +1,5 @@
+package com.meditrack.auth.aop;
+
+public class LoggingAspectTest {
+
+}

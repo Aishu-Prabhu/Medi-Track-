@@ -1,0 +1,5 @@
+package com.meditrack.doctor.controller;
+
+public class DoctorController {
+
+}

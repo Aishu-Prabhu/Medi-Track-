@@ -1,0 +1,5 @@
+package com.meditrack.patient.entity;
+
+public class Patient {
+
+}

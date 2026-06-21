@@ -1,0 +1,591 @@
+2026-05-13 18:41:27.574 INFO  [notification-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-13 18:41:27.758 INFO  [notification-service] [traceId=none] c.m.n.NotificationServiceApplication - Starting NotificationServiceApplication using Java 20.0.2 with PID 14304 (C:\Users\Aishu\C_MediTrack\MediTrack\notification-service\target\classes started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\notification-service)
+2026-05-13 18:41:27.760 INFO  [notification-service] [traceId=none] c.m.n.NotificationServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-13 18:41:30.397 INFO  [notification-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-13 18:41:31.098 INFO  [notification-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 677 ms. Found 1 JPA repository interface.
+2026-05-13 18:41:32.292 INFO  [notification-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=98b81654-1233-3ec7-9a04-e446105884bc
+2026-05-13 18:41:33.405 WARN  [notification-service] [traceId=none] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-05-13 18:41:33.414 WARN  [notification-service] [traceId=none] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-05-13 18:41:34.407 INFO  [notification-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8087 (http)
+2026-05-13 18:41:34.443 INFO  [notification-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+2026-05-13 18:41:34.451 INFO  [notification-service] [traceId=none] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-13 18:41:34.455 INFO  [notification-service] [traceId=none] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-13 18:41:34.654 INFO  [notification-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-13 18:41:34.656 INFO  [notification-service] [traceId=none] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6697 ms
+2026-05-13 18:41:35.311 INFO  [notification-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-13 18:41:35.523 INFO  [notification-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-13 18:41:35.632 INFO  [notification-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-13 18:41:36.526 INFO  [notification-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-13 18:41:36.629 INFO  [notification-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-13 18:41:37.857 INFO  [notification-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d65e744
+2026-05-13 18:41:37.864 INFO  [notification-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-13 18:41:40.376 INFO  [notification-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-13 18:41:40.600 INFO  [notification-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-13 18:41:43.120 WARN  [notification-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-13 18:41:46.220 INFO  [notification-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-13 18:41:46.381 WARN  [notification-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-13 18:41:46.617 INFO  [notification-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-13 18:41:47.761 INFO  [notification-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2026-05-13 18:41:47.765 INFO  [notification-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+2026-05-13 18:41:47.814 INFO  [notification-service] [traceId=none] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8087 (http) with context path ''
+2026-05-13 18:41:47.815 INFO  [notification-service] [traceId=none] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8087
+2026-05-13 18:41:48.081 INFO  [notification-service] [traceId=none] o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-notification-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-05-13 18:41:48.336 INFO  [notification-service] [traceId=none] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.2
+2026-05-13 18:41:48.337 INFO  [notification-service] [traceId=none] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: c4deed513057c94e
+2026-05-13 18:41:48.337 INFO  [notification-service] [traceId=none] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1778677908332
+2026-05-13 18:41:48.342 INFO  [notification-service] [traceId=none] o.s.k.c.DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Subscribed to topic(s): notifications
+2026-05-13 18:41:48.388 INFO  [notification-service] [traceId=none] c.m.n.NotificationServiceApplication - Started NotificationServiceApplication in 31.776 seconds (process running for 34.224)
+2026-05-13 18:41:49.393 INFO  [notification-service] [traceId=none] org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Cluster ID: uDJtSLDBQTO5CGuWyOQNeA
+2026-05-13 18:41:49.396 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Discovered group coordinator DESKTOP-TE08QKM:9092 (id: 2147483647 rack: null)
+2026-05-13 18:41:49.402 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2026-05-13 18:41:49.457 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: need to re-join with the given member-id: consumer-notification-group-1-66213108-6bc3-4959-8a57-221a161666df
+2026-05-13 18:41:49.458 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2026-05-13 18:41:49.459 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2026-05-13 18:41:49.496 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully joined group with generation Generation{generationId=31, memberId='consumer-notification-group-1-66213108-6bc3-4959-8a57-221a161666df', protocol='range'}
+2026-05-13 18:41:49.512 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Finished assignment for group at generation 31: {consumer-notification-group-1-66213108-6bc3-4959-8a57-221a161666df=Assignment(partitions=[notifications-0])}
+2026-05-13 18:41:49.547 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully synced group in generation Generation{generationId=31, memberId='consumer-notification-group-1-66213108-6bc3-4959-8a57-221a161666df', protocol='range'}
+2026-05-13 18:41:49.548 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Notifying assignor about the new Assignment(partitions=[notifications-0])
+2026-05-13 18:41:49.555 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Adding newly assigned partitions: notifications-0
+2026-05-13 18:41:49.591 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Setting offset for partition notifications-0 to the committed offset FetchPosition{offset=65, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-TE08QKM:9092 (id: 0 rack: null)], epoch=0}}
+2026-05-13 18:41:49.593 INFO  [notification-service] [traceId=none] o.s.k.l.KafkaMessageListenerContainer - notification-group: partitions assigned: [notifications-0]
+2026-05-13 18:48:45.151 INFO  [notification-service] [traceId=none] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-13 18:48:45.200 INFO  [notification-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-13 18:48:45.448 INFO  [notification-service] [traceId=none] o.s.web.servlet.DispatcherServlet - Completed initialization in 240 ms
+2026-05-13 18:48:46.465 INFO  [notification-service] [traceId=4eba4336] c.m.notification.aop.LoggingAspect - [CONTROLLER][4eba4336] --> NotificationController.doctor(..) | args: [3]
+2026-05-13 18:48:46.471 INFO  [notification-service] [traceId=4eba4336] c.m.notification.aop.LoggingAspect - [SERVICE][4eba4336] --> NotificationService.getByDoctor(..) | args: [3]
+2026-05-13 18:48:47.806 INFO  [notification-service] [traceId=4eba4336] c.m.notification.aop.LoggingAspect - [SERVICE][4eba4336] <-- NotificationService.getByDoctor(..) | 1335ms | result: [com.meditrack.notification.entity.Notification@35b0eaa1, com.meditrack.notification.entity.Notification@3630fe8c]
+2026-05-13 18:48:47.807 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][4eba4336] <-- NotificationController.doctor(..) | 1342ms | result: [com.meditrack.notification.entity.Notification@35b0eaa1, com.meditrack.notification.entity.Notification@3630fe8c]
+2026-05-13 18:48:47.996 INFO  [notification-service] [traceId=b1db5fcc] c.m.notification.aop.LoggingAspect - [CONTROLLER][b1db5fcc] --> NotificationController.doctor(..) | args: [3]
+2026-05-13 18:48:47.997 INFO  [notification-service] [traceId=b1db5fcc] c.m.notification.aop.LoggingAspect - [SERVICE][b1db5fcc] --> NotificationService.getByDoctor(..) | args: [3]
+2026-05-13 18:48:48.007 INFO  [notification-service] [traceId=b1db5fcc] c.m.notification.aop.LoggingAspect - [SERVICE][b1db5fcc] <-- NotificationService.getByDoctor(..) | 10ms | result: [com.meditrack.notification.entity.Notification@5671d537, com.meditrack.notification.entity.Notification@4a750b2]
+2026-05-13 18:48:48.008 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][b1db5fcc] <-- NotificationController.doctor(..) | 12ms | result: [com.meditrack.notification.entity.Notification@5671d537, com.meditrack.notification.entity.Notification@4a750b2]
+2026-05-13 18:48:49.062 INFO  [notification-service] [traceId=bb14a99e] c.m.notification.aop.LoggingAspect - [CONTROLLER][bb14a99e] --> NotificationController.doctor(..) | args: [3]
+2026-05-13 18:48:49.062 INFO  [notification-service] [traceId=bb14a99e] c.m.notification.aop.LoggingAspect - [SERVICE][bb14a99e] --> NotificationService.getByDoctor(..) | args: [3]
+2026-05-13 18:48:49.070 INFO  [notification-service] [traceId=bb14a99e] c.m.notification.aop.LoggingAspect - [SERVICE][bb14a99e] <-- NotificationService.getByDoctor(..) | 8ms | result: [com.meditrack.notification.entity.Notification@16adb744, com.meditrack.notification.entity.Notification@61302a6e]
+2026-05-13 18:48:49.071 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][bb14a99e] <-- NotificationController.doctor(..) | 9ms | result: [com.meditrack.notification.entity.Notification@16adb744, com.meditrack.notification.entity.Notification@61302a6e]
+2026-05-13 18:48:59.516 INFO  [notification-service] [traceId=653488a5] c.m.notification.aop.LoggingAspect - [CONTROLLER][653488a5] --> NotificationController.doctor(..) | args: [3]
+2026-05-13 18:48:59.516 INFO  [notification-service] [traceId=653488a5] c.m.notification.aop.LoggingAspect - [SERVICE][653488a5] --> NotificationService.getByDoctor(..) | args: [3]
+2026-05-13 18:48:59.532 INFO  [notification-service] [traceId=653488a5] c.m.notification.aop.LoggingAspect - [SERVICE][653488a5] <-- NotificationService.getByDoctor(..) | 16ms | result: [com.meditrack.notification.entity.Notification@11eb44a4, com.meditrack.notification.entity.Notification@6c16665f]
+2026-05-13 18:48:59.533 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][653488a5] <-- NotificationController.doctor(..) | 17ms | result: [com.meditrack.notification.entity.Notification@11eb44a4, com.meditrack.notification.entity.Notification@6c16665f]
+2026-05-13 18:49:09.405 INFO  [notification-service] [traceId=5a8d615e] c.m.notification.aop.LoggingAspect - [CONTROLLER][5a8d615e] --> NotificationController.doctor(..) | args: [3]
+2026-05-13 18:49:09.406 INFO  [notification-service] [traceId=5a8d615e] c.m.notification.aop.LoggingAspect - [SERVICE][5a8d615e] --> NotificationService.getByDoctor(..) | args: [3]
+2026-05-13 18:49:09.421 INFO  [notification-service] [traceId=5a8d615e] c.m.notification.aop.LoggingAspect - [SERVICE][5a8d615e] <-- NotificationService.getByDoctor(..) | 15ms | result: [com.meditrack.notification.entity.Notification@73e76a4d, com.meditrack.notification.entity.Notification@1dd41f85]
+2026-05-13 18:49:09.422 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][5a8d615e] <-- NotificationController.doctor(..) | 17ms | result: [com.meditrack.notification.entity.Notification@73e76a4d, com.meditrack.notification.entity.Notification@1dd41f85]
+2026-05-13 18:49:19.361 INFO  [notification-service] [traceId=43bb34e2] c.m.notification.aop.LoggingAspect - [CONTROLLER][43bb34e2] --> NotificationController.doctor(..) | args: [3]
+2026-05-13 18:49:19.362 INFO  [notification-service] [traceId=43bb34e2] c.m.notification.aop.LoggingAspect - [SERVICE][43bb34e2] --> NotificationService.getByDoctor(..) | args: [3]
+2026-05-13 18:49:19.372 INFO  [notification-service] [traceId=43bb34e2] c.m.notification.aop.LoggingAspect - [SERVICE][43bb34e2] <-- NotificationService.getByDoctor(..) | 10ms | result: [com.meditrack.notification.entity.Notification@c14fa21, com.meditrack.notification.entity.Notification@7e94a3e6]
+2026-05-13 18:49:19.373 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][43bb34e2] <-- NotificationController.doctor(..) | 12ms | result: [com.meditrack.notification.entity.Notification@c14fa21, com.meditrack.notification.entity.Notification@7e94a3e6]
+2026-05-13 18:49:29.347 INFO  [notification-service] [traceId=1a4bbd4e] c.m.notification.aop.LoggingAspect - [CONTROLLER][1a4bbd4e] --> NotificationController.doctor(..) | args: [3]
+2026-05-13 18:49:29.347 INFO  [notification-service] [traceId=1a4bbd4e] c.m.notification.aop.LoggingAspect - [SERVICE][1a4bbd4e] --> NotificationService.getByDoctor(..) | args: [3]
+2026-05-13 18:49:29.367 INFO  [notification-service] [traceId=1a4bbd4e] c.m.notification.aop.LoggingAspect - [SERVICE][1a4bbd4e] <-- NotificationService.getByDoctor(..) | 20ms | result: [com.meditrack.notification.entity.Notification@3a42ca7f, com.meditrack.notification.entity.Notification@7d930110]
+2026-05-13 18:49:29.367 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][1a4bbd4e] <-- NotificationController.doctor(..) | 20ms | result: [com.meditrack.notification.entity.Notification@3a42ca7f, com.meditrack.notification.entity.Notification@7d930110]
+2026-05-13 18:49:39.353 INFO  [notification-service] [traceId=ecfe3f4c] c.m.notification.aop.LoggingAspect - [CONTROLLER][ecfe3f4c] --> NotificationController.doctor(..) | args: [3]
+2026-05-13 18:49:39.354 INFO  [notification-service] [traceId=ecfe3f4c] c.m.notification.aop.LoggingAspect - [SERVICE][ecfe3f4c] --> NotificationService.getByDoctor(..) | args: [3]
+2026-05-13 18:49:39.365 INFO  [notification-service] [traceId=ecfe3f4c] c.m.notification.aop.LoggingAspect - [SERVICE][ecfe3f4c] <-- NotificationService.getByDoctor(..) | 11ms | result: [com.meditrack.notification.entity.Notification@1f47ac99, com.meditrack.notification.entity.Notification@7e2c308c]
+2026-05-13 18:49:39.366 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][ecfe3f4c] <-- NotificationController.doctor(..) | 13ms | result: [com.meditrack.notification.entity.Notification@1f47ac99, com.meditrack.notification.entity.Notification@7e2c308c]
+2026-05-13 18:49:52.131 INFO  [notification-service] [traceId=6f00dbda] c.m.notification.aop.LoggingAspect - [CONTROLLER][6f00dbda] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:49:52.133 INFO  [notification-service] [traceId=6f00dbda] c.m.notification.aop.LoggingAspect - [SERVICE][6f00dbda] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:49:52.152 INFO  [notification-service] [traceId=6f00dbda] c.m.notification.aop.LoggingAspect - [SERVICE][6f00dbda] <-- NotificationService.getByPatient(..) | 19ms | result: [com.meditrack.notification.entity.Notification@4eac2821, com.meditrack.notification.entity.Notification@5565ab89, com.meditrack.notification.entity.Notification@11ff20c8, com.meditrack.notification.entity.Notification@2bed35fa, com.meditrack.notification.entity.Notification@4afed86, com.meditrack.notification.entity.Notification@7cee3779]
+2026-05-13 18:49:52.154 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][6f00dbda] <-- NotificationController.patient(..) | 23ms | result: [com.meditrack.notification.entity.Notification@4eac2821, com.meditrack.notification.entity.Notification@5565ab89, com.meditrack.notification.entity.Notification@11ff20c8, com.meditrack.notification.entity.Notification@2bed35fa, com.meditrack.notification.entity.Notification@4afed86, com.meditrack.notification.entity.Notification@7cee3779]
+2026-05-13 18:49:52.172 INFO  [notification-service] [traceId=586def33] c.m.notification.aop.LoggingAspect - [CONTROLLER][586def33] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:49:52.173 INFO  [notification-service] [traceId=586def33] c.m.notification.aop.LoggingAspect - [SERVICE][586def33] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:49:52.181 INFO  [notification-service] [traceId=586def33] c.m.notification.aop.LoggingAspect - [SERVICE][586def33] <-- NotificationService.getByPatient(..) | 8ms | result: [com.meditrack.notification.entity.Notification@4b9e1c6c, com.meditrack.notification.entity.Notification@151b6053, com.meditrack.notification.entity.Notification@1a81582c, com.meditrack.notification.entity.Notification@7b0e2810, com.meditrack.notification.entity.Notification@40483661, com.meditrack.notification.entity.Notification@e1fcfc3]
+2026-05-13 18:49:52.181 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][586def33] <-- NotificationController.patient(..) | 9ms | result: [com.meditrack.notification.entity.Notification@4b9e1c6c, com.meditrack.notification.entity.Notification@151b6053, com.meditrack.notification.entity.Notification@1a81582c, com.meditrack.notification.entity.Notification@7b0e2810, com.meditrack.notification.entity.Notification@40483661, com.meditrack.notification.entity.Notification@e1fcfc3]
+2026-05-13 18:50:00.996 INFO  [notification-service] [traceId=7f023815] c.m.notification.aop.LoggingAspect - [CONTROLLER][7f023815] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:50:00.997 INFO  [notification-service] [traceId=7f023815] c.m.notification.aop.LoggingAspect - [SERVICE][7f023815] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:50:01.010 INFO  [notification-service] [traceId=7f023815] c.m.notification.aop.LoggingAspect - [SERVICE][7f023815] <-- NotificationService.getByPatient(..) | 13ms | result: [com.meditrack.notification.entity.Notification@61d7aed, com.meditrack.notification.entity.Notification@1df853eb, com.meditrack.notification.entity.Notification@6dbf3555, com.meditrack.notification.entity.Notification@608bc3af, com.meditrack.notification.entity.Notification@dac0741, com.meditrack.notification.entity.Notification@52946a14]
+2026-05-13 18:50:01.011 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][7f023815] <-- NotificationController.patient(..) | 15ms | result: [com.meditrack.notification.entity.Notification@61d7aed, com.meditrack.notification.entity.Notification@1df853eb, com.meditrack.notification.entity.Notification@6dbf3555, com.meditrack.notification.entity.Notification@608bc3af, com.meditrack.notification.entity.Notification@dac0741, com.meditrack.notification.entity.Notification@52946a14]
+2026-05-13 18:50:11.378 INFO  [notification-service] [traceId=9c04cc77] c.m.notification.aop.LoggingAspect - [CONTROLLER][9c04cc77] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:50:11.379 INFO  [notification-service] [traceId=9c04cc77] c.m.notification.aop.LoggingAspect - [SERVICE][9c04cc77] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:50:11.396 INFO  [notification-service] [traceId=9c04cc77] c.m.notification.aop.LoggingAspect - [SERVICE][9c04cc77] <-- NotificationService.getByPatient(..) | 17ms | result: [com.meditrack.notification.entity.Notification@5e3384dc, com.meditrack.notification.entity.Notification@5a4644f8, com.meditrack.notification.entity.Notification@313bdc47, com.meditrack.notification.entity.Notification@3f7a3204, com.meditrack.notification.entity.Notification@7dad4453, com.meditrack.notification.entity.Notification@15a4be9a]
+2026-05-13 18:50:11.397 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][9c04cc77] <-- NotificationController.patient(..) | 19ms | result: [com.meditrack.notification.entity.Notification@5e3384dc, com.meditrack.notification.entity.Notification@5a4644f8, com.meditrack.notification.entity.Notification@313bdc47, com.meditrack.notification.entity.Notification@3f7a3204, com.meditrack.notification.entity.Notification@7dad4453, com.meditrack.notification.entity.Notification@15a4be9a]
+2026-05-13 18:50:21.421 INFO  [notification-service] [traceId=d8bd4e33] c.m.notification.aop.LoggingAspect - [CONTROLLER][d8bd4e33] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:50:21.423 INFO  [notification-service] [traceId=d8bd4e33] c.m.notification.aop.LoggingAspect - [SERVICE][d8bd4e33] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:50:21.442 INFO  [notification-service] [traceId=d8bd4e33] c.m.notification.aop.LoggingAspect - [SERVICE][d8bd4e33] <-- NotificationService.getByPatient(..) | 19ms | result: [com.meditrack.notification.entity.Notification@5cb523d1, com.meditrack.notification.entity.Notification@4d94c07, com.meditrack.notification.entity.Notification@48a96bb8, com.meditrack.notification.entity.Notification@30361fd0, com.meditrack.notification.entity.Notification@45e819ac, com.meditrack.notification.entity.Notification@b1fdc62]
+2026-05-13 18:50:21.442 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][d8bd4e33] <-- NotificationController.patient(..) | 21ms | result: [com.meditrack.notification.entity.Notification@5cb523d1, com.meditrack.notification.entity.Notification@4d94c07, com.meditrack.notification.entity.Notification@48a96bb8, com.meditrack.notification.entity.Notification@30361fd0, com.meditrack.notification.entity.Notification@45e819ac, com.meditrack.notification.entity.Notification@b1fdc62]
+2026-05-13 18:50:31.419 INFO  [notification-service] [traceId=27a360f6] c.m.notification.aop.LoggingAspect - [CONTROLLER][27a360f6] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:50:31.421 INFO  [notification-service] [traceId=27a360f6] c.m.notification.aop.LoggingAspect - [SERVICE][27a360f6] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:50:31.438 INFO  [notification-service] [traceId=27a360f6] c.m.notification.aop.LoggingAspect - [SERVICE][27a360f6] <-- NotificationService.getByPatient(..) | 17ms | result: [com.meditrack.notification.entity.Notification@22363f66, com.meditrack.notification.entity.Notification@41186ddb, com.meditrack.notification.entity.Notification@3b50b83, com.meditrack.notification.entity.Notification@3d4b88cb, com.meditrack.notification.entity.Notification@2e954d0b, com.meditrack.notification.entity.Notification@2ce18bb7]
+2026-05-13 18:50:31.438 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][27a360f6] <-- NotificationController.patient(..) | 19ms | result: [com.meditrack.notification.entity.Notification@22363f66, com.meditrack.notification.entity.Notification@41186ddb, com.meditrack.notification.entity.Notification@3b50b83, com.meditrack.notification.entity.Notification@3d4b88cb, com.meditrack.notification.entity.Notification@2e954d0b, com.meditrack.notification.entity.Notification@2ce18bb7]
+2026-05-13 18:50:41.384 INFO  [notification-service] [traceId=e0a2a996] c.m.notification.aop.LoggingAspect - [CONTROLLER][e0a2a996] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:50:41.385 INFO  [notification-service] [traceId=e0a2a996] c.m.notification.aop.LoggingAspect - [SERVICE][e0a2a996] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:50:41.400 INFO  [notification-service] [traceId=e0a2a996] c.m.notification.aop.LoggingAspect - [SERVICE][e0a2a996] <-- NotificationService.getByPatient(..) | 15ms | result: [com.meditrack.notification.entity.Notification@31f5224, com.meditrack.notification.entity.Notification@54f74fb, com.meditrack.notification.entity.Notification@53de92c6, com.meditrack.notification.entity.Notification@8e4dc13, com.meditrack.notification.entity.Notification@71932159, com.meditrack.notification.entity.Notification@f057b3c]
+2026-05-13 18:50:41.401 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][e0a2a996] <-- NotificationController.patient(..) | 17ms | result: [com.meditrack.notification.entity.Notification@31f5224, com.meditrack.notification.entity.Notification@54f74fb, com.meditrack.notification.entity.Notification@53de92c6, com.meditrack.notification.entity.Notification@8e4dc13, com.meditrack.notification.entity.Notification@71932159, com.meditrack.notification.entity.Notification@f057b3c]
+2026-05-13 18:50:49.904 INFO  [notification-service] [traceId=none] o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Node -1 disconnected.
+2026-05-13 18:50:51.005 INFO  [notification-service] [traceId=81b41e01] c.m.notification.aop.LoggingAspect - [CONTROLLER][81b41e01] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:50:51.005 INFO  [notification-service] [traceId=81b41e01] c.m.notification.aop.LoggingAspect - [SERVICE][81b41e01] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:50:51.026 INFO  [notification-service] [traceId=81b41e01] c.m.notification.aop.LoggingAspect - [SERVICE][81b41e01] <-- NotificationService.getByPatient(..) | 21ms | result: [com.meditrack.notification.entity.Notification@39d498e, com.meditrack.notification.entity.Notification@6037d39d, com.meditrack.notification.entity.Notification@29555993, com.meditrack.notification.entity.Notification@1ed5150b, com.meditrack.notification.entity.Notification@77edfe66, com.meditrack.notification.entity.Notification@2998703d]
+2026-05-13 18:50:51.028 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][81b41e01] <-- NotificationController.patient(..) | 23ms | result: [com.meditrack.notification.entity.Notification@39d498e, com.meditrack.notification.entity.Notification@6037d39d, com.meditrack.notification.entity.Notification@29555993, com.meditrack.notification.entity.Notification@1ed5150b, com.meditrack.notification.entity.Notification@77edfe66, com.meditrack.notification.entity.Notification@2998703d]
+2026-05-13 18:51:00.962 INFO  [notification-service] [traceId=e7b33092] c.m.notification.aop.LoggingAspect - [CONTROLLER][e7b33092] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:51:00.963 INFO  [notification-service] [traceId=e7b33092] c.m.notification.aop.LoggingAspect - [SERVICE][e7b33092] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:51:00.977 INFO  [notification-service] [traceId=e7b33092] c.m.notification.aop.LoggingAspect - [SERVICE][e7b33092] <-- NotificationService.getByPatient(..) | 14ms | result: [com.meditrack.notification.entity.Notification@2aafc23a, com.meditrack.notification.entity.Notification@7619ca3d, com.meditrack.notification.entity.Notification@b2e13e8, com.meditrack.notification.entity.Notification@4444e7d7, com.meditrack.notification.entity.Notification@10ae4377, com.meditrack.notification.entity.Notification@285e2b7d]
+2026-05-13 18:51:00.978 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][e7b33092] <-- NotificationController.patient(..) | 16ms | result: [com.meditrack.notification.entity.Notification@2aafc23a, com.meditrack.notification.entity.Notification@7619ca3d, com.meditrack.notification.entity.Notification@b2e13e8, com.meditrack.notification.entity.Notification@4444e7d7, com.meditrack.notification.entity.Notification@10ae4377, com.meditrack.notification.entity.Notification@285e2b7d]
+2026-05-13 18:51:11.110 INFO  [notification-service] [traceId=50a64249] c.m.notification.aop.LoggingAspect - [CONTROLLER][50a64249] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:51:11.113 INFO  [notification-service] [traceId=50a64249] c.m.notification.aop.LoggingAspect - [SERVICE][50a64249] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:51:11.125 INFO  [notification-service] [traceId=50a64249] c.m.notification.aop.LoggingAspect - [SERVICE][50a64249] <-- NotificationService.getByPatient(..) | 12ms | result: [com.meditrack.notification.entity.Notification@628ccc3e, com.meditrack.notification.entity.Notification@41dbb775, com.meditrack.notification.entity.Notification@1fdbb287, com.meditrack.notification.entity.Notification@7f572e15, com.meditrack.notification.entity.Notification@7b3ee0fd, com.meditrack.notification.entity.Notification@67c290f0]
+2026-05-13 18:51:11.125 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][50a64249] <-- NotificationController.patient(..) | 15ms | result: [com.meditrack.notification.entity.Notification@628ccc3e, com.meditrack.notification.entity.Notification@41dbb775, com.meditrack.notification.entity.Notification@1fdbb287, com.meditrack.notification.entity.Notification@7f572e15, com.meditrack.notification.entity.Notification@7b3ee0fd, com.meditrack.notification.entity.Notification@67c290f0]
+2026-05-13 18:51:21.367 INFO  [notification-service] [traceId=5e506cdf] c.m.notification.aop.LoggingAspect - [CONTROLLER][5e506cdf] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:51:21.368 INFO  [notification-service] [traceId=5e506cdf] c.m.notification.aop.LoggingAspect - [SERVICE][5e506cdf] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:51:21.383 INFO  [notification-service] [traceId=5e506cdf] c.m.notification.aop.LoggingAspect - [SERVICE][5e506cdf] <-- NotificationService.getByPatient(..) | 15ms | result: [com.meditrack.notification.entity.Notification@72a42216, com.meditrack.notification.entity.Notification@2f9d47bb, com.meditrack.notification.entity.Notification@7a34e1ef, com.meditrack.notification.entity.Notification@3cdd7af2, com.meditrack.notification.entity.Notification@6fba5bed, com.meditrack.notification.entity.Notification@2adf793e]
+2026-05-13 18:51:21.384 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][5e506cdf] <-- NotificationController.patient(..) | 17ms | result: [com.meditrack.notification.entity.Notification@72a42216, com.meditrack.notification.entity.Notification@2f9d47bb, com.meditrack.notification.entity.Notification@7a34e1ef, com.meditrack.notification.entity.Notification@3cdd7af2, com.meditrack.notification.entity.Notification@6fba5bed, com.meditrack.notification.entity.Notification@2adf793e]
+2026-05-13 18:51:31.352 INFO  [notification-service] [traceId=8d084717] c.m.notification.aop.LoggingAspect - [CONTROLLER][8d084717] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:51:31.353 INFO  [notification-service] [traceId=8d084717] c.m.notification.aop.LoggingAspect - [SERVICE][8d084717] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:51:31.365 INFO  [notification-service] [traceId=8d084717] c.m.notification.aop.LoggingAspect - [SERVICE][8d084717] <-- NotificationService.getByPatient(..) | 12ms | result: [com.meditrack.notification.entity.Notification@516f2f8d, com.meditrack.notification.entity.Notification@356bed19, com.meditrack.notification.entity.Notification@55da17b6, com.meditrack.notification.entity.Notification@c5606bd, com.meditrack.notification.entity.Notification@246d53fd, com.meditrack.notification.entity.Notification@4e04714c]
+2026-05-13 18:51:31.366 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][8d084717] <-- NotificationController.patient(..) | 14ms | result: [com.meditrack.notification.entity.Notification@516f2f8d, com.meditrack.notification.entity.Notification@356bed19, com.meditrack.notification.entity.Notification@55da17b6, com.meditrack.notification.entity.Notification@c5606bd, com.meditrack.notification.entity.Notification@246d53fd, com.meditrack.notification.entity.Notification@4e04714c]
+2026-05-13 18:51:40.980 INFO  [notification-service] [traceId=ddd5431f] c.m.notification.aop.LoggingAspect - [CONTROLLER][ddd5431f] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:51:40.980 INFO  [notification-service] [traceId=ddd5431f] c.m.notification.aop.LoggingAspect - [SERVICE][ddd5431f] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:51:40.996 INFO  [notification-service] [traceId=ddd5431f] c.m.notification.aop.LoggingAspect - [SERVICE][ddd5431f] <-- NotificationService.getByPatient(..) | 16ms | result: [com.meditrack.notification.entity.Notification@3c3317a0, com.meditrack.notification.entity.Notification@428527ae, com.meditrack.notification.entity.Notification@1308196b, com.meditrack.notification.entity.Notification@5a839858, com.meditrack.notification.entity.Notification@7ea91abf, com.meditrack.notification.entity.Notification@157afa93]
+2026-05-13 18:51:40.997 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][ddd5431f] <-- NotificationController.patient(..) | 17ms | result: [com.meditrack.notification.entity.Notification@3c3317a0, com.meditrack.notification.entity.Notification@428527ae, com.meditrack.notification.entity.Notification@1308196b, com.meditrack.notification.entity.Notification@5a839858, com.meditrack.notification.entity.Notification@7ea91abf, com.meditrack.notification.entity.Notification@157afa93]
+2026-05-13 18:51:50.969 INFO  [notification-service] [traceId=a8323a0d] c.m.notification.aop.LoggingAspect - [CONTROLLER][a8323a0d] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:51:50.970 INFO  [notification-service] [traceId=a8323a0d] c.m.notification.aop.LoggingAspect - [SERVICE][a8323a0d] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:51:50.982 INFO  [notification-service] [traceId=a8323a0d] c.m.notification.aop.LoggingAspect - [SERVICE][a8323a0d] <-- NotificationService.getByPatient(..) | 12ms | result: [com.meditrack.notification.entity.Notification@8db550c, com.meditrack.notification.entity.Notification@4bbc61d7, com.meditrack.notification.entity.Notification@61ca0c40, com.meditrack.notification.entity.Notification@500afce8, com.meditrack.notification.entity.Notification@2aba0d0, com.meditrack.notification.entity.Notification@2a31cb8b]
+2026-05-13 18:51:50.983 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][a8323a0d] <-- NotificationController.patient(..) | 14ms | result: [com.meditrack.notification.entity.Notification@8db550c, com.meditrack.notification.entity.Notification@4bbc61d7, com.meditrack.notification.entity.Notification@61ca0c40, com.meditrack.notification.entity.Notification@500afce8, com.meditrack.notification.entity.Notification@2aba0d0, com.meditrack.notification.entity.Notification@2a31cb8b]
+2026-05-13 18:52:00.974 INFO  [notification-service] [traceId=eb37c99a] c.m.notification.aop.LoggingAspect - [CONTROLLER][eb37c99a] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:52:00.975 INFO  [notification-service] [traceId=eb37c99a] c.m.notification.aop.LoggingAspect - [SERVICE][eb37c99a] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:52:00.986 INFO  [notification-service] [traceId=eb37c99a] c.m.notification.aop.LoggingAspect - [SERVICE][eb37c99a] <-- NotificationService.getByPatient(..) | 11ms | result: [com.meditrack.notification.entity.Notification@337447db, com.meditrack.notification.entity.Notification@60c4c6a, com.meditrack.notification.entity.Notification@5803b008, com.meditrack.notification.entity.Notification@6ee813f0, com.meditrack.notification.entity.Notification@7f33db69, com.meditrack.notification.entity.Notification@1b38a7f9]
+2026-05-13 18:52:00.986 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][eb37c99a] <-- NotificationController.patient(..) | 12ms | result: [com.meditrack.notification.entity.Notification@337447db, com.meditrack.notification.entity.Notification@60c4c6a, com.meditrack.notification.entity.Notification@5803b008, com.meditrack.notification.entity.Notification@6ee813f0, com.meditrack.notification.entity.Notification@7f33db69, com.meditrack.notification.entity.Notification@1b38a7f9]
+2026-05-13 18:52:10.965 INFO  [notification-service] [traceId=8292b1ff] c.m.notification.aop.LoggingAspect - [CONTROLLER][8292b1ff] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:52:10.966 INFO  [notification-service] [traceId=8292b1ff] c.m.notification.aop.LoggingAspect - [SERVICE][8292b1ff] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:52:10.978 INFO  [notification-service] [traceId=8292b1ff] c.m.notification.aop.LoggingAspect - [SERVICE][8292b1ff] <-- NotificationService.getByPatient(..) | 12ms | result: [com.meditrack.notification.entity.Notification@1524ecfb, com.meditrack.notification.entity.Notification@1e8f058, com.meditrack.notification.entity.Notification@58e1d402, com.meditrack.notification.entity.Notification@6ea192bd, com.meditrack.notification.entity.Notification@5c50f8a6, com.meditrack.notification.entity.Notification@1a7ca944]
+2026-05-13 18:52:10.978 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][8292b1ff] <-- NotificationController.patient(..) | 13ms | result: [com.meditrack.notification.entity.Notification@1524ecfb, com.meditrack.notification.entity.Notification@1e8f058, com.meditrack.notification.entity.Notification@58e1d402, com.meditrack.notification.entity.Notification@6ea192bd, com.meditrack.notification.entity.Notification@5c50f8a6, com.meditrack.notification.entity.Notification@1a7ca944]
+2026-05-13 18:52:20.967 INFO  [notification-service] [traceId=7220b982] c.m.notification.aop.LoggingAspect - [CONTROLLER][7220b982] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:52:20.968 INFO  [notification-service] [traceId=7220b982] c.m.notification.aop.LoggingAspect - [SERVICE][7220b982] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:52:21.159 INFO  [notification-service] [traceId=7220b982] c.m.notification.aop.LoggingAspect - [SERVICE][7220b982] <-- NotificationService.getByPatient(..) | 191ms | result: [com.meditrack.notification.entity.Notification@554b8b9f, com.meditrack.notification.entity.Notification@50f8806a, com.meditrack.notification.entity.Notification@308803a6, com.meditrack.notification.entity.Notification@298958d4, com.meditrack.notification.entity.Notification@20972909, com.meditrack.notification.entity.Notification@34f816a1]
+2026-05-13 18:52:21.160 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][7220b982] <-- NotificationController.patient(..) | 193ms | result: [com.meditrack.notification.entity.Notification@554b8b9f, com.meditrack.notification.entity.Notification@50f8806a, com.meditrack.notification.entity.Notification@308803a6, com.meditrack.notification.entity.Notification@298958d4, com.meditrack.notification.entity.Notification@20972909, com.meditrack.notification.entity.Notification@34f816a1]
+2026-05-13 18:52:31.364 INFO  [notification-service] [traceId=13db7984] c.m.notification.aop.LoggingAspect - [CONTROLLER][13db7984] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:52:31.366 INFO  [notification-service] [traceId=13db7984] c.m.notification.aop.LoggingAspect - [SERVICE][13db7984] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:52:31.380 INFO  [notification-service] [traceId=13db7984] c.m.notification.aop.LoggingAspect - [SERVICE][13db7984] <-- NotificationService.getByPatient(..) | 14ms | result: [com.meditrack.notification.entity.Notification@7bde2ce0, com.meditrack.notification.entity.Notification@77bc2fbe, com.meditrack.notification.entity.Notification@5de934a2, com.meditrack.notification.entity.Notification@5d808d7a, com.meditrack.notification.entity.Notification@57b31306, com.meditrack.notification.entity.Notification@41e41791]
+2026-05-13 18:52:31.381 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][13db7984] <-- NotificationController.patient(..) | 17ms | result: [com.meditrack.notification.entity.Notification@7bde2ce0, com.meditrack.notification.entity.Notification@77bc2fbe, com.meditrack.notification.entity.Notification@5de934a2, com.meditrack.notification.entity.Notification@5d808d7a, com.meditrack.notification.entity.Notification@57b31306, com.meditrack.notification.entity.Notification@41e41791]
+2026-05-13 18:52:41.356 INFO  [notification-service] [traceId=08c54d55] c.m.notification.aop.LoggingAspect - [CONTROLLER][08c54d55] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:52:41.357 INFO  [notification-service] [traceId=08c54d55] c.m.notification.aop.LoggingAspect - [SERVICE][08c54d55] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:52:41.393 INFO  [notification-service] [traceId=08c54d55] c.m.notification.aop.LoggingAspect - [SERVICE][08c54d55] <-- NotificationService.getByPatient(..) | 36ms | result: [com.meditrack.notification.entity.Notification@26ca8812, com.meditrack.notification.entity.Notification@1ecebf8b, com.meditrack.notification.entity.Notification@1b01cbe9, com.meditrack.notification.entity.Notification@2a082d0, com.meditrack.notification.entity.Notification@124e6707, com.meditrack.notification.entity.Notification@46e32628]
+2026-05-13 18:52:41.393 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][08c54d55] <-- NotificationController.patient(..) | 37ms | result: [com.meditrack.notification.entity.Notification@26ca8812, com.meditrack.notification.entity.Notification@1ecebf8b, com.meditrack.notification.entity.Notification@1b01cbe9, com.meditrack.notification.entity.Notification@2a082d0, com.meditrack.notification.entity.Notification@124e6707, com.meditrack.notification.entity.Notification@46e32628]
+2026-05-13 18:52:51.369 INFO  [notification-service] [traceId=8f599364] c.m.notification.aop.LoggingAspect - [CONTROLLER][8f599364] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:52:51.370 INFO  [notification-service] [traceId=8f599364] c.m.notification.aop.LoggingAspect - [SERVICE][8f599364] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:52:51.386 INFO  [notification-service] [traceId=8f599364] c.m.notification.aop.LoggingAspect - [SERVICE][8f599364] <-- NotificationService.getByPatient(..) | 16ms | result: [com.meditrack.notification.entity.Notification@66091afb, com.meditrack.notification.entity.Notification@16998fff, com.meditrack.notification.entity.Notification@7ae20e65, com.meditrack.notification.entity.Notification@5896284e, com.meditrack.notification.entity.Notification@76662f65, com.meditrack.notification.entity.Notification@2c5aa021]
+2026-05-13 18:52:51.387 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][8f599364] <-- NotificationController.patient(..) | 18ms | result: [com.meditrack.notification.entity.Notification@66091afb, com.meditrack.notification.entity.Notification@16998fff, com.meditrack.notification.entity.Notification@7ae20e65, com.meditrack.notification.entity.Notification@5896284e, com.meditrack.notification.entity.Notification@76662f65, com.meditrack.notification.entity.Notification@2c5aa021]
+2026-05-13 18:53:01.373 INFO  [notification-service] [traceId=1dc338b7] c.m.notification.aop.LoggingAspect - [CONTROLLER][1dc338b7] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:53:01.374 INFO  [notification-service] [traceId=1dc338b7] c.m.notification.aop.LoggingAspect - [SERVICE][1dc338b7] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:53:01.389 INFO  [notification-service] [traceId=1dc338b7] c.m.notification.aop.LoggingAspect - [SERVICE][1dc338b7] <-- NotificationService.getByPatient(..) | 15ms | result: [com.meditrack.notification.entity.Notification@abaf448, com.meditrack.notification.entity.Notification@19a361af, com.meditrack.notification.entity.Notification@3741f6b7, com.meditrack.notification.entity.Notification@dbd2b3b, com.meditrack.notification.entity.Notification@50788670, com.meditrack.notification.entity.Notification@52d42bc9]
+2026-05-13 18:53:01.391 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][1dc338b7] <-- NotificationController.patient(..) | 18ms | result: [com.meditrack.notification.entity.Notification@abaf448, com.meditrack.notification.entity.Notification@19a361af, com.meditrack.notification.entity.Notification@3741f6b7, com.meditrack.notification.entity.Notification@dbd2b3b, com.meditrack.notification.entity.Notification@50788670, com.meditrack.notification.entity.Notification@52d42bc9]
+2026-05-13 18:53:11.384 INFO  [notification-service] [traceId=b5bf7a18] c.m.notification.aop.LoggingAspect - [CONTROLLER][b5bf7a18] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:53:11.385 INFO  [notification-service] [traceId=b5bf7a18] c.m.notification.aop.LoggingAspect - [SERVICE][b5bf7a18] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:53:11.397 INFO  [notification-service] [traceId=b5bf7a18] c.m.notification.aop.LoggingAspect - [SERVICE][b5bf7a18] <-- NotificationService.getByPatient(..) | 12ms | result: [com.meditrack.notification.entity.Notification@697d29d, com.meditrack.notification.entity.Notification@6589bcb2, com.meditrack.notification.entity.Notification@1f9030cf, com.meditrack.notification.entity.Notification@48e8d215, com.meditrack.notification.entity.Notification@7053f2af, com.meditrack.notification.entity.Notification@5897bc3b]
+2026-05-13 18:53:11.397 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][b5bf7a18] <-- NotificationController.patient(..) | 13ms | result: [com.meditrack.notification.entity.Notification@697d29d, com.meditrack.notification.entity.Notification@6589bcb2, com.meditrack.notification.entity.Notification@1f9030cf, com.meditrack.notification.entity.Notification@48e8d215, com.meditrack.notification.entity.Notification@7053f2af, com.meditrack.notification.entity.Notification@5897bc3b]
+2026-05-13 18:53:20.966 INFO  [notification-service] [traceId=6988284a] c.m.notification.aop.LoggingAspect - [CONTROLLER][6988284a] --> NotificationController.patient(..) | args: [1]
+2026-05-13 18:53:20.967 INFO  [notification-service] [traceId=6988284a] c.m.notification.aop.LoggingAspect - [SERVICE][6988284a] --> NotificationService.getByPatient(..) | args: [1]
+2026-05-13 18:53:20.976 INFO  [notification-service] [traceId=6988284a] c.m.notification.aop.LoggingAspect - [SERVICE][6988284a] <-- NotificationService.getByPatient(..) | 9ms | result: [com.meditrack.notification.entity.Notification@33e6a4e, com.meditrack.notification.entity.Notification@2e250348, com.meditrack.notification.entity.Notification@6d8d64ee, com.meditrack.notification.entity.Notification@1300dc5, com.meditrack.notification.entity.Notification@71ac7bb7, com.meditrack.notification.entity.Notification@77151989]
+2026-05-13 18:53:20.976 INFO  [notification-service] [traceId=none] c.m.notification.aop.LoggingAspect - [CONTROLLER][6988284a] <-- NotificationController.patient(..) | 10ms | result: [com.meditrack.notification.entity.Notification@33e6a4e, com.meditrack.notification.entity.Notification@2e250348, com.meditrack.notification.entity.Notification@6d8d64ee, com.meditrack.notification.entity.Notification@1300dc5, com.meditrack.notification.entity.Notification@71ac7bb7, com.meditrack.notification.entity.Notification@77151989]
+2026-05-13 18:53:57.412 INFO  [notification-service] [traceId=none] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 2252 ms
+2026-05-13 18:58:08.310 INFO  [notification-service] [traceId=none] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-05-13 18:58:08.449 INFO  [notification-service] [traceId=none] c.m.n.NotificationServiceApplicationTests - Starting NotificationServiceApplicationTests using Java 20.0.2 with PID 12796 (started by Aishu in C:\Users\Aishu\C_MediTrack\MediTrack\notification-service)
+2026-05-13 18:58:08.453 INFO  [notification-service] [traceId=none] c.m.n.NotificationServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-13 18:58:11.488 INFO  [notification-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-13 18:58:12.055 INFO  [notification-service] [traceId=none] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 534 ms. Found 1 JPA repository interface.
+2026-05-13 18:58:12.987 INFO  [notification-service] [traceId=none] o.s.cloud.context.scope.GenericScope - BeanFactory id=40fd1a04-1776-3ebf-ab4c-c0a9de79dd21
+2026-05-13 18:58:13.955 WARN  [notification-service] [traceId=none] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-05-13 18:58:13.967 WARN  [notification-service] [traceId=none] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-05-13 18:58:14.584 INFO  [notification-service] [traceId=none] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-13 18:58:14.847 INFO  [notification-service] [traceId=none] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-13 18:58:14.987 INFO  [notification-service] [traceId=none] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-13 18:58:15.940 INFO  [notification-service] [traceId=none] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-13 18:58:16.046 INFO  [notification-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-13 18:58:17.322 INFO  [notification-service] [traceId=none] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21fd75f2
+2026-05-13 18:58:17.330 INFO  [notification-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-13 18:58:20.821 INFO  [notification-service] [traceId=none] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-13 18:58:21.014 INFO  [notification-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-13 18:58:23.570 WARN  [notification-service] [traceId=none] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-13 18:58:26.695 INFO  [notification-service] [traceId=none] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-13 18:58:26.893 WARN  [notification-service] [traceId=none] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-13 18:58:27.195 INFO  [notification-service] [traceId=none] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-13 18:58:28.795 INFO  [notification-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Registering application NOTIFICATION-SERVICE with eureka with status UP
+2026-05-13 18:58:28.976 INFO  [notification-service] [traceId=none] o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-notification-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-05-13 18:58:29.395 INFO  [notification-service] [traceId=none] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.2
+2026-05-13 18:58:29.396 INFO  [notification-service] [traceId=none] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: c4deed513057c94e
+2026-05-13 18:58:29.397 INFO  [notification-service] [traceId=none] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1778678909388
+2026-05-13 18:58:29.406 INFO  [notification-service] [traceId=none] o.s.k.c.DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Subscribed to topic(s): notifications
+2026-05-13 18:58:29.475 INFO  [notification-service] [traceId=none] c.m.n.NotificationServiceApplicationTests - Started NotificationServiceApplicationTests in 22.61 seconds (process running for 27.137)
+2026-05-13 18:58:31.530 INFO  [notification-service] [traceId=none] org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Cluster ID: uDJtSLDBQTO5CGuWyOQNeA
+2026-05-13 18:58:31.534 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Discovered group coordinator DESKTOP-TE08QKM:9092 (id: 2147483647 rack: null)
+2026-05-13 18:58:31.545 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2026-05-13 18:58:31.661 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: need to re-join with the given member-id: consumer-notification-group-1-2352762e-15af-4b89-889e-8c4b48bcc719
+2026-05-13 18:58:31.662 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2026-05-13 18:58:31.663 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2026-05-13 18:58:34.563 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: group is already rebalancing
+2026-05-13 18:58:34.650 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Revoke previously assigned partitions notifications-0
+2026-05-13 18:58:34.739 INFO  [notification-service] [traceId=none] o.s.k.l.KafkaMessageListenerContainer - notification-group: partitions revoked: [notifications-0]
+2026-05-13 18:58:34.768 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2026-05-13 18:58:34.871 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully joined group with generation Generation{generationId=32, memberId='consumer-notification-group-1-66213108-6bc3-4959-8a57-221a161666df', protocol='range'}
+2026-05-13 18:58:34.882 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Finished assignment for group at generation 32: {consumer-notification-group-1-66213108-6bc3-4959-8a57-221a161666df=Assignment(partitions=[]), consumer-notification-group-1-2352762e-15af-4b89-889e-8c4b48bcc719=Assignment(partitions=[notifications-0])}
+2026-05-13 18:58:34.989 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully synced group in generation Generation{generationId=32, memberId='consumer-notification-group-1-66213108-6bc3-4959-8a57-221a161666df', protocol='range'}
+2026-05-13 18:58:34.992 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Notifying assignor about the new Assignment(partitions=[])
+2026-05-13 18:58:34.995 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Adding newly assigned partitions: 
+2026-05-13 18:58:34.996 INFO  [notification-service] [traceId=none] o.s.k.l.KafkaMessageListenerContainer - notification-group: partitions assigned: []
+2026-05-13 18:58:35.776 INFO  [notification-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application NOTIFICATION-SERVICE with eureka with status DOWN
+2026-05-13 18:58:35.778 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully joined group with generation Generation{generationId=32, memberId='consumer-notification-group-1-2352762e-15af-4b89-889e-8c4b48bcc719', protocol='range'}
+2026-05-13 18:58:35.797 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully synced group in generation Generation{generationId=32, memberId='consumer-notification-group-1-2352762e-15af-4b89-889e-8c4b48bcc719', protocol='range'}
+2026-05-13 18:58:35.814 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Notifying assignor about the new Assignment(partitions=[notifications-0])
+2026-05-13 18:58:35.839 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Adding newly assigned partitions: notifications-0
+2026-05-13 18:58:35.881 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Revoke previously assigned partitions notifications-0
+2026-05-13 18:58:35.883 INFO  [notification-service] [traceId=none] o.s.k.l.KafkaMessageListenerContainer - notification-group: partitions revoked: [notifications-0]
+2026-05-13 18:58:35.885 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Member consumer-notification-group-1-2352762e-15af-4b89-889e-8c4b48bcc719 sending LeaveGroup request to coordinator DESKTOP-TE08QKM:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2026-05-13 18:58:35.889 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-05-13 18:58:35.889 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: consumer pro-actively leaving the group
+2026-05-13 18:58:35.890 INFO  [notification-service] [traceId=none] o.s.k.c.DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Unsubscribed all topics or patterns and assigned partitions
+2026-05-13 18:58:35.897 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-05-13 18:58:35.897 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: consumer pro-actively leaving the group
+2026-05-13 18:58:36.146 INFO  [notification-service] [traceId=none] o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-05-13 18:58:36.147 INFO  [notification-service] [traceId=none] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-05-13 18:58:36.148 INFO  [notification-service] [traceId=none] o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-05-13 18:58:36.166 INFO  [notification-service] [traceId=none] o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-notification-group-1 unregistered
+2026-05-13 18:58:36.169 INFO  [notification-service] [traceId=none] o.s.k.l.KafkaMessageListenerContainer - notification-group: Consumer stopped
+2026-05-13 18:58:36.203 INFO  [notification-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-13 18:58:36.212 INFO  [notification-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-13 18:58:36.238 INFO  [notification-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-13 18:58:37.889 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: group is already rebalancing
+2026-05-13 18:58:37.889 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Revoke previously assigned partitions 
+2026-05-13 18:58:37.889 INFO  [notification-service] [traceId=none] o.s.k.l.KafkaMessageListenerContainer - notification-group: partitions revoked: []
+2026-05-13 18:58:37.890 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2026-05-13 18:58:37.898 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully joined group with generation Generation{generationId=33, memberId='consumer-notification-group-1-66213108-6bc3-4959-8a57-221a161666df', protocol='range'}
+2026-05-13 18:58:37.899 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Finished assignment for group at generation 33: {consumer-notification-group-1-66213108-6bc3-4959-8a57-221a161666df=Assignment(partitions=[notifications-0])}
+2026-05-13 18:58:37.912 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully synced group in generation Generation{generationId=33, memberId='consumer-notification-group-1-66213108-6bc3-4959-8a57-221a161666df', protocol='range'}
+2026-05-13 18:58:37.916 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Notifying assignor about the new Assignment(partitions=[notifications-0])
+2026-05-13 18:58:37.916 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Adding newly assigned partitions: notifications-0
+2026-05-13 18:58:37.931 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Setting offset for partition notifications-0 to the committed offset FetchPosition{offset=65, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-TE08QKM:9092 (id: 0 rack: null)], epoch=0}}
+2026-05-13 18:58:37.932 INFO  [notification-service] [traceId=none] o.s.k.l.KafkaMessageListenerContainer - notification-group: partitions assigned: [notifications-0]
+2026-05-13 18:58:39.269 WARN  [notification-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: Connection pool shut down
+2026-05-13 18:58:39.281 WARN  [notification-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: Connection pool shut down
+2026-05-13 18:58:39.282 ERROR [notification-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/DESKTOP-TE08QKM:notification-service:8087 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1147)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-13 19:07:39.963 INFO  [notification-service] [traceId=none] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-05-13 19:07:40.034 INFO  [notification-service] [traceId=none] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application NOTIFICATION-SERVICE with eureka with status DOWN
+2026-05-13 19:07:40.147 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Revoke previously assigned partitions notifications-0
+2026-05-13 19:07:40.149 INFO  [notification-service] [traceId=none] o.s.k.l.KafkaMessageListenerContainer - notification-group: partitions revoked: [notifications-0]
+2026-05-13 19:07:40.150 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Member consumer-notification-group-1-66213108-6bc3-4959-8a57-221a161666df sending LeaveGroup request to coordinator DESKTOP-TE08QKM:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2026-05-13 19:07:40.155 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-05-13 19:07:40.155 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: consumer pro-actively leaving the group
+2026-05-13 19:07:40.157 INFO  [notification-service] [traceId=none] o.s.k.c.DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Unsubscribed all topics or patterns and assigned partitions
+2026-05-13 19:07:40.168 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-05-13 19:07:40.169 INFO  [notification-service] [traceId=none] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Request joining group due to: consumer pro-actively leaving the group
+2026-05-13 19:07:40.184 WARN  [notification-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/NOTIFICATION-SERVICE": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2026-05-13 19:07:40.237 WARN  [notification-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/NOTIFICATION-SERVICE": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2026-05-13 19:07:40.239 WARN  [notification-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/DESKTOP-TE08QKM:notification-service:8087 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-13 19:07:40.259 WARN  [notification-service] [traceId=none] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-05-13 19:07:40.827 INFO  [notification-service] [traceId=none] o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-05-13 19:07:40.828 INFO  [notification-service] [traceId=none] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-05-13 19:07:40.828 INFO  [notification-service] [traceId=none] o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-05-13 19:07:40.848 INFO  [notification-service] [traceId=none] o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-notification-group-1 unregistered
+2026-05-13 19:07:40.853 INFO  [notification-service] [traceId=none] o.s.k.l.KafkaMessageListenerContainer - notification-group: Consumer stopped
+2026-05-13 19:07:40.881 INFO  [notification-service] [traceId=none] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8087"]
+2026-05-13 19:07:40.953 INFO  [notification-service] [traceId=none] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-13 19:07:40.999 INFO  [notification-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-13 19:07:41.091 INFO  [notification-service] [traceId=none] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-13 19:07:44.138 WARN  [notification-service] [traceId=none] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: Connection pool shut down
+2026-05-13 19:07:44.139 ERROR [notification-service] [traceId=none] c.netflix.discovery.DiscoveryClient - DiscoveryClient_NOTIFICATION-SERVICE/DESKTOP-TE08QKM:notification-service:8087 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1147)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)

@@ -1,0 +1,164 @@
+package com.meditrack.prescription.service;
+
+import com.meditrack.prescription.client.AppointmentClient;
+import com.meditrack.prescription.client.PatientClient;
+import com.meditrack.prescription.dto.AppointmentResponse;
+import com.meditrack.prescription.dto.PatientResponse;
+import com.meditrack.prescription.entity.Prescription;
+import com.meditrack.prescription.repository.PrescriptionRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.logging.Logger;
+
+@Service
+public class PrescriptionService {
+
+    private static final Logger logger =
+        Logger.getLogger(PrescriptionService.class.getName());
+
+    @Autowired
+    private PrescriptionRepository prescriptionRepository;
+
+    @Autowired
+    private AppointmentClient appointmentClient;
+
+    @Autowired
+    private PatientClient patientClient;
+
+    public Prescription addPrescription(Prescription prescription) {
+        logger.info("Adding prescription for appointment: "
+            + prescription.getAppointmentId());
+
+        // Step 1 — Validate appointment exists
+        AppointmentResponse appointment;
+        try {
+            appointment = appointmentClient.getAppointmentById(
+                prescription.getAppointmentId());
+        } catch (Exception e) {
+            throw new RuntimeException(
+                "Appointment not found with id: "
+                + prescription.getAppointmentId()
+                + ". Please check the appointment id.");
+        }
+
+        // Step 2 — Check appointment is not already cancelled
+        if (appointment.getStatus().equals("CANCELLED")) {
+            throw new RuntimeException(
+                "Cannot add prescription for a CANCELLED appointment!");
+        }
+
+        // Step 3 — Check prescription not already added
+        prescriptionRepository.findByAppointmentId(
+            prescription.getAppointmentId()).ifPresent(p -> {
+                throw new RuntimeException(
+                    "Prescription already exists for appointment id: "
+                    + prescription.getAppointmentId());
+            });
+
+        // Step 4 — Get patient details
+        PatientResponse patient;
+        try {
+            patient = patientClient.getPatientById(
+                appointment.getPatientId());
+        } catch (Exception e) {
+            throw new RuntimeException(
+                "Patient not found with id: "
+                + appointment.getPatientId());
+        }
+
+        // Step 5 — Set all details from appointment
+        prescription.setPatientId(appointment.getPatientId());
+        prescription.setDoctorId(appointment.getDoctorId());
+        prescription.setPatientName(appointment.getPatientName());
+        prescription.setDoctorName(appointment.getDoctorName());
+        prescription.setPrescriptionDate(LocalDate.now());
+
+        // Step 6 — Save prescription
+        Prescription saved = prescriptionRepository.save(prescription);
+
+        // Step 7 — Update patient medical history
+        try {
+            patientClient.updateMedicalHistory(
+                appointment.getPatientId(),
+                "Diagnosis: " + prescription.getDiagnosis()
+                + " | Medicines: " + prescription.getMedicines()
+                + " | Date: " + LocalDate.now()
+            );
+            logger.info("Medical history updated for patient: "
+                + appointment.getPatientId());
+        } catch (Exception e) {
+            logger.warning("Could not update medical history: "
+                + e.getMessage());
+        }
+
+        // Step 8 — Mark appointment as completed
+        try {
+            appointmentClient.completeAppointment(
+                prescription.getAppointmentId());
+            logger.info("Appointment marked as COMPLETED: "
+                + prescription.getAppointmentId());
+        } catch (Exception e) {
+            logger.warning("Could not complete appointment: "
+                + e.getMessage());
+        }
+
+        return saved;
+    }
+
+    public Prescription getPrescriptionById(Long id) {
+        return prescriptionRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException(
+                "Prescription not found with id: " + id));
+    }
+
+    public Prescription getPrescriptionByAppointment(Long appointmentId) {
+        return prescriptionRepository
+            .findByAppointmentId(appointmentId)
+            .orElseThrow(() -> new RuntimeException(
+                "No prescription found for appointment id: "
+                + appointmentId));
+    }
+
+    public List<Prescription> getPrescriptionsByPatient(Long patientId) {
+        List<Prescription> list =
+            prescriptionRepository.findByPatientId(patientId);
+        if (list.isEmpty()) {
+            throw new RuntimeException(
+                "No prescriptions found for patient id: " + patientId);
+        }
+        return list;
+    }
+
+    public List<Prescription> getPrescriptionsByDoctor(Long doctorId) {
+        List<Prescription> list =
+            prescriptionRepository.findByDoctorId(doctorId);
+        if (list.isEmpty()) {
+            throw new RuntimeException(
+                "No prescriptions found for doctor id: " + doctorId);
+        }
+        return list;
+    }
+
+    public List<Prescription> getAllPrescriptions() {
+        List<Prescription> list = prescriptionRepository.findAll();
+        if (list.isEmpty()) {
+            throw new RuntimeException(
+                "No prescriptions found in the system yet.");
+        }
+        return list;
+    }
+
+    public Prescription updatePrescription(
+            Long id, Prescription updated) {
+        logger.info("Updating prescription: " + id);
+        Prescription existing = getPrescriptionById(id);
+        existing.setDiagnosis(updated.getDiagnosis());
+        existing.setMedicines(updated.getMedicines());
+        existing.setNotes(updated.getNotes());
+        existing.setFollowUpDate(updated.getFollowUpDate());
+        return prescriptionRepository.save(existing);
+    }
+}

@@ -1,0 +1,150 @@
+package com.meditrack.appointment.service;
+
+import com.meditrack.appointment.client.DoctorClient;
+import com.meditrack.appointment.dto.DoctorResponse;
+import com.meditrack.appointment.entity.Appointment;
+import com.meditrack.appointment.entity.AppointmentStatus;
+import com.meditrack.appointment.repository.AppointmentRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.logging.Logger;
+
+@Service
+public class AppointmentService {
+
+    private static final Logger logger =
+        Logger.getLogger(AppointmentService.class.getName());
+
+    @Autowired
+    private AppointmentRepository appointmentRepository;
+
+    @Autowired
+    private DoctorClient doctorClient;
+
+    @Autowired
+    private SlotService slotService;
+
+    public Appointment bookAppointment(Appointment appointment) {
+        logger.info("Booking for patient: " + appointment.getPatientId());
+
+        // Validate required fields
+        if (appointment.getPatientId() == null) {
+            throw new RuntimeException("patientId is required!");
+        }
+        if (appointment.getDoctorId() == null) {
+            throw new RuntimeException("doctorId is required!");
+        }
+        if (appointment.getAppointmentDate() == null) {
+            throw new RuntimeException("appointmentDate is required!");
+        }
+        if (appointment.getSlot() == null
+                || appointment.getSlot().isEmpty()) {
+            throw new RuntimeException(
+                "slot is required! Valid slots: 09:00 AM,"
+                + " 10:00 AM, 11:00 AM, 02:00 PM, 03:00 PM, 04:00 PM");
+        }
+
+        // Check doctor exists via Feign
+        DoctorResponse doctor;
+        try {
+            doctor = doctorClient.getDoctorById(appointment.getDoctorId());
+        } catch (Exception e) {
+            throw new RuntimeException(
+                "Doctor with id " + appointment.getDoctorId()
+                + " not found! Please check the doctorId.");
+        }
+
+        // Book the specific slot
+        slotService.bookSlot(
+            appointment.getDoctorId(),
+            appointment.getAppointmentDate(),
+            appointment.getSlot()
+        );
+
+        // Save appointment
+        appointment.setDoctorName(doctor.getName());
+        appointment.setSpecialization(doctor.getSpecialization());
+        appointment.setStatus(AppointmentStatus.BOOKED);
+        return appointmentRepository.save(appointment);
+    }
+
+    public Appointment getAppointmentById(Long id) {
+        return appointmentRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException(
+                "Appointment not found with id: " + id
+                + ". Please check the appointment id."));
+    }
+
+    public List<Appointment> getAllAppointments() {
+        List<Appointment> list = appointmentRepository.findAll();
+        if (list.isEmpty()) {
+            throw new RuntimeException(
+                "No appointments found in the system yet.");
+        }
+        return list;
+    }
+
+    public List<Appointment> getAppointmentsByPatient(Long patientId) {
+        List<Appointment> list =
+            appointmentRepository.findByPatientId(patientId);
+        if (list.isEmpty()) {
+            throw new RuntimeException(
+                "No appointments found for patient id: " + patientId);
+        }
+        return list;
+    }
+
+    public List<Appointment> getAppointmentsByDoctor(Long doctorId) {
+        List<Appointment> list =
+            appointmentRepository.findByDoctorId(doctorId);
+        if (list.isEmpty()) {
+            throw new RuntimeException(
+                "No appointments found for doctor id: " + doctorId);
+        }
+        return list;
+    }
+
+    public Appointment cancelAppointment(Long id) {
+        logger.info("Cancelling appointment: " + id);
+        Appointment appointment = getAppointmentById(id);
+
+        if (appointment.getStatus() == AppointmentStatus.CANCELLED) {
+            throw new RuntimeException(
+                "Appointment " + id + " is already CANCELLED!");
+        }
+        if (appointment.getStatus() == AppointmentStatus.COMPLETED) {
+            throw new RuntimeException(
+                "Cannot cancel a COMPLETED appointment!");
+        }
+
+        appointment.setStatus(AppointmentStatus.CANCELLED);
+
+        // Release slot back to available
+        slotService.releaseSlot(
+            appointment.getDoctorId(),
+            appointment.getAppointmentDate(),
+            appointment.getSlot()
+        );
+
+        return appointmentRepository.save(appointment);
+    }
+
+    public Appointment completeAppointment(Long id) {
+        logger.info("Completing appointment: " + id);
+        Appointment appointment = getAppointmentById(id);
+
+        if (appointment.getStatus() == AppointmentStatus.COMPLETED) {
+            throw new RuntimeException(
+                "Appointment " + id + " is already COMPLETED!");
+        }
+        if (appointment.getStatus() == AppointmentStatus.CANCELLED) {
+            throw new RuntimeException(
+                "Cannot complete a CANCELLED appointment!");
+        }
+
+        appointment.setStatus(AppointmentStatus.COMPLETED);
+        return appointmentRepository.save(appointment);
+    }
+}

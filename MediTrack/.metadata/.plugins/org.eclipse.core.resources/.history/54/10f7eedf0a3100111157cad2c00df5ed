@@ -1,0 +1,90 @@
+package com.meditrack.appointment.controller;
+
+import com.meditrack.appointment.entity.Appointment;
+import com.meditrack.appointment.service.AppointmentService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/appointments")
+public class AppointmentController {
+
+    @Autowired
+    private AppointmentService appointmentService;
+
+    @PostMapping("/book")
+    public ResponseEntity<?> bookAppointment(
+            @RequestBody Appointment appointment) {
+        try {
+            return ResponseEntity.ok(
+                appointmentService.bookAppointment(appointment));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<?> getById(@PathVariable Long id) {
+        try {
+            return ResponseEntity.ok(
+                appointmentService.getAppointmentById(id));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @GetMapping("/all")
+    public ResponseEntity<?> getAll() {
+        try {
+            return ResponseEntity.ok(
+                appointmentService.getAllAppointments());
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @GetMapping("/patient/{patientId}")
+    public ResponseEntity<?> getByPatient(
+            @PathVariable Long patientId) {
+        try {
+            return ResponseEntity.ok(
+                appointmentService.getAppointmentsByPatient(patientId));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @GetMapping("/doctor/{doctorId}")
+    public ResponseEntity<?> getByDoctor(
+            @PathVariable Long doctorId) {
+        try {
+            return ResponseEntity.ok(
+                appointmentService.getAppointmentsByDoctor(doctorId));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @PutMapping("/cancel/{id}")
+    public ResponseEntity<?> cancel(@PathVariable Long id) {
+        try {
+            return ResponseEntity.ok(
+                appointmentService.cancelAppointment(id));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @PutMapping("/complete/{id}")
+    public ResponseEntity<?> complete(@PathVariable Long id) {
+        try {
+            return ResponseEntity.ok(
+                appointmentService.completeAppointment(id));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+}
